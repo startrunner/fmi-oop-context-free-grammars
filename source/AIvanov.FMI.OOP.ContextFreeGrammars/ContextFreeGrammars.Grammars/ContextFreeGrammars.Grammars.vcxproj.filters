@@ -21,25 +21,25 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="concatenation_expression.h">
+    <ClInclude Include="variable_arity_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="union_expression.h">
+    <ClInclude Include="concatenation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="kleene_star_expression.h">
+    <ClInclude Include="production.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="terminal_expression.h">
+    <ClInclude Include="grammar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rule_expression.h">
+    <ClInclude Include="grammar_operators.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="production_expression.h">
+    <ClInclude Include="cyk_parse_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="context_free_grammar.h">
+    <ClInclude Include="term.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,28 +47,28 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="production_expression.cpp">
+    <ClCompile Include="concatenation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="concatenation_expression.cpp">
+    <ClCompile Include="production.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\ContextFreeGrammars.Serialization\try_parse_token.cpp">
+    <ClCompile Include="grammar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="union_expression.cpp">
+    <ClCompile Include="grammar_operators.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kleene_star_expression.cpp">
+    <ClCompile Include="grammar_chomsky_normal_form.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="terminal_expression.cpp">
+    <ClCompile Include="cyk_parse_tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rule_expression.cpp">
+    <ClCompile Include="grammar_try_match.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="context_free_grammar.cpp">
+    <ClCompile Include="term.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
