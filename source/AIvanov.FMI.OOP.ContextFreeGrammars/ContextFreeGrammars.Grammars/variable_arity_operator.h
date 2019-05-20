@@ -22,7 +22,12 @@ public:
 
 	bool has_no_operands()const { return operands.empty(); }
 
-	int operand_count()const { return operands.size(); }
+	int operand_count()const 
+	{
+		int value = operands.size();
+		;
+		return value;
+	}
 
 	T& operand(int index) { return operands[index]; }
 
@@ -40,6 +45,11 @@ public:
 
 	void replace_operand(int index, const T& operand)
 	{
+		if (index < 0 || index >= operand_count())
+		{
+			throw std::out_of_range("");
+		}
+		
 		operands[index] = operand;
 	}
 
@@ -53,7 +63,7 @@ public:
 		operands.clear();
 	}
 
-	void remove_operands(const std::set<int> &indicesToRemove)
+	void remove_operands(const set<int> &indicesToRemove)
 	{
 		std::vector<T> keptOperands;
 		for (int i = 0; i < operands.size(); i++)

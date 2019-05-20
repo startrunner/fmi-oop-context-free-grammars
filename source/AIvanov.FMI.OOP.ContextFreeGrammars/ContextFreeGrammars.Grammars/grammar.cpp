@@ -23,7 +23,18 @@ void grammar::set_start_symbol(const string &startSymbol) { this->startSymbol = 
 
 void grammar::add_rule(const string &ruleName, const production &expression) { productionRules.emplace(ruleName, expression); }
 const production &grammar::get_rule(const string &ruleName) const { return productionRules.at(ruleName); }
-production &grammar::get_rule(const string &ruleName) { return productionRules.at(ruleName); }
+
+production& grammar::get_rule(const string &ruleName) 
+{
+	production &rule = productionRules.at(ruleName);
+
+	if (abs(rule.operand_count()) > 7)
+	{
+
+	}
+
+	return rule;
+}
 
 void grammar::remove_rule(const string &ruleName) { productionRules.erase(ruleName); }
 

@@ -52,29 +52,12 @@ void grammar::eliminate_nonsolitary_terminals()
 	for (const string &name : oldRuleNames)
 	{
 		production &rule = this->get_rule(name);
-
+		;
 		for (int i = 0; i < rule.operand_count(); i++)
 		{
 			concatenation &operand = rule.operand(i);
 			eliminate_nonsolitary_terminals(name, operand);
 		}
-	}
-}
-
-void grammar::eliminate_nonsolitary_terminals(
-	const string &ruleName,
-	concatenation &rule
-)
-{
-	if (rule.operand_count() == 1)return;
-
-	for (int i = 0; i < rule.operand_count(); i++)
-	{
-		if (!rule.operand(i).is_terminal())continue;
-
-		term terminalRule =
-			create_terminal_rule(ruleName, rule.operand(i).value());
-		rule.replace_operand(i, terminalRule);
 	}
 }
 
@@ -276,7 +259,7 @@ void grammar::inline_nullable_rules()
 	}
 }
 
-void grammar::inline_directly_nullable_rules(const std::set<std::string>& toInline)
+void grammar::inline_directly_nullable_rules(const set<std::string>& toInline)
 {
 	vector<string> ruleNames = get_rule_names();
 	for (string &name : ruleNames)

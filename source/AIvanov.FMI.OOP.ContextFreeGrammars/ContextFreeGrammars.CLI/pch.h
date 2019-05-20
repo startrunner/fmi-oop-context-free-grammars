@@ -16,4 +16,5 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <map>
+#include "../ContextFreeGrammars.Infrastructure/map.h"
+#include "../ContextFreeGrammars.Infrastructure/set.h"

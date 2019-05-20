@@ -5,11 +5,11 @@
 class grammar
 {
 	std::string startSymbol;
-	std::map<std::string, production> productionRules;
+	map<std::string, production> productionRules;
 public:
 	grammar(
 		const std::string &startSymbol,
-		const std::map<std::string, production> &productionRules
+		const map<std::string, production> &productionRules
 	) :
 		startSymbol(startSymbol),
 		productionRules(productionRules) {}
@@ -60,29 +60,49 @@ public:
 	bool is_empty()const;
 
 private:
-	bool can_reach_terminal(const production &from, std::set<std::string> &walkedRules)const;
-	bool can_reach_terminal(const concatenation &from, std::set<std::string> &walkedRules)const;
+	bool can_reach_terminal(const production &from, set<std::string> &walkedRules)const;
+	bool can_reach_terminal(const concatenation &from, set<std::string> &walkedRules)const;
 
-	void eliminate_nonsolitary_terminals(const std::string &ruleName, concatenation &rule);
+	void eliminate_nonsolitary_terminals(const std::string &ruleName, concatenation &rule)
+	{
+		if (rule.operand_count() == 0)
+		{
+			;
+		}
+
+		if (rule.operand_count() == 1)return;
+
+		for (int i = 0; i < rule.operand_count(); i++)
+		{
+			if (!rule.operand(i).is_terminal())continue;
+
+			std::string tval = rule.operand(i).value();
+
+			term terminalRule =
+				create_terminal_rule(ruleName, rule.operand(i).value());
+
+			rule.replace_operand(i, terminalRule);
+		}
+	}
 
 	void eliminate_long_concatenations(const std::string &ruleName, concatenation &rule);
 	concatenation create_binary_concatenation(const std::string &ruleName, std::vector<term> operands);
 	term create_concatenation_rule(const std::string &parentRuleName, const term &left, const term &right);
 
-	static std::vector<concatenation> substitute_directly_nullable_rules(const concatenation &replaceIn, const std::set<std::string> &directlyNullables);
-	void inline_directly_nullable_rules(const std::set<std::string> &toReplace);
-	std::set<std::string> get_directly_nullable_rules(const std::set<std::string> &toIgnore)const;
+	static std::vector<concatenation> substitute_directly_nullable_rules(const concatenation &replaceIn, const set<std::string> &directlyNullables);
+	void inline_directly_nullable_rules(const set<std::string> &toReplace);
+	set<std::string> get_directly_nullable_rules(const set<std::string> &toIgnore)const;
 	static bool is_directly_nullable(const production& rule);
 	static bool is_directly_nullable(const concatenation& rule);
 	void make_non_directly_nullable(const std::string &ruleName);
 	static std::vector<int> get_directly_nullable_operand_indices(
 		const concatenation &concatenation,
-		const std::set<std::string> &directlyNullables
+		const set<std::string> &directlyNullables
 	);
 
 	static void remove_repeating_concatenations(production &rule);
 
-	std::set<std::string> get_referenced_rules()const;
+	set<std::string> get_referenced_rules()const;
 
 	term create_terminal_rule(
 		const std::string &suggestedName,
@@ -105,6 +125,6 @@ private:
 
 	std::vector<binary_concatenation_rule> get_binary_concatenation_rules()const;
 
-	std::vector<std::vector<std::map<std::string, cyk_parse_tree_node>>> initialize_cyk_table(const std::vector<std::string> &word)const;
+	std::vector<std::vector<map<std::string, cyk_parse_tree_node>>> initialize_cyk_table(const std::vector<std::string> &word)const;
 };
 
