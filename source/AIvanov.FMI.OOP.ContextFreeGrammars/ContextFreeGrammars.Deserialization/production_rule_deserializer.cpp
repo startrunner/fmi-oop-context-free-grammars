@@ -4,7 +4,7 @@ using namespace std;
 
 bool production_rule_deserializer::filter_token_no_whitespace(const token &token)
 {
-	return token.type() != token_type::whitespace;
+	return token.type() != token_type::whitespace && token.type()!=token_type::invalid_sequence;
 }
 
 void production_rule_deserializer::refeed(std::istream *stream)

@@ -8,21 +8,6 @@
 #include <sstream>
 using namespace std;
 
-/*grammar g = {
-	"Stamat",
-	{
-		{"Stamat", "kiro"_term * "Pesho" | "Blagoi"_term * "Haho" | "Nulata"_term * "Pesho" | "Nulata"},
-		{"Pesho", "Haho"_term | "Haho"_term*"Pesho" | "_"},
-		{"Haho", "Blagoi"_term | "Haho" | "Stamat" | "Georgi"_term * "Georgi" | "stamat"_terminal * "Georgi" * "Dulgiq"},
-		{"Dulgiq", "Stamat"_term * "Pesho"*"Haho" * "gosho" | "ivan"_term * "Stamat" * "petkan" | "GoshoUnita"},
-		{"GoshoUnita", "Gosho"_term},
-		{"Gosho", "DrugiqGoshoUnit"},
-		{"DrugiqGoshoUnit", "petko"},
-		{"Nulata", "nulata"_term | "_"},
-		{"Blagoi", "blago_we"}
-	}
-};*/
-
 grammar g = {
 	"Expr",
 	{
@@ -89,7 +74,7 @@ int main()
 	}
 
 	stringstream serializationStream;
-	serializationStream << g;
+	serialize_grammar(serializationStream, g);
 
 	grammar deserialized;
 	if (try_deserialize_grammar(serializationStream, &deserialized))
