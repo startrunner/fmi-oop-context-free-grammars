@@ -1,0 +1,207 @@
+\hypertarget{classtesting_1_1internal_1_1_file_path}{}\section{testing\+::internal\+::File\+Path Class Reference}
+\label{classtesting_1_1internal_1_1_file_path}\index{testing::internal::FilePath@{testing::internal::FilePath}}
+
+
+{\ttfamily \#include $<$gtest-\/filepath.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a3504a51accbca78a52fe586133ea5499}{File\+Path}} ()
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ae9efd0fee56c6e3e2d659b464250b112}{File\+Path}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&rhs)
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a9fc072b140aa0652a7022fb809fe3abe}{File\+Path}} (const std\+::string \&pathname)
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \& \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a8d9c1bafb90f10bcd5611a54d8f326ef}{operator=}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&rhs)
+\item 
+void \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a15a42de7518e89254e0640dd9317d5f7}{Set}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&rhs)
+\item 
+const std\+::string \& \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ab1d58734f2e179264eb6353fea57361d}{string}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a43e9ff978b0d7c43c401d976d4621aa3}{c\+\_\+str}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a2c165c5510e8705ade547849a9234a6e}{Is\+Empty}} () const
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ab47ada111cc940cf2359f6533bada6ca}{Remove\+Trailing\+Path\+Separator}} () const
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a6b61ede2c81ecd870b8220c04aec3060}{Remove\+Directory\+Name}} () const
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a49e030b5a62ca7dcc7f920a63a96fa55}{Remove\+File\+Name}} () const
+\item 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_aab20b631705b90044d04c67205f2256f}{Remove\+Extension}} (const char $\ast$extension) const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a26790e530dd738f7fc8202c1ce718406}{Create\+Directories\+Recursively}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ae3a455e7c9fc967c2443b703e958f8bd}{Create\+Folder}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a105bd8fc3adff8fcb4a593532842fb68}{File\+Or\+Directory\+Exists}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a74ba8435e822d77f79f137c38de9bfeb}{Directory\+Exists}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a73fc042ad65e85bbecb956eb4603a6f2}{Is\+Directory}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a0661adf59aec40c40c8e39b888d68142}{Is\+Root\+Directory}} () const
+\item 
+bool \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ae17e5581e7996021e598851fe947df9c}{Is\+Absolute\+Path}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a0f7b48e493656679cb82a2b679620c4e}{Get\+Current\+Dir}} ()
+\item 
+static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_a1e7793eaae21c6629afe8be11064b111}{Make\+File\+Name}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&directory, const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&base\+\_\+name, int number, const char $\ast$extension)
+\item 
+static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ad58aa6d8b160d0ba0b661f56f0980e26}{Concat\+Paths}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&directory, const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&relative\+\_\+path)
+\item 
+static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path_ab22637ea53e3918ec814dc6a5fecd1f9}{Generate\+Unique\+File\+Name}} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&directory, const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&base\+\_\+name, const char $\ast$extension)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a3504a51accbca78a52fe586133ea5499}\label{classtesting_1_1internal_1_1_file_path_a3504a51accbca78a52fe586133ea5499}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{FilePath()}{FilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily testing\+::internal\+::\+File\+Path\+::\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ae9efd0fee56c6e3e2d659b464250b112}\label{classtesting_1_1internal_1_1_file_path_ae9efd0fee56c6e3e2d659b464250b112}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{FilePath()}{FilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily testing\+::internal\+::\+File\+Path\+::\+File\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a9fc072b140aa0652a7022fb809fe3abe}\label{classtesting_1_1internal_1_1_file_path_a9fc072b140aa0652a7022fb809fe3abe}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FilePath@{FilePath}}
+\index{FilePath@{FilePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{FilePath()}{FilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily testing\+::internal\+::\+File\+Path\+::\+File\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pathname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a43e9ff978b0d7c43c401d976d4621aa3}\label{classtesting_1_1internal_1_1_file_path_a43e9ff978b0d7c43c401d976d4621aa3}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!c\_str@{c\_str}}
+\index{c\_str@{c\_str}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{c\_str()}{c\_str()}}
+{\footnotesize\ttfamily const char$\ast$ testing\+::internal\+::\+File\+Path\+::c\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ad58aa6d8b160d0ba0b661f56f0980e26}\label{classtesting_1_1internal_1_1_file_path_ad58aa6d8b160d0ba0b661f56f0980e26}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!ConcatPaths@{ConcatPaths}}
+\index{ConcatPaths@{ConcatPaths}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{ConcatPaths()}{ConcatPaths()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Concat\+Paths (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{directory,  }\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{relative\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a26790e530dd738f7fc8202c1ce718406}\label{classtesting_1_1internal_1_1_file_path_a26790e530dd738f7fc8202c1ce718406}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!CreateDirectoriesRecursively@{CreateDirectoriesRecursively}}
+\index{CreateDirectoriesRecursively@{CreateDirectoriesRecursively}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{CreateDirectoriesRecursively()}{CreateDirectoriesRecursively()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Create\+Directories\+Recursively (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ae3a455e7c9fc967c2443b703e958f8bd}\label{classtesting_1_1internal_1_1_file_path_ae3a455e7c9fc967c2443b703e958f8bd}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!CreateFolder@{CreateFolder}}
+\index{CreateFolder@{CreateFolder}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{CreateFolder()}{CreateFolder()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Create\+Folder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a74ba8435e822d77f79f137c38de9bfeb}\label{classtesting_1_1internal_1_1_file_path_a74ba8435e822d77f79f137c38de9bfeb}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!DirectoryExists@{DirectoryExists}}
+\index{DirectoryExists@{DirectoryExists}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{DirectoryExists()}{DirectoryExists()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Directory\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a105bd8fc3adff8fcb4a593532842fb68}\label{classtesting_1_1internal_1_1_file_path_a105bd8fc3adff8fcb4a593532842fb68}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!FileOrDirectoryExists@{FileOrDirectoryExists}}
+\index{FileOrDirectoryExists@{FileOrDirectoryExists}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{FileOrDirectoryExists()}{FileOrDirectoryExists()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+File\+Or\+Directory\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ab22637ea53e3918ec814dc6a5fecd1f9}\label{classtesting_1_1internal_1_1_file_path_ab22637ea53e3918ec814dc6a5fecd1f9}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!GenerateUniqueFileName@{GenerateUniqueFileName}}
+\index{GenerateUniqueFileName@{GenerateUniqueFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{GenerateUniqueFileName()}{GenerateUniqueFileName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Generate\+Unique\+File\+Name (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{directory,  }\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{base\+\_\+name,  }\item[{const char $\ast$}]{extension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a0f7b48e493656679cb82a2b679620c4e}\label{classtesting_1_1internal_1_1_file_path_a0f7b48e493656679cb82a2b679620c4e}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!GetCurrentDir@{GetCurrentDir}}
+\index{GetCurrentDir@{GetCurrentDir}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{GetCurrentDir()}{GetCurrentDir()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Get\+Current\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ae17e5581e7996021e598851fe947df9c}\label{classtesting_1_1internal_1_1_file_path_ae17e5581e7996021e598851fe947df9c}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsAbsolutePath@{IsAbsolutePath}}
+\index{IsAbsolutePath@{IsAbsolutePath}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{IsAbsolutePath()}{IsAbsolutePath()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Is\+Absolute\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a73fc042ad65e85bbecb956eb4603a6f2}\label{classtesting_1_1internal_1_1_file_path_a73fc042ad65e85bbecb956eb4603a6f2}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsDirectory@{IsDirectory}}
+\index{IsDirectory@{IsDirectory}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{IsDirectory()}{IsDirectory()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Is\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a2c165c5510e8705ade547849a9234a6e}\label{classtesting_1_1internal_1_1_file_path_a2c165c5510e8705ade547849a9234a6e}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a0661adf59aec40c40c8e39b888d68142}\label{classtesting_1_1internal_1_1_file_path_a0661adf59aec40c40c8e39b888d68142}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!IsRootDirectory@{IsRootDirectory}}
+\index{IsRootDirectory@{IsRootDirectory}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{IsRootDirectory()}{IsRootDirectory()}}
+{\footnotesize\ttfamily bool testing\+::internal\+::\+File\+Path\+::\+Is\+Root\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a1e7793eaae21c6629afe8be11064b111}\label{classtesting_1_1internal_1_1_file_path_a1e7793eaae21c6629afe8be11064b111}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!MakeFileName@{MakeFileName}}
+\index{MakeFileName@{MakeFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{MakeFileName()}{MakeFileName()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Make\+File\+Name (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{directory,  }\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{base\+\_\+name,  }\item[{int}]{number,  }\item[{const char $\ast$}]{extension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a8d9c1bafb90f10bcd5611a54d8f326ef}\label{classtesting_1_1internal_1_1_file_path_a8d9c1bafb90f10bcd5611a54d8f326ef}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}}\& testing\+::internal\+::\+File\+Path\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a6b61ede2c81ecd870b8220c04aec3060}\label{classtesting_1_1internal_1_1_file_path_a6b61ede2c81ecd870b8220c04aec3060}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveDirectoryName@{RemoveDirectoryName}}
+\index{RemoveDirectoryName@{RemoveDirectoryName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{RemoveDirectoryName()}{RemoveDirectoryName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Remove\+Directory\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_aab20b631705b90044d04c67205f2256f}\label{classtesting_1_1internal_1_1_file_path_aab20b631705b90044d04c67205f2256f}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveExtension@{RemoveExtension}}
+\index{RemoveExtension@{RemoveExtension}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{RemoveExtension()}{RemoveExtension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Remove\+Extension (\begin{DoxyParamCaption}\item[{const char $\ast$}]{extension }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a49e030b5a62ca7dcc7f920a63a96fa55}\label{classtesting_1_1internal_1_1_file_path_a49e030b5a62ca7dcc7f920a63a96fa55}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveFileName@{RemoveFileName}}
+\index{RemoveFileName@{RemoveFileName}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{RemoveFileName()}{RemoveFileName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Remove\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ab47ada111cc940cf2359f6533bada6ca}\label{classtesting_1_1internal_1_1_file_path_ab47ada111cc940cf2359f6533bada6ca}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!RemoveTrailingPathSeparator@{RemoveTrailingPathSeparator}}
+\index{RemoveTrailingPathSeparator@{RemoveTrailingPathSeparator}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{RemoveTrailingPathSeparator()}{RemoveTrailingPathSeparator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} testing\+::internal\+::\+File\+Path\+::\+Remove\+Trailing\+Path\+Separator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_a15a42de7518e89254e0640dd9317d5f7}\label{classtesting_1_1internal_1_1_file_path_a15a42de7518e89254e0640dd9317d5f7}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!Set@{Set}}
+\index{Set@{Set}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void testing\+::internal\+::\+File\+Path\+::\+Set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1internal_1_1_file_path}{File\+Path}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_file_path_ab1d58734f2e179264eb6353fea57361d}\label{classtesting_1_1internal_1_1_file_path_ab1d58734f2e179264eb6353fea57361d}} 
+\index{testing::internal::FilePath@{testing::internal::FilePath}!string@{string}}
+\index{string@{string}!testing::internal::FilePath@{testing::internal::FilePath}}
+\subsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily const std\+::string\& testing\+::internal\+::\+File\+Path\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+packages/\+Microsoft.\+googletest.\+v140.\+windesktop.\+msvcstl.\+static.\+rt-\/dyn.\+1.\+8.\+0/build/native/include/gtest/internal/\mbox{\hyperlink{gtest-filepath_8h}{gtest-\/filepath.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\hypertarget{grammar__serialization_8cpp}{}\section{Context\+Free\+Grammars.\+Serialization/grammar\+\_\+serialization.cpp File Reference}
+\label{grammar__serialization_8cpp}\index{ContextFreeGrammars.Serialization/grammar\_serialization.cpp@{ContextFreeGrammars.Serialization/grammar\_serialization.cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}grammar\+\_\+serialization.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{grammar__serialization_8cpp_accd9974d2a7236101a06b1567be4987d}{serialize\+\_\+grammar}} (std\+::ostream \&stream, const \mbox{\hyperlink{classgrammar}{grammar}} \&\mbox{\hyperlink{classgrammar}{grammar}})
+\item 
+std\+::ostream \& \mbox{\hyperlink{grammar__serialization_8cpp_a80e24fcd765cdc28c8c9e77e4b12deb9}{serialize\+\_\+named\+\_\+rule}} (std\+::ostream \&stream, const std\+::string \&name, const \mbox{\hyperlink{classproduction}{production}} \&rule)
+\item 
+std\+::ostream \& \mbox{\hyperlink{grammar__serialization_8cpp_ad8e726a6146fe1b9fc9f19aac7938cb2}{serialize\+\_\+rule}} (std\+::ostream \&stream, const \mbox{\hyperlink{classproduction}{production}} \&rule)
+\item 
+std\+::ostream \& \mbox{\hyperlink{grammar__serialization_8cpp_a036ebc1d293f3bce4cfdcb85aa9f8f57}{serialize\+\_\+concatenation}} (std\+::ostream \&stream, const \mbox{\hyperlink{classconcatenation}{concatenation}} \&\mbox{\hyperlink{classconcatenation}{concatenation}})
+\item 
+std\+::ostream \& \mbox{\hyperlink{grammar__serialization_8cpp_a3b138d2a426666c0c3ce11f984c2851d}{serialize\+\_\+production\+\_\+term}} (std\+::ostream \&stream, const \mbox{\hyperlink{classterm}{term}} \&\mbox{\hyperlink{classterm}{term}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{grammar__serialization_8cpp_a036ebc1d293f3bce4cfdcb85aa9f8f57}\label{grammar__serialization_8cpp_a036ebc1d293f3bce4cfdcb85aa9f8f57}} 
+\index{grammar\_serialization.cpp@{grammar\_serialization.cpp}!serialize\_concatenation@{serialize\_concatenation}}
+\index{serialize\_concatenation@{serialize\_concatenation}!grammar\_serialization.cpp@{grammar\_serialization.cpp}}
+\subsubsection{\texorpdfstring{serialize\_concatenation()}{serialize\_concatenation()}}
+{\footnotesize\ttfamily std\+::ostream\& serialize\+\_\+concatenation (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{concatenation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__serialization_8cpp_accd9974d2a7236101a06b1567be4987d}\label{grammar__serialization_8cpp_accd9974d2a7236101a06b1567be4987d}} 
+\index{grammar\_serialization.cpp@{grammar\_serialization.cpp}!serialize\_grammar@{serialize\_grammar}}
+\index{serialize\_grammar@{serialize\_grammar}!grammar\_serialization.cpp@{grammar\_serialization.cpp}}
+\subsubsection{\texorpdfstring{serialize\_grammar()}{serialize\_grammar()}}
+{\footnotesize\ttfamily std\+::ostream\& serialize\+\_\+grammar (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{grammar }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__serialization_8cpp_a80e24fcd765cdc28c8c9e77e4b12deb9}\label{grammar__serialization_8cpp_a80e24fcd765cdc28c8c9e77e4b12deb9}} 
+\index{grammar\_serialization.cpp@{grammar\_serialization.cpp}!serialize\_named\_rule@{serialize\_named\_rule}}
+\index{serialize\_named\_rule@{serialize\_named\_rule}!grammar\_serialization.cpp@{grammar\_serialization.cpp}}
+\subsubsection{\texorpdfstring{serialize\_named\_rule()}{serialize\_named\_rule()}}
+{\footnotesize\ttfamily std\+::ostream\& serialize\+\_\+named\+\_\+rule (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{rule }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__serialization_8cpp_a3b138d2a426666c0c3ce11f984c2851d}\label{grammar__serialization_8cpp_a3b138d2a426666c0c3ce11f984c2851d}} 
+\index{grammar\_serialization.cpp@{grammar\_serialization.cpp}!serialize\_production\_term@{serialize\_production\_term}}
+\index{serialize\_production\_term@{serialize\_production\_term}!grammar\_serialization.cpp@{grammar\_serialization.cpp}}
+\subsubsection{\texorpdfstring{serialize\_production\_term()}{serialize\_production\_term()}}
+{\footnotesize\ttfamily std\+::ostream\& serialize\+\_\+production\+\_\+term (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{classterm}{term}} \&}]{term }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__serialization_8cpp_ad8e726a6146fe1b9fc9f19aac7938cb2}\label{grammar__serialization_8cpp_ad8e726a6146fe1b9fc9f19aac7938cb2}} 
+\index{grammar\_serialization.cpp@{grammar\_serialization.cpp}!serialize\_rule@{serialize\_rule}}
+\index{serialize\_rule@{serialize\_rule}!grammar\_serialization.cpp@{grammar\_serialization.cpp}}
+\subsubsection{\texorpdfstring{serialize\_rule()}{serialize\_rule()}}
+{\footnotesize\ttfamily std\+::ostream\& serialize\+\_\+rule (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{rule }\end{DoxyParamCaption})}
+

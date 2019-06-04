@@ -1,0 +1,73 @@
+.TH "Test.ContextFreeGrammars/chomskify_tests.cpp" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Test.ContextFreeGrammars/chomskify_tests.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'pch\&.h'\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <tuple>\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Grammars/grammar\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Grammars/grammar_operators\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgrammar\fP \fBget_chomskified\fP (const \fBgrammar\fP &\fBgrammar\fP)"
+.br
+.ti -1c
+.RI "\fBTEST\fP (ChomskifySucceeds, Chomsky)"
+.br
+.ti -1c
+.RI "\fBTEST\fP (CykSucceedsOnGoodWords, Chomsky)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBgrammar\fP \fBTEST_GRAMMAR\fP"
+.br
+.ti -1c
+.RI "const \fBgrammar\fP \fBCHOMSKIFIED_TEST_GRAMMAR\fP = \fBget_chomskified\fP(\fBTEST_GRAMMAR\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBgrammar\fP get_chomskified (const \fBgrammar\fP & grammar)"
+
+.SS "TEST (ChomskifySucceeds, Chomsky)"
+
+.SS "TEST (CykSucceedsOnGoodWords, Chomsky)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const \fBgrammar\fP CHOMSKIFIED_TEST_GRAMMAR = \fBget_chomskified\fP(\fBTEST_GRAMMAR\fP)"
+
+.SS "const \fBgrammar\fP TEST_GRAMMAR"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+    "Expr",
+    {
+        {"Expr", "Term"_term | "Expr"_term * "AddOp" * "Term" | "AddOp"_term*"Term"},
+        {"Term", "Factor"_term | "Term"_term*"MulOp"*"Factor"},
+        {"Factor", "Primary"_term | "Factor"_term*"pw"*"Primary"},
+        {"Primary", "number"_terminal | "variable" | "opn"_terminal*"Expr"*"cls"},
+        {"AddOp", "add"_terminal | "sub"},
+        {"MulOp", "mul"_terminal | "div"}
+    }
+}
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

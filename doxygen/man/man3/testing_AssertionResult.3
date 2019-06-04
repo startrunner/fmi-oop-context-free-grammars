@@ -1,0 +1,67 @@
+.TH "testing::AssertionResult" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::AssertionResult
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAssertionResult\fP (const \fBAssertionResult\fP &other)"
+.br
+.ti -1c
+.RI "template<typename T > \fBAssertionResult\fP (const T &success, typename \fBinternal::EnableIf\fP< !\fBinternal::ImplicitlyConvertible\fP< T, \fBAssertionResult\fP >::value >::type *=NULL)"
+.br
+.ti -1c
+.RI "\fBAssertionResult\fP & \fBoperator=\fP (\fBAssertionResult\fP other)"
+.br
+.ti -1c
+.RI "\fBoperator bool\fP () const"
+.br
+.ti -1c
+.RI "\fBAssertionResult\fP \fBoperator!\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBmessage\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBfailure_message\fP () const"
+.br
+.ti -1c
+.RI "template<typename T > \fBAssertionResult\fP & \fBoperator<<\fP (const T &value)"
+.br
+.ti -1c
+.RI "\fBAssertionResult\fP & \fBoperator<<\fP (::std::ostream &(*basic_manipulator)(::std::ostream &stream))"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::AssertionResult::AssertionResult (const \fBAssertionResult\fP & other)"
+
+.SS "template<typename T > testing::AssertionResult::AssertionResult (const T & success, typename \fBinternal::EnableIf\fP< !\fBinternal::ImplicitlyConvertible\fP< T, \fBAssertionResult\fP >::value >::type * = \fCNULL\fP)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const char* testing::AssertionResult::failure_message () const\fC [inline]\fP"
+
+.SS "const char* testing::AssertionResult::message () const\fC [inline]\fP"
+
+.SS "testing::AssertionResult::operator bool () const\fC [inline]\fP"
+
+.SS "\fBAssertionResult\fP testing::AssertionResult::operator! () const"
+
+.SS "template<typename T > \fBAssertionResult\fP& testing::AssertionResult::operator<< (const T & value)\fC [inline]\fP"
+
+.SS "\fBAssertionResult\fP& testing::AssertionResult::operator<< (::std::ostream &(*)(::std::ostream &stream) basic_manipulator)\fC [inline]\fP"
+
+.SS "\fBAssertionResult\fP& testing::AssertionResult::operator= (\fBAssertionResult\fP other)\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

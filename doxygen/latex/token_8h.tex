@@ -1,0 +1,67 @@
+\hypertarget{token_8h}{}\section{Context\+Free\+Grammars.\+Deserialization/token.h File Reference}
+\label{token_8h}\index{ContextFreeGrammars.Deserialization/token.h@{ContextFreeGrammars.Deserialization/token.h}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}document\+\_\+position.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtoken}{token}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}} \{ \newline
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da7792d500702829a00ddb486620f7d8b5}{token\+\_\+type\+::non\+\_\+terminal}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0daede997b0caf2ec398110d79d9eba38bb}{token\+\_\+type\+::terminal}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0daf131e30f2e162f002800ed03c4568f64}{token\+\_\+type\+::concatenation}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da0162cefc4952304026cb1f5dab2419d2}{token\+\_\+type\+::choice}}, 
+\newline
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da9022a153e6190f10d9b57aa4232b8aea}{token\+\_\+type\+::arrow}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da67b8601a11e47a9ee3bf08ddfd0b79ba}{token\+\_\+type\+::whitespace}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da77b7e24bb3642a4b9d3081d393785273}{token\+\_\+type\+::semicolon}}, 
+\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0da63800257a604293c60f727fec3eea3ed}{token\+\_\+type\+::invalid\+\_\+sequence}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}} 
+\index{token.h@{token.h}!token\_type@{token\_type}}
+\index{token\_type@{token\_type}!token.h@{token.h}}
+\subsubsection{\texorpdfstring{token\_type}{token\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{non\_terminal@{non\_terminal}!token.h@{token.h}}\index{token.h@{token.h}!non\_terminal@{non\_terminal}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da7792d500702829a00ddb486620f7d8b5}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da7792d500702829a00ddb486620f7d8b5}} 
+non\+\_\+terminal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{terminal@{terminal}!token.h@{token.h}}\index{token.h@{token.h}!terminal@{terminal}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0daede997b0caf2ec398110d79d9eba38bb}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0daede997b0caf2ec398110d79d9eba38bb}} 
+terminal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{concatenation@{concatenation}!token.h@{token.h}}\index{token.h@{token.h}!concatenation@{concatenation}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0daf131e30f2e162f002800ed03c4568f64}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0daf131e30f2e162f002800ed03c4568f64}} 
+concatenation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{choice@{choice}!token.h@{token.h}}\index{token.h@{token.h}!choice@{choice}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da0162cefc4952304026cb1f5dab2419d2}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da0162cefc4952304026cb1f5dab2419d2}} 
+choice&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{arrow@{arrow}!token.h@{token.h}}\index{token.h@{token.h}!arrow@{arrow}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da9022a153e6190f10d9b57aa4232b8aea}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da9022a153e6190f10d9b57aa4232b8aea}} 
+arrow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{whitespace@{whitespace}!token.h@{token.h}}\index{token.h@{token.h}!whitespace@{whitespace}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da67b8601a11e47a9ee3bf08ddfd0b79ba}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da67b8601a11e47a9ee3bf08ddfd0b79ba}} 
+whitespace&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{semicolon@{semicolon}!token.h@{token.h}}\index{token.h@{token.h}!semicolon@{semicolon}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da77b7e24bb3642a4b9d3081d393785273}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da77b7e24bb3642a4b9d3081d393785273}} 
+semicolon&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{invalid\_sequence@{invalid\_sequence}!token.h@{token.h}}\index{token.h@{token.h}!invalid\_sequence@{invalid\_sequence}}}\mbox{\Hypertarget{token_8h_afe5ef662303b6b710ea6ee1a944bad0da63800257a604293c60f727fec3eea3ed}\label{token_8h_afe5ef662303b6b710ea6ee1a944bad0da63800257a604293c60f727fec3eea3ed}} 
+invalid\+\_\+sequence&\\
+\hline
+
+\end{DoxyEnumFields}

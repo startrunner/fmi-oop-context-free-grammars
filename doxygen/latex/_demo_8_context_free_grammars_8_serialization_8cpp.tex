@@ -1,0 +1,53 @@
+\hypertarget{_demo_8_context_free_grammars_8_serialization_8cpp}{}\section{Demo.\+Context\+Free\+Grammars/\+Demo.Context\+Free\+Grammars.\+Serialization.\+cpp File Reference}
+\label{_demo_8_context_free_grammars_8_serialization_8cpp}\index{Demo.ContextFreeGrammars/Demo.ContextFreeGrammars.Serialization.cpp@{Demo.ContextFreeGrammars/Demo.ContextFreeGrammars.Serialization.cpp}}
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Grammars/grammar.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Grammars/grammar\+\_\+operators.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Serialization/grammar\+\_\+serialization.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Deserialization/grammar\+\_\+deserialization.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Serialization/informal\+\_\+grammar\+\_\+serialization.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_demo_8_context_free_grammars_8_serialization_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgrammar}{grammar}} \mbox{\hyperlink{_demo_8_context_free_grammars_8_serialization_8cpp_a809de91d9907edfc9310f36b00701589}{g}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_demo_8_context_free_grammars_8_serialization_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_demo_8_context_free_grammars_8_serialization_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Demo.ContextFreeGrammars.Serialization.cpp@{Demo.ContextFreeGrammars.Serialization.cpp}!main@{main}}
+\index{main@{main}!Demo.ContextFreeGrammars.Serialization.cpp@{Demo.ContextFreeGrammars.Serialization.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_demo_8_context_free_grammars_8_serialization_8cpp_a809de91d9907edfc9310f36b00701589}\label{_demo_8_context_free_grammars_8_serialization_8cpp_a809de91d9907edfc9310f36b00701589}} 
+\index{Demo.ContextFreeGrammars.Serialization.cpp@{Demo.ContextFreeGrammars.Serialization.cpp}!g@{g}}
+\index{g@{g}!Demo.ContextFreeGrammars.Serialization.cpp@{Demo.ContextFreeGrammars.Serialization.cpp}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgrammar}{grammar}} g}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"Expr"},}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"Expr"}, \textcolor{stringliteral}{"Term"}\_term | \textcolor{stringliteral}{"Expr"}\_term * \textcolor{stringliteral}{"AddOp"} * \textcolor{stringliteral}{"Term"} | \textcolor{stringliteral}{"AddOp"}\_term*\textcolor{stringliteral}{"Term"}\},}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"Term"}, \textcolor{stringliteral}{"Factor"}\_term | \textcolor{stringliteral}{"Term"}\_term*\textcolor{stringliteral}{"MulOp"}*\textcolor{stringliteral}{"Factor"}\},}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"Factor"}, \textcolor{stringliteral}{"Primary"}\_term | \textcolor{stringliteral}{"Factor"}\_term*\textcolor{stringliteral}{"pw"}*\textcolor{stringliteral}{"Primary"}\},}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"Primary"}, \textcolor{stringliteral}{"number"}\_terminal | \textcolor{stringliteral}{"variable"} | \textcolor{stringliteral}{"opn"}\_terminal*\textcolor{stringliteral}{"Expr"}*\textcolor{stringliteral}{"cls"}\},}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"AddOp"}, \textcolor{stringliteral}{"add"}\_terminal | \textcolor{stringliteral}{"sub"}\},}
+\DoxyCodeLine{        \{\textcolor{stringliteral}{"MulOp"}, \textcolor{stringliteral}{"mul"}\_terminal | \textcolor{stringliteral}{"div"}\}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

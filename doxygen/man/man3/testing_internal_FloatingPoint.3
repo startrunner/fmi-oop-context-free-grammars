@@ -1,0 +1,148 @@
+.TH "testing::internal::FloatingPoint< RawType >" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::FloatingPoint< RawType >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-internal\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBTypeWithSize\fP< sizeof(RawType)>::UInt \fBBits\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloatingPoint\fP (const RawType &x)"
+.br
+.ti -1c
+.RI "const \fBBits\fP & \fBbits\fP () const"
+.br
+.ti -1c
+.RI "\fBBits\fP \fBexponent_bits\fP () const"
+.br
+.ti -1c
+.RI "\fBBits\fP \fBfraction_bits\fP () const"
+.br
+.ti -1c
+.RI "\fBBits\fP \fBsign_bit\fP () const"
+.br
+.ti -1c
+.RI "bool \fBis_nan\fP () const"
+.br
+.ti -1c
+.RI "bool \fBAlmostEquals\fP (const \fBFloatingPoint\fP &rhs) const"
+.br
+.ti -1c
+.RI "template<> float \fBMax\fP ()"
+.br
+.ti -1c
+.RI "template<> double \fBMax\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static RawType \fBReinterpretBits\fP (const \fBBits\fP \fBbits\fP)"
+.br
+.ti -1c
+.RI "static RawType \fBInfinity\fP ()"
+.br
+.ti -1c
+.RI "static RawType \fBMax\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const size_t \fBkBitCount\fP = 8*sizeof(RawType)"
+.br
+.ti -1c
+.RI "static const size_t \fBkFractionBitCount\fP"
+.br
+.ti -1c
+.RI "static const size_t \fBkExponentBitCount\fP = \fBkBitCount\fP \- 1 \- \fBkFractionBitCount\fP"
+.br
+.ti -1c
+.RI "static const \fBBits\fP \fBkSignBitMask\fP = static_cast<\fBBits\fP>(1) << (\fBkBitCount\fP \- 1)"
+.br
+.ti -1c
+.RI "static const \fBBits\fP \fBkFractionBitMask\fP"
+.br
+.ti -1c
+.RI "static const \fBBits\fP \fBkExponentBitMask\fP = ~(\fBkSignBitMask\fP | \fBkFractionBitMask\fP)"
+.br
+.ti -1c
+.RI "static const size_t \fBkMaxUlps\fP = 4"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename RawType> typedef \fBTypeWithSize\fP<sizeof(RawType)>::UInt \fBtesting::internal::FloatingPoint\fP< RawType >::\fBBits\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename RawType> \fBtesting::internal::FloatingPoint\fP< RawType >::\fBFloatingPoint\fP (const RawType & x)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename RawType> bool \fBtesting::internal::FloatingPoint\fP< RawType >::AlmostEquals (const \fBFloatingPoint\fP< RawType > & rhs) const\fC [inline]\fP"
+
+.SS "template<typename RawType> const \fBBits\fP& \fBtesting::internal::FloatingPoint\fP< RawType >::bits () const\fC [inline]\fP"
+
+.SS "template<typename RawType> \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::exponent_bits () const\fC [inline]\fP"
+
+.SS "template<typename RawType> \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::fraction_bits () const\fC [inline]\fP"
+
+.SS "template<typename RawType> static RawType \fBtesting::internal::FloatingPoint\fP< RawType >::Infinity ()\fC [inline]\fP, \fC [static]\fP"
+
+.SS "template<typename RawType> bool \fBtesting::internal::FloatingPoint\fP< RawType >::is_nan () const\fC [inline]\fP"
+
+.SS "template<typename RawType> static RawType \fBtesting::internal::FloatingPoint\fP< RawType >::Max ()\fC [static]\fP"
+
+.SS "template<> float \fBtesting::internal::FloatingPoint\fP< float >::Max ()\fC [inline]\fP"
+
+.SS "template<> double \fBtesting::internal::FloatingPoint\fP< double >::Max ()\fC [inline]\fP"
+
+.SS "template<typename RawType> static RawType \fBtesting::internal::FloatingPoint\fP< RawType >::ReinterpretBits (const \fBBits\fP bits)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "template<typename RawType> \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::sign_bit () const\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename RawType> const size_t \fBtesting::internal::FloatingPoint\fP< RawType >::kBitCount = 8*sizeof(RawType)\fC [static]\fP"
+
+.SS "template<typename RawType> const size_t \fBtesting::internal::FloatingPoint\fP< RawType >::kExponentBitCount = \fBkBitCount\fP \- 1 \- \fBkFractionBitCount\fP\fC [static]\fP"
+
+.SS "template<typename RawType> const \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::kExponentBitMask = ~(\fBkSignBitMask\fP | \fBkFractionBitMask\fP)\fC [static]\fP"
+
+.SS "template<typename RawType> const size_t \fBtesting::internal::FloatingPoint\fP< RawType >::kFractionBitCount\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=
+    std::numeric_limits<RawType>::digits - 1
+.fi
+.SS "template<typename RawType> const \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::kFractionBitMask\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=
+    ~static_cast<Bits>(0) >> (kExponentBitCount + 1)
+.fi
+.SS "template<typename RawType> const size_t \fBtesting::internal::FloatingPoint\fP< RawType >::kMaxUlps = 4\fC [static]\fP"
+
+.SS "template<typename RawType> const \fBBits\fP \fBtesting::internal::FloatingPoint\fP< RawType >::kSignBitMask = static_cast<\fBBits\fP>(1) << (\fBkBitCount\fP \- 1)\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

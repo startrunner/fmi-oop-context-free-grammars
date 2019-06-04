@@ -1,0 +1,72 @@
+.TH "testing::Message" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::Message
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-message\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMessage\fP ()"
+.br
+.ti -1c
+.RI "\fBMessage\fP (const \fBMessage\fP &msg)"
+.br
+.ti -1c
+.RI "\fBMessage\fP (const char *str)"
+.br
+.ti -1c
+.RI "template<typename T > \fBMessage\fP & \fBoperator<<\fP (const T &val)"
+.br
+.ti -1c
+.RI "template<typename T > \fBMessage\fP & \fBoperator<<\fP (T *const &pointer)"
+.br
+.ti -1c
+.RI "\fBMessage\fP & \fBoperator<<\fP (BasicNarrowIoManip val)"
+.br
+.ti -1c
+.RI "\fBMessage\fP & \fBoperator<<\fP (bool b)"
+.br
+.ti -1c
+.RI "\fBMessage\fP & \fBoperator<<\fP (const wchar_t *wide_c_str)"
+.br
+.ti -1c
+.RI "\fBMessage\fP & \fBoperator<<\fP (wchar_t *wide_c_str)"
+.br
+.ti -1c
+.RI "std::string \fBGetString\fP () const"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::Message::Message ()"
+
+.SS "testing::Message::Message (const \fBMessage\fP & msg)\fC [inline]\fP"
+
+.SS "testing::Message::Message (const char * str)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string testing::Message::GetString () const"
+
+.SS "template<typename T > \fBMessage\fP& testing::Message::operator<< (const T & val)\fC [inline]\fP"
+
+.SS "template<typename T > \fBMessage\fP& testing::Message::operator<< (T *const & pointer)\fC [inline]\fP"
+
+.SS "\fBMessage\fP& testing::Message::operator<< (BasicNarrowIoManip val)\fC [inline]\fP"
+
+.SS "\fBMessage\fP& testing::Message::operator<< (bool b)\fC [inline]\fP"
+
+.SS "\fBMessage\fP& testing::Message::operator<< (const wchar_t * wide_c_str)"
+
+.SS "\fBMessage\fP& testing::Message::operator<< (wchar_t * wide_c_str)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

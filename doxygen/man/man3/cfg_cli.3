@@ -1,0 +1,122 @@
+.TH "cfg_cli" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cfg_cli
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cfg_cli\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.ti -1c
+.RI "\fBcommand\fP \fBread_command\fP ()"
+.br
+.ti -1c
+.RI "void \fBopen\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBlist\fP () const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (const std::vector< std::string > &arguments) const"
+.br
+.ti -1c
+.RI "void \fBsave\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBgrammar_union\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBgrammar_concatenation\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBgrammar_kleene_star\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBgrammar_check_chomsky\fP (const std::vector< std::string > &arguments) const"
+.br
+.ti -1c
+.RI "void \fBgrammar_check_empty\fP (const std::vector< std::string > &arguments) const"
+.br
+.ti -1c
+.RI "void \fBgrammar_chomskify\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBadd_rule\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBremove_rule\fP (const std::vector< std::string > &arguments)"
+.br
+.ti -1c
+.RI "void \fBcyk\fP (const std::vector< std::string > &arguments) const"
+.br
+.ti -1c
+.RI "bool \fBtry_get_grammar_from_id\fP (const std::vector< std::string > &arguments, \fBgrammar\fP const **outGrammar) const"
+.br
+.ti -1c
+.RI "bool \fBtry_get_two_grammars_from_ids\fP (const std::vector< std::string > &arguments, \fBgrammar\fP const **outLeft, \fBgrammar\fP const **outRight) const"
+.br
+.ti -1c
+.RI "bool \fBshow_binary_dialog\fP (const std::string &message, const std::string &yes, const std::string &no) const"
+.br
+.ti -1c
+.RI "\fBcfg_cli\fP ()"
+.br
+.ti -1c
+.RI "\fB~cfg_cli\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cfg_cli::cfg_cli ()"
+
+.SS "cfg_cli::~cfg_cli ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void cfg_cli::add_rule (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::cyk (const std::vector< std::string > & arguments) const"
+
+.SS "void cfg_cli::grammar_check_chomsky (const std::vector< std::string > & arguments) const"
+
+.SS "void cfg_cli::grammar_check_empty (const std::vector< std::string > & arguments) const"
+
+.SS "void cfg_cli::grammar_chomskify (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::grammar_concatenation (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::grammar_kleene_star (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::grammar_union (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::list () const"
+
+.SS "void cfg_cli::open (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::print (const std::vector< std::string > & arguments) const"
+
+.SS "\fBcommand\fP cfg_cli::read_command ()"
+
+.SS "void cfg_cli::remove_rule (const std::vector< std::string > & arguments)"
+
+.SS "void cfg_cli::run ()"
+
+.SS "void cfg_cli::save (const std::vector< std::string > & arguments)"
+
+.SS "bool cfg_cli::show_binary_dialog (const std::string & message, const std::string & yes, const std::string & no) const"
+
+.SS "bool cfg_cli::try_get_grammar_from_id (const std::vector< std::string > & arguments, \fBgrammar\fP const ** outGrammar) const"
+
+.SS "bool cfg_cli::try_get_two_grammars_from_ids (const std::vector< std::string > & arguments, \fBgrammar\fP const ** outLeft, \fBgrammar\fP const ** outRight) const"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

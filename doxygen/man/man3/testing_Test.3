@@ -1,0 +1,112 @@
+.TH "testing::Test" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::Test
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef internal::SetUpTestCaseFunc \fBSetUpTestCaseFunc\fP"
+.br
+.ti -1c
+.RI "typedef internal::TearDownTestCaseFunc \fBTearDownTestCaseFunc\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~Test\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBSetUpTestCase\fP ()"
+.br
+.ti -1c
+.RI "static void \fBTearDownTestCase\fP ()"
+.br
+.ti -1c
+.RI "static bool \fBHasFatalFailure\fP ()"
+.br
+.ti -1c
+.RI "static bool \fBHasNonfatalFailure\fP ()"
+.br
+.ti -1c
+.RI "static bool \fBHasFailure\fP ()"
+.br
+.ti -1c
+.RI "static void \fBRecordProperty\fP (const std::string &key, const std::string &value)"
+.br
+.ti -1c
+.RI "static void \fBRecordProperty\fP (const std::string &key, int value)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTest\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetUp\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBTearDown\fP ()"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTestInfo\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef internal::SetUpTestCaseFunc \fBtesting::Test::SetUpTestCaseFunc\fP"
+
+.SS "typedef internal::TearDownTestCaseFunc \fBtesting::Test::TearDownTestCaseFunc\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual testing::Test::~Test ()\fC [virtual]\fP"
+
+.SS "testing::Test::Test ()\fC [protected]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static bool testing::Test::HasFailure ()\fC [inline]\fP, \fC [static]\fP"
+
+.SS "static bool testing::Test::HasFatalFailure ()\fC [static]\fP"
+
+.SS "static bool testing::Test::HasNonfatalFailure ()\fC [static]\fP"
+
+.SS "static void testing::Test::RecordProperty (const std::string & key, const std::string & value)\fC [static]\fP"
+
+.SS "static void testing::Test::RecordProperty (const std::string & key, int value)\fC [static]\fP"
+
+.SS "virtual void testing::Test::SetUp ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "static void testing::Test::SetUpTestCase ()\fC [inline]\fP, \fC [static]\fP"
+
+.SS "virtual void testing::Test::TearDown ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "static void testing::Test::TearDownTestCase ()\fC [inline]\fP, \fC [static]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBTestInfo\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

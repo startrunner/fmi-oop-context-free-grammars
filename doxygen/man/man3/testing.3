@@ -1,0 +1,271 @@
+.TH "testing" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBinternal\fP"
+.br
+.ti -1c
+.RI " \fBinternal2\fP"
+.br
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAssertionResult\fP"
+.br
+.ti -1c
+.RI "class \fBEmptyTestEventListener\fP"
+.br
+.ti -1c
+.RI "class \fBEnvironment\fP"
+.br
+.ti -1c
+.RI "class \fBMessage\fP"
+.br
+.ti -1c
+.RI "class \fBScopedFakeTestPartResultReporter\fP"
+.br
+.ti -1c
+.RI "class \fBTest\fP"
+.br
+.ti -1c
+.RI "class \fBTestCase\fP"
+.br
+.ti -1c
+.RI "class \fBTestEventListener\fP"
+.br
+.ti -1c
+.RI "class \fBTestEventListeners\fP"
+.br
+.ti -1c
+.RI "class \fBTestInfo\fP"
+.br
+.ti -1c
+.RI "class \fBTestPartResult\fP"
+.br
+.ti -1c
+.RI "class \fBTestPartResultArray\fP"
+.br
+.ti -1c
+.RI "class \fBTestPartResultReporterInterface\fP"
+.br
+.ti -1c
+.RI "class \fBTestProperty\fP"
+.br
+.ti -1c
+.RI "class \fBTestResult\fP"
+.br
+.ti -1c
+.RI "class \fBUnitTest\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBinternal::TimeInMillis\fP \fBTimeInMillis\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGTEST_DECLARE_string_\fP (death_test_style)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBMessage\fP &sb)"
+.br
+.ti -1c
+.RI "template<typename T > ::std::string \fBPrintToString\fP (const T &value)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBTestPartResult\fP &result)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (also_run_disabled_tests)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (break_on_failure)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (catch_exceptions)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_string_\fP (color)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_string_\fP (filter)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (list_tests)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_string_\fP (output)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (print_time)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_int32_\fP (random_seed)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_int32_\fP (repeat)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (show_internal_stack_frames)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (shuffle)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_int32_\fP (stack_trace_depth)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_bool_\fP (throw_on_failure)"
+.br
+.ti -1c
+.RI "\fBGTEST_DECLARE_string_\fP (stream_result_to)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBAssertionSuccess\fP ()"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBAssertionFailure\fP ()"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBAssertionFailure\fP (const \fBMessage\fP &msg)"
+.br
+.ti -1c
+.RI "\fBEnvironment\fP * \fBAddGlobalTestEnvironment\fP (\fBEnvironment\fP *env)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP void \fBInitGoogleTest\fP (int *argc, char **argv)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP void \fBInitGoogleTest\fP (int *argc, wchar_t **argv)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsSubstring\fP (const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsSubstring\fP (const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsNotSubstring\fP (const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsNotSubstring\fP (const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsSubstring\fP (const char *needle_expr, const char *haystack_expr, const ::std::string &needle, const ::std::string &haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBIsNotSubstring\fP (const char *needle_expr, const char *haystack_expr, const ::std::string &needle, const ::std::string &haystack)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBFloatLE\fP (const char *expr1, const char *expr2, float val1, float val2)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP \fBAssertionResult\fP \fBDoubleLE\fP (const char *expr1, const char *expr2, double val1, double val2)"
+.br
+.ti -1c
+.RI "template<typename T1 , typename T2 > bool \fBStaticAssertTypeEq\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const int \fBkMaxStackTraceDepth\fP = 100"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBinternal::TimeInMillis\fP \fBtesting::TimeInMillis\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBEnvironment\fP* testing::AddGlobalTestEnvironment (\fBEnvironment\fP * env)\fC [inline]\fP"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::AssertionFailure ()"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::AssertionFailure (const \fBMessage\fP & msg)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::AssertionSuccess ()"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::DoubleLE (const char * expr1, const char * expr2, double val1, double val2)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::FloatLE (const char * expr1, const char * expr2, float val1, float val2)"
+
+.SS "testing::GTEST_DECLARE_bool_ (also_run_disabled_tests)"
+
+.SS "testing::GTEST_DECLARE_bool_ (break_on_failure)"
+
+.SS "testing::GTEST_DECLARE_bool_ (catch_exceptions)"
+
+.SS "testing::GTEST_DECLARE_bool_ (list_tests)"
+
+.SS "testing::GTEST_DECLARE_bool_ (print_time)"
+
+.SS "testing::GTEST_DECLARE_bool_ (show_internal_stack_frames)"
+
+.SS "testing::GTEST_DECLARE_bool_ (shuffle)"
+
+.SS "testing::GTEST_DECLARE_bool_ (throw_on_failure)"
+
+.SS "testing::GTEST_DECLARE_int32_ (random_seed)"
+
+.SS "testing::GTEST_DECLARE_int32_ (repeat)"
+
+.SS "testing::GTEST_DECLARE_int32_ (stack_trace_depth)"
+
+.SS "testing::GTEST_DECLARE_string_ (death_test_style)"
+
+.SS "testing::GTEST_DECLARE_string_ (color)"
+
+.SS "testing::GTEST_DECLARE_string_ (filter)"
+
+.SS "testing::GTEST_DECLARE_string_ (output)"
+
+.SS "testing::GTEST_DECLARE_string_ (stream_result_to)"
+
+.SS "\fBGTEST_API_\fP void testing::InitGoogleTest (int * argc, char ** argv)"
+
+.SS "\fBGTEST_API_\fP void testing::InitGoogleTest (int * argc, wchar_t ** argv)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsNotSubstring (const char * needle_expr, const char * haystack_expr, const char * needle, const char * haystack)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsNotSubstring (const char * needle_expr, const char * haystack_expr, const wchar_t * needle, const wchar_t * haystack)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsNotSubstring (const char * needle_expr, const char * haystack_expr, const ::std::string & needle, const ::std::string & haystack)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsSubstring (const char * needle_expr, const char * haystack_expr, const char * needle, const char * haystack)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsSubstring (const char * needle_expr, const char * haystack_expr, const wchar_t * needle, const wchar_t * haystack)"
+
+.SS "\fBGTEST_API_\fP \fBAssertionResult\fP testing::IsSubstring (const char * needle_expr, const char * haystack_expr, const ::std::string & needle, const ::std::string & haystack)"
+
+.SS "std::ostream& testing::operator<< (std::ostream & os, const \fBTestPartResult\fP & result)"
+
+.SS "std::ostream& testing::operator<< (std::ostream & os, const \fBMessage\fP & sb)\fC [inline]\fP"
+
+.SS "template<typename T > ::std::string testing::PrintToString (const T & value)"
+
+.SS "template<typename T1 , typename T2 > bool testing::StaticAssertTypeEq ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const int testing::kMaxStackTraceDepth = 100"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

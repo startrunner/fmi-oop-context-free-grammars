@@ -1,0 +1,92 @@
+.TH "testing::TestPartResult" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::TestPartResult
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-test\-part\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType\fP { \fBkSuccess\fP, \fBkNonFatalFailure\fP, \fBkFatalFailure\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTestPartResult\fP (\fBType\fP a_type, const char *a_file_name, int a_line_number, const char *a_message)"
+.br
+.ti -1c
+.RI "\fBType\fP \fBtype\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBfile_name\fP () const"
+.br
+.ti -1c
+.RI "int \fBline_number\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBsummary\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBmessage\fP () const"
+.br
+.ti -1c
+.RI "bool \fBpassed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBfailed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBnonfatally_failed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBfatally_failed\fP () const"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBtesting::TestPartResult::Type\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIkSuccess \fP\fP
+.TP
+\fB\fIkNonFatalFailure \fP\fP
+.TP
+\fB\fIkFatalFailure \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::TestPartResult::TestPartResult (\fBType\fP a_type, const char * a_file_name, int a_line_number, const char * a_message)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool testing::TestPartResult::failed () const\fC [inline]\fP"
+
+.SS "bool testing::TestPartResult::fatally_failed () const\fC [inline]\fP"
+
+.SS "const char* testing::TestPartResult::file_name () const\fC [inline]\fP"
+
+.SS "int testing::TestPartResult::line_number () const\fC [inline]\fP"
+
+.SS "const char* testing::TestPartResult::message () const\fC [inline]\fP"
+
+.SS "bool testing::TestPartResult::nonfatally_failed () const\fC [inline]\fP"
+
+.SS "bool testing::TestPartResult::passed () const\fC [inline]\fP"
+
+.SS "const char* testing::TestPartResult::summary () const\fC [inline]\fP"
+
+.SS "\fBType\fP testing::TestPartResult::type () const\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

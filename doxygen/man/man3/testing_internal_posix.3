@@ -1,0 +1,123 @@
+.TH "testing::internal::posix" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::posix
+.SH SYNOPSIS
+.br
+.PP
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct stat \fBStatStruct\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBFileNo\fP (FILE *file)"
+.br
+.ti -1c
+.RI "int \fBIsATTY\fP (int fd)"
+.br
+.ti -1c
+.RI "int \fBStat\fP (const char *path, \fBStatStruct\fP *buf)"
+.br
+.ti -1c
+.RI "int \fBStrCaseCmp\fP (const char *s1, const char *s2)"
+.br
+.ti -1c
+.RI "char * \fBStrDup\fP (const char *src)"
+.br
+.ti -1c
+.RI "int \fBRmDir\fP (const char *dir)"
+.br
+.ti -1c
+.RI "bool \fBIsDir\fP (const \fBStatStruct\fP &st)"
+.br
+.ti -1c
+.RI "const char * \fBStrNCpy\fP (char *dest, const char *src, size_t n)"
+.br
+.ti -1c
+.RI "int \fBChDir\fP (const char *dir)"
+.br
+.ti -1c
+.RI "FILE * \fBFOpen\fP (const char *path, const char *mode)"
+.br
+.ti -1c
+.RI "FILE * \fBFReopen\fP (const char *path, const char *mode, FILE *stream)"
+.br
+.ti -1c
+.RI "FILE * \fBFDOpen\fP (int fd, const char *mode)"
+.br
+.ti -1c
+.RI "int \fBFClose\fP (FILE *fp)"
+.br
+.ti -1c
+.RI "int \fBRead\fP (int fd, void *buf, unsigned int count)"
+.br
+.ti -1c
+.RI "int \fBWrite\fP (int fd, const void *buf, unsigned int count)"
+.br
+.ti -1c
+.RI "int \fBClose\fP (int fd)"
+.br
+.ti -1c
+.RI "const char * \fBStrError\fP (int errnum)"
+.br
+.ti -1c
+.RI "const char * \fBGetEnv\fP (const char *name)"
+.br
+.ti -1c
+.RI "void \fBAbort\fP ()"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct stat \fBtesting::internal::posix::StatStruct\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "void testing::internal::posix::Abort ()\fC [inline]\fP"
+
+.SS "int testing::internal::posix::ChDir (const char * dir)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::Close (int fd)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::FClose (FILE * fp)\fC [inline]\fP"
+
+.SS "FILE* testing::internal::posix::FDOpen (int fd, const char * mode)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::FileNo (FILE * file)\fC [inline]\fP"
+
+.SS "FILE* testing::internal::posix::FOpen (const char * path, const char * mode)\fC [inline]\fP"
+
+.SS "FILE* testing::internal::posix::FReopen (const char * path, const char * mode, FILE * stream)\fC [inline]\fP"
+
+.SS "const char* testing::internal::posix::GetEnv (const char * name)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::IsATTY (int fd)\fC [inline]\fP"
+
+.SS "bool testing::internal::posix::IsDir (const \fBStatStruct\fP & st)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::Read (int fd, void * buf, unsigned int count)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::RmDir (const char * dir)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::Stat (const char * path, \fBStatStruct\fP * buf)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::StrCaseCmp (const char * s1, const char * s2)\fC [inline]\fP"
+
+.SS "char* testing::internal::posix::StrDup (const char * src)\fC [inline]\fP"
+
+.SS "const char* testing::internal::posix::StrError (int errnum)\fC [inline]\fP"
+
+.SS "const char* testing::internal::posix::StrNCpy (char * dest, const char * src, size_t n)\fC [inline]\fP"
+
+.SS "int testing::internal::posix::Write (int fd, const void * buf, unsigned int count)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

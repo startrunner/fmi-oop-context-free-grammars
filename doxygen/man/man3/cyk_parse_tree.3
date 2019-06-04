@@ -1,0 +1,58 @@
+.TH "cyk_parse_tree" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cyk_parse_tree
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cyk_parse_tree\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcyk_parse_tree\fP ()"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree\fP (const \fBcyk_parse_tree_node\fP &root)"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree\fP & \fBoperator=\fP (const \fBcyk_parse_tree\fP &other)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBcyk_parse_tree\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBcyk_parse_tree\fP &other) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &stream, const \fBcyk_parse_tree\fP &tree)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cyk_parse_tree::cyk_parse_tree ()\fC [inline]\fP"
+
+.SS "cyk_parse_tree::cyk_parse_tree (const \fBcyk_parse_tree_node\fP & root)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool cyk_parse_tree::operator< (const \fBcyk_parse_tree\fP & other) const\fC [inline]\fP"
+
+.SS "\fBcyk_parse_tree\fP& cyk_parse_tree::operator= (const \fBcyk_parse_tree\fP & other)\fC [inline]\fP"
+
+.SS "bool cyk_parse_tree::operator== (const \fBcyk_parse_tree\fP & other) const\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & stream, const \fBcyk_parse_tree\fP & tree)\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

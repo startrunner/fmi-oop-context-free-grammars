@@ -1,0 +1,99 @@
+\hypertarget{classlookahead__tokenizer}{}\section{lookahead\+\_\+tokenizer Class Reference}
+\label{classlookahead__tokenizer}\index{lookahead\_tokenizer@{lookahead\_tokenizer}}
+
+
+{\ttfamily \#include $<$lookahead\+\_\+tokenizer.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}{filter\+\_\+predicate}} = typename std\+::function$<$ bool(const \mbox{\hyperlink{classtoken}{token}} \&\mbox{\hyperlink{classtoken}{token}})$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlookahead__tokenizer_a563c4ea223d63bc32c184d529f134c1a}{lookahead\+\_\+tokenizer}} (std\+::istream $\ast$stream)
+\item 
+\mbox{\hyperlink{classlookahead__tokenizer_a6d2c0e59001a9e65bbb87f27fa764246}{lookahead\+\_\+tokenizer}} (std\+::istream $\ast$stream, \mbox{\hyperlink{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}{filter\+\_\+predicate}} filter)
+\item 
+void \mbox{\hyperlink{classlookahead__tokenizer_a872954e0ef8b074e466d23ca38319900}{refeed}} (std\+::istream $\ast$stream)
+\item 
+bool \mbox{\hyperlink{classlookahead__tokenizer_a4f76ccb0a417fa5579e5607aa8acd9be}{try\+\_\+cache}} (int token\+Count)
+\item 
+const \mbox{\hyperlink{classtoken}{token}} \& \mbox{\hyperlink{classlookahead__tokenizer_ab94756fe32e75e9ecb051b7f6fd6796a}{token\+\_\+at}} (int index)
+\item 
+int \mbox{\hyperlink{classlookahead__tokenizer_a876641e4468cffe0bd931fe640f1ea9e}{cache\+\_\+all}} ()
+\item 
+void \mbox{\hyperlink{classlookahead__tokenizer_a32f1b0097babb1211d9538e18c81ceb2}{pop}} (int count)
+\item 
+\mbox{\hyperlink{classtoken}{token}} \mbox{\hyperlink{classlookahead__tokenizer_a192149a84e3f86637f3fb8850bbf541d}{pop}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}\label{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!filter\_predicate@{filter\_predicate}}
+\index{filter\_predicate@{filter\_predicate}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{filter\_predicate}{filter\_predicate}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}{lookahead\+\_\+tokenizer\+::filter\+\_\+predicate}} =  typename std\+::function$<$bool(const \mbox{\hyperlink{classtoken}{token}} \&\mbox{\hyperlink{classtoken}{token}})$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlookahead__tokenizer_a563c4ea223d63bc32c184d529f134c1a}\label{classlookahead__tokenizer_a563c4ea223d63bc32c184d529f134c1a}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{lookahead\_tokenizer()}{lookahead\_tokenizer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily lookahead\+\_\+tokenizer\+::lookahead\+\_\+tokenizer (\begin{DoxyParamCaption}\item[{std\+::istream $\ast$}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_a6d2c0e59001a9e65bbb87f27fa764246}\label{classlookahead__tokenizer_a6d2c0e59001a9e65bbb87f27fa764246}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{lookahead\_tokenizer()}{lookahead\_tokenizer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily lookahead\+\_\+tokenizer\+::lookahead\+\_\+tokenizer (\begin{DoxyParamCaption}\item[{std\+::istream $\ast$}]{stream,  }\item[{\mbox{\hyperlink{classlookahead__tokenizer_aa661c2cf70b109f34b64c9d910d6bd9e}{filter\+\_\+predicate}}}]{filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlookahead__tokenizer_a876641e4468cffe0bd931fe640f1ea9e}\label{classlookahead__tokenizer_a876641e4468cffe0bd931fe640f1ea9e}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!cache\_all@{cache\_all}}
+\index{cache\_all@{cache\_all}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{cache\_all()}{cache\_all()}}
+{\footnotesize\ttfamily int lookahead\+\_\+tokenizer\+::cache\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_a32f1b0097babb1211d9538e18c81ceb2}\label{classlookahead__tokenizer_a32f1b0097babb1211d9538e18c81ceb2}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!pop@{pop}}
+\index{pop@{pop}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void lookahead\+\_\+tokenizer\+::pop (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_a192149a84e3f86637f3fb8850bbf541d}\label{classlookahead__tokenizer_a192149a84e3f86637f3fb8850bbf541d}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!pop@{pop}}
+\index{pop@{pop}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoken}{token}} lookahead\+\_\+tokenizer\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_a872954e0ef8b074e466d23ca38319900}\label{classlookahead__tokenizer_a872954e0ef8b074e466d23ca38319900}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!refeed@{refeed}}
+\index{refeed@{refeed}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{refeed()}{refeed()}}
+{\footnotesize\ttfamily void lookahead\+\_\+tokenizer\+::refeed (\begin{DoxyParamCaption}\item[{std\+::istream $\ast$}]{stream }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_ab94756fe32e75e9ecb051b7f6fd6796a}\label{classlookahead__tokenizer_ab94756fe32e75e9ecb051b7f6fd6796a}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!token\_at@{token\_at}}
+\index{token\_at@{token\_at}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{token\_at()}{token\_at()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classtoken}{token}} \& lookahead\+\_\+tokenizer\+::token\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlookahead__tokenizer_a4f76ccb0a417fa5579e5607aa8acd9be}\label{classlookahead__tokenizer_a4f76ccb0a417fa5579e5607aa8acd9be}} 
+\index{lookahead\_tokenizer@{lookahead\_tokenizer}!try\_cache@{try\_cache}}
+\index{try\_cache@{try\_cache}!lookahead\_tokenizer@{lookahead\_tokenizer}}
+\subsubsection{\texorpdfstring{try\_cache()}{try\_cache()}}
+{\footnotesize\ttfamily bool lookahead\+\_\+tokenizer\+::try\+\_\+cache (\begin{DoxyParamCaption}\item[{int}]{token\+Count }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Context\+Free\+Grammars.\+Deserialization/\mbox{\hyperlink{lookahead__tokenizer_8h}{lookahead\+\_\+tokenizer.\+h}}\item 
+Context\+Free\+Grammars.\+Deserialization/\mbox{\hyperlink{lookahead__tokenizer_8cpp}{lookahead\+\_\+tokenizer.\+cpp}}\end{DoxyCompactItemize}

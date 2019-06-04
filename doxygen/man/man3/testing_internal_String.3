@@ -1,0 +1,70 @@
+.TH "testing::internal::String" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::String
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-string\&.h>\fP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static const char * \fBCloneCString\fP (const char *c_str)"
+.br
+.ti -1c
+.RI "static bool \fBCStringEquals\fP (const char *lhs, const char *rhs)"
+.br
+.ti -1c
+.RI "static std::string \fBShowWideCString\fP (const wchar_t *wide_c_str)"
+.br
+.ti -1c
+.RI "static bool \fBWideCStringEquals\fP (const wchar_t *lhs, const wchar_t *rhs)"
+.br
+.ti -1c
+.RI "static bool \fBCaseInsensitiveCStringEquals\fP (const char *lhs, const char *rhs)"
+.br
+.ti -1c
+.RI "static bool \fBCaseInsensitiveWideCStringEquals\fP (const wchar_t *lhs, const wchar_t *rhs)"
+.br
+.ti -1c
+.RI "static bool \fBEndsWithCaseInsensitive\fP (const std::string &str, const std::string &suffix)"
+.br
+.ti -1c
+.RI "static std::string \fBFormatIntWidth2\fP (int value)"
+.br
+.ti -1c
+.RI "static std::string \fBFormatHexInt\fP (int value)"
+.br
+.ti -1c
+.RI "static std::string \fBFormatByte\fP (unsigned char value)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static bool testing::internal::String::CaseInsensitiveCStringEquals (const char * lhs, const char * rhs)\fC [static]\fP"
+
+.SS "static bool testing::internal::String::CaseInsensitiveWideCStringEquals (const wchar_t * lhs, const wchar_t * rhs)\fC [static]\fP"
+
+.SS "static const char* testing::internal::String::CloneCString (const char * c_str)\fC [static]\fP"
+
+.SS "static bool testing::internal::String::CStringEquals (const char * lhs, const char * rhs)\fC [static]\fP"
+
+.SS "static bool testing::internal::String::EndsWithCaseInsensitive (const std::string & str, const std::string & suffix)\fC [static]\fP"
+
+.SS "static std::string testing::internal::String::FormatByte (unsigned char value)\fC [static]\fP"
+
+.SS "static std::string testing::internal::String::FormatHexInt (int value)\fC [static]\fP"
+
+.SS "static std::string testing::internal::String::FormatIntWidth2 (int value)\fC [static]\fP"
+
+.SS "static std::string testing::internal::String::ShowWideCString (const wchar_t * wide_c_str)\fC [static]\fP"
+
+.SS "static bool testing::internal::String::WideCStringEquals (const wchar_t * lhs, const wchar_t * rhs)\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

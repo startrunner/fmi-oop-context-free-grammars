@@ -1,0 +1,44 @@
+\hypertarget{grammar__deserialization_8cpp}{}\section{Context\+Free\+Grammars.\+Deserialization/grammar\+\_\+deserialization.cpp File Reference}
+\label{grammar__deserialization_8cpp}\index{ContextFreeGrammars.Deserialization/grammar\_deserialization.cpp@{ContextFreeGrammars.Deserialization/grammar\_deserialization.cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}grammar\+\_\+deserialization.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Infrastructure/stringutil.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{grammar__deserialization_8cpp_a6604609fe8e73a5b0034cf2aebee9788}{try\+\_\+deserialize\+\_\+grammar}} (std\+::istream \&stream, \mbox{\hyperlink{classgrammar}{grammar}} $\ast$out\+Grammar)
+\item 
+bool \mbox{\hyperlink{grammar__deserialization_8cpp_ab58b57ba8c71397a8ffeec2cba8467f1}{try\+\_\+deserialize\+\_\+identifier}} (const string \&text, string $\ast$out\+Identifier)
+\item 
+bool \mbox{\hyperlink{grammar__deserialization_8cpp_a9ff4612512559d4adbb73bfed7e79d5d}{try\+\_\+deserialize\+\_\+production\+\_\+rule}} (const std\+::string \&text, \mbox{\hyperlink{classproduction}{production}} $\ast$out\+Production)
+\item 
+bool \mbox{\hyperlink{grammar__deserialization_8cpp_a8b5db7a7615d7b32e213526541cecde9}{try\+\_\+deserialize\+\_\+integer}} (const std\+::string \&text, int $\ast$out\+Value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{grammar__deserialization_8cpp_a6604609fe8e73a5b0034cf2aebee9788}\label{grammar__deserialization_8cpp_a6604609fe8e73a5b0034cf2aebee9788}} 
+\index{grammar\_deserialization.cpp@{grammar\_deserialization.cpp}!try\_deserialize\_grammar@{try\_deserialize\_grammar}}
+\index{try\_deserialize\_grammar@{try\_deserialize\_grammar}!grammar\_deserialization.cpp@{grammar\_deserialization.cpp}}
+\subsubsection{\texorpdfstring{try\_deserialize\_grammar()}{try\_deserialize\_grammar()}}
+{\footnotesize\ttfamily bool try\+\_\+deserialize\+\_\+grammar (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{\mbox{\hyperlink{classgrammar}{grammar}} $\ast$}]{out\+Grammar }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__deserialization_8cpp_ab58b57ba8c71397a8ffeec2cba8467f1}\label{grammar__deserialization_8cpp_ab58b57ba8c71397a8ffeec2cba8467f1}} 
+\index{grammar\_deserialization.cpp@{grammar\_deserialization.cpp}!try\_deserialize\_identifier@{try\_deserialize\_identifier}}
+\index{try\_deserialize\_identifier@{try\_deserialize\_identifier}!grammar\_deserialization.cpp@{grammar\_deserialization.cpp}}
+\subsubsection{\texorpdfstring{try\_deserialize\_identifier()}{try\_deserialize\_identifier()}}
+{\footnotesize\ttfamily bool try\+\_\+deserialize\+\_\+identifier (\begin{DoxyParamCaption}\item[{const string \&}]{text,  }\item[{string $\ast$}]{out\+Identifier }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__deserialization_8cpp_a8b5db7a7615d7b32e213526541cecde9}\label{grammar__deserialization_8cpp_a8b5db7a7615d7b32e213526541cecde9}} 
+\index{grammar\_deserialization.cpp@{grammar\_deserialization.cpp}!try\_deserialize\_integer@{try\_deserialize\_integer}}
+\index{try\_deserialize\_integer@{try\_deserialize\_integer}!grammar\_deserialization.cpp@{grammar\_deserialization.cpp}}
+\subsubsection{\texorpdfstring{try\_deserialize\_integer()}{try\_deserialize\_integer()}}
+{\footnotesize\ttfamily bool try\+\_\+deserialize\+\_\+integer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{int $\ast$}]{out\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__deserialization_8cpp_a9ff4612512559d4adbb73bfed7e79d5d}\label{grammar__deserialization_8cpp_a9ff4612512559d4adbb73bfed7e79d5d}} 
+\index{grammar\_deserialization.cpp@{grammar\_deserialization.cpp}!try\_deserialize\_production\_rule@{try\_deserialize\_production\_rule}}
+\index{try\_deserialize\_production\_rule@{try\_deserialize\_production\_rule}!grammar\_deserialization.cpp@{grammar\_deserialization.cpp}}
+\subsubsection{\texorpdfstring{try\_deserialize\_production\_rule()}{try\_deserialize\_production\_rule()}}
+{\footnotesize\ttfamily bool try\+\_\+deserialize\+\_\+production\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classproduction}{production}} $\ast$}]{out\+Production }\end{DoxyParamCaption})}
+

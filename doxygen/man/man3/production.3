@@ -1,0 +1,65 @@
+.TH "production" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+production
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <production\&.h>\fP
+.PP
+Inherits \fBvariable_arity_operator< concatenation >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBproduction\fP ()"
+.br
+.ti -1c
+.RI "\fBproduction\fP (const char *toWrap)"
+.br
+.ti -1c
+.RI "\fBproduction\fP (const std::string &toWrap)"
+.br
+.ti -1c
+.RI "\fBproduction\fP (const \fBterm\fP &toWrap)"
+.br
+.ti -1c
+.RI "\fBproduction\fP (const \fBconcatenation\fP &toWrap)"
+.br
+.ti -1c
+.RI "\fBproduction\fP (const \fBproduction\fP &toCopy)"
+.br
+.ti -1c
+.RI "void \fBsort_operands\fP ()"
+.br
+.ti -1c
+.RI "\fBproduction\fP & \fBoperator=\fP (const \fBproduction\fP &toAssign)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "production::production ()\fC [inline]\fP"
+
+.SS "production::production (const char * toWrap)\fC [inline]\fP"
+
+.SS "production::production (const std::string & toWrap)\fC [inline]\fP"
+
+.SS "production::production (const \fBterm\fP & toWrap)\fC [inline]\fP"
+
+.SS "production::production (const \fBconcatenation\fP & toWrap)"
+
+.SS "production::production (const \fBproduction\fP & toCopy)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBproduction\fP & production::operator= (const \fBproduction\fP & toAssign)"
+
+.SS "void production::sort_operands ()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

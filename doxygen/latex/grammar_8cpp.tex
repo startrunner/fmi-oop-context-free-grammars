@@ -1,0 +1,46 @@
+\hypertarget{grammar_8cpp}{}\section{Context\+Free\+Grammars.\+Grammars/grammar.cpp File Reference}
+\label{grammar_8cpp}\index{ContextFreeGrammars.Grammars/grammar.cpp@{ContextFreeGrammars.Grammars/grammar.cpp}}
+{\ttfamily \#include \char`\"{}grammar.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Infrastructure/stringutil.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Infrastructure/bitmaskutil.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cyk\+\_\+parse\+\_\+tree.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{grammar_8cpp_a45409fc2035593fa8bd3cd24ba41fd82}{prefix\+\_\+rule\+\_\+terms}} (\mbox{\hyperlink{classproduction}{production}} \&\mbox{\hyperlink{classproduction}{production}}, const string \&prefix)
+\item 
+void \mbox{\hyperlink{grammar_8cpp_a5cf8c4ce7d57f202d2f4f6044d3467c1}{add\+\_\+rule\+\_\+with\+\_\+prefix}} (\mbox{\hyperlink{classgrammar}{grammar}} \&add\+To, const string \&rule\+Name, const \mbox{\hyperlink{classproduction}{production}} \&rule, const string \&prefix)
+\item 
+void \mbox{\hyperlink{grammar_8cpp_a56722d524585dd8ad5e42e5d8771fc62}{add\+\_\+rules\+\_\+with\+\_\+prefix}} (\mbox{\hyperlink{classgrammar}{grammar}} \&add\+To, const \mbox{\hyperlink{classgrammar}{grammar}} \&add\+From, const std\+::string \&prefix)
+\item 
+{\footnotesize template$<$typename T\+Join $>$ }\\\mbox{\hyperlink{classgrammar}{grammar}} \mbox{\hyperlink{grammar_8cpp_ab00f22c9e26294687a9057157bb1f704}{join\+\_\+grammars}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&left, const \mbox{\hyperlink{classgrammar}{grammar}} \&right)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{grammar_8cpp_a5cf8c4ce7d57f202d2f4f6044d3467c1}\label{grammar_8cpp_a5cf8c4ce7d57f202d2f4f6044d3467c1}} 
+\index{grammar.cpp@{grammar.cpp}!add\_rule\_with\_prefix@{add\_rule\_with\_prefix}}
+\index{add\_rule\_with\_prefix@{add\_rule\_with\_prefix}!grammar.cpp@{grammar.cpp}}
+\subsubsection{\texorpdfstring{add\_rule\_with\_prefix()}{add\_rule\_with\_prefix()}}
+{\footnotesize\ttfamily void add\+\_\+rule\+\_\+with\+\_\+prefix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgrammar}{grammar}} \&}]{add\+To,  }\item[{const string \&}]{rule\+Name,  }\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{rule,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8cpp_a56722d524585dd8ad5e42e5d8771fc62}\label{grammar_8cpp_a56722d524585dd8ad5e42e5d8771fc62}} 
+\index{grammar.cpp@{grammar.cpp}!add\_rules\_with\_prefix@{add\_rules\_with\_prefix}}
+\index{add\_rules\_with\_prefix@{add\_rules\_with\_prefix}!grammar.cpp@{grammar.cpp}}
+\subsubsection{\texorpdfstring{add\_rules\_with\_prefix()}{add\_rules\_with\_prefix()}}
+{\footnotesize\ttfamily void add\+\_\+rules\+\_\+with\+\_\+prefix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgrammar}{grammar}} \&}]{add\+To,  }\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{add\+From,  }\item[{const std\+::string \&}]{prefix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8cpp_ab00f22c9e26294687a9057157bb1f704}\label{grammar_8cpp_ab00f22c9e26294687a9057157bb1f704}} 
+\index{grammar.cpp@{grammar.cpp}!join\_grammars@{join\_grammars}}
+\index{join\_grammars@{join\_grammars}!grammar.cpp@{grammar.cpp}}
+\subsubsection{\texorpdfstring{join\_grammars()}{join\_grammars()}}
+{\footnotesize\ttfamily template$<$typename T\+Join $>$ \\
+\mbox{\hyperlink{classgrammar}{grammar}} join\+\_\+grammars (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{left,  }\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8cpp_a45409fc2035593fa8bd3cd24ba41fd82}\label{grammar_8cpp_a45409fc2035593fa8bd3cd24ba41fd82}} 
+\index{grammar.cpp@{grammar.cpp}!prefix\_rule\_terms@{prefix\_rule\_terms}}
+\index{prefix\_rule\_terms@{prefix\_rule\_terms}!grammar.cpp@{grammar.cpp}}
+\subsubsection{\texorpdfstring{prefix\_rule\_terms()}{prefix\_rule\_terms()}}
+{\footnotesize\ttfamily void prefix\+\_\+rule\+\_\+terms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproduction}{production}} \&}]{production,  }\item[{const string \&}]{prefix }\end{DoxyParamCaption})}
+

@@ -1,0 +1,190 @@
+.TH "testing::UnitTest" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::UnitTest
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBRun\fP () \fBGTEST_MUST_USE_RESULT_\fP"
+.br
+.ti -1c
+.RI "const char * \fBoriginal_working_dir\fP () const"
+.br
+.ti -1c
+.RI "const \fBTestCase\fP * \fBcurrent_test_case\fP () const \fBGTEST_LOCK_EXCLUDED_\fP(mutex_)"
+.br
+.ti -1c
+.RI "const \fBTestInfo\fP * \fBcurrent_test_info\fP () const \fBGTEST_LOCK_EXCLUDED_\fP(mutex_)"
+.br
+.ti -1c
+.RI "int \fBrandom_seed\fP () const"
+.br
+.ti -1c
+.RI "int \fBsuccessful_test_case_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBfailed_test_case_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtotal_test_case_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtest_case_to_run_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBsuccessful_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBfailed_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBreportable_disabled_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBdisabled_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBreportable_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtotal_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtest_to_run_count\fP () const"
+.br
+.ti -1c
+.RI "\fBTimeInMillis\fP \fBstart_timestamp\fP () const"
+.br
+.ti -1c
+.RI "\fBTimeInMillis\fP \fBelapsed_time\fP () const"
+.br
+.ti -1c
+.RI "bool \fBPassed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBFailed\fP () const"
+.br
+.ti -1c
+.RI "const \fBTestCase\fP * \fBGetTestCase\fP (int i) const"
+.br
+.ti -1c
+.RI "const \fBTestResult\fP & \fBad_hoc_test_result\fP () const"
+.br
+.ti -1c
+.RI "\fBTestEventListeners\fP & \fBlisteners\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBUnitTest\fP * \fBGetInstance\fP ()"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTest\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::AssertHelper\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::ScopedTrace\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::StreamingListenerTest\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::UnitTestRecordPropertyTestHelper\fP"
+.br
+.ti -1c
+.RI "\fBEnvironment\fP * \fBAddGlobalTestEnvironment\fP (\fBEnvironment\fP *env)"
+.br
+.ti -1c
+.RI "internal::UnitTestImpl * \fBinternal::GetUnitTestImpl\fP ()"
+.br
+.ti -1c
+.RI "void \fBinternal::ReportFailureInUnknownLocation\fP (\fBTestPartResult::Type\fP result_type, const std::string &message)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBTestResult\fP& testing::UnitTest::ad_hoc_test_result () const"
+
+.SS "const \fBTestCase\fP* testing::UnitTest::current_test_case () const"
+
+.SS "const \fBTestInfo\fP* testing::UnitTest::current_test_info () const"
+
+.SS "int testing::UnitTest::disabled_test_count () const"
+
+.SS "\fBTimeInMillis\fP testing::UnitTest::elapsed_time () const"
+
+.SS "bool testing::UnitTest::Failed () const"
+
+.SS "int testing::UnitTest::failed_test_case_count () const"
+
+.SS "int testing::UnitTest::failed_test_count () const"
+
+.SS "static \fBUnitTest\fP* testing::UnitTest::GetInstance ()\fC [static]\fP"
+
+.SS "const \fBTestCase\fP* testing::UnitTest::GetTestCase (int i) const"
+
+.SS "\fBTestEventListeners\fP& testing::UnitTest::listeners ()"
+
+.SS "const char* testing::UnitTest::original_working_dir () const"
+
+.SS "bool testing::UnitTest::Passed () const"
+
+.SS "int testing::UnitTest::random_seed () const"
+
+.SS "int testing::UnitTest::reportable_disabled_test_count () const"
+
+.SS "int testing::UnitTest::reportable_test_count () const"
+
+.SS "int testing::UnitTest::Run ()"
+
+.SS "\fBTimeInMillis\fP testing::UnitTest::start_timestamp () const"
+
+.SS "int testing::UnitTest::successful_test_case_count () const"
+
+.SS "int testing::UnitTest::successful_test_count () const"
+
+.SS "int testing::UnitTest::test_case_to_run_count () const"
+
+.SS "int testing::UnitTest::test_to_run_count () const"
+
+.SS "int testing::UnitTest::total_test_case_count () const"
+
+.SS "int testing::UnitTest::total_test_count () const"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "\fBEnvironment\fP* AddGlobalTestEnvironment (\fBEnvironment\fP * env)\fC [friend]\fP"
+
+.SS "friend class \fBinternal::AssertHelper\fP\fC [friend]\fP"
+
+.SS "internal::UnitTestImpl* \fBinternal::GetUnitTestImpl\fP ()\fC [friend]\fP"
+
+.SS "void \fBinternal::ReportFailureInUnknownLocation\fP (\fBTestPartResult::Type\fP result_type, const std::string & message)\fC [friend]\fP"
+
+.SS "friend class \fBinternal::ScopedTrace\fP\fC [friend]\fP"
+
+.SS "friend class internal::StreamingListenerTest\fC [friend]\fP"
+
+.SS "friend class internal::UnitTestRecordPropertyTestHelper\fC [friend]\fP"
+
+.SS "friend class \fBTest\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

@@ -1,0 +1,70 @@
+.TH "token" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+token
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <token\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBtoken\fP ()"
+.br
+.ti -1c
+.RI "\fBtoken\fP (\fBtoken_type\fP \fBtype\fP, \fBdocument_position\fP \fBposition\fP, const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBtoken_type\fP \fBtype\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_type\fP (\fBtoken_type\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "const std::string & \fBvalue\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_value\fP (const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBdocument_position\fP \fBposition\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_position\fP (\fBdocument_position\fP \fBposition\fP)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "token::token ()\fC [inline]\fP"
+
+.SS "token::token (\fBtoken_type\fP type, \fBdocument_position\fP position, const std::string & value)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBdocument_position\fP token::position () const\fC [inline]\fP"
+
+.SS "void token::set_position (\fBdocument_position\fP position)\fC [inline]\fP"
+
+.SS "void token::set_type (\fBtoken_type\fP type)\fC [inline]\fP"
+
+.SS "void token::set_value (const std::string & value)\fC [inline]\fP"
+
+.SS "\fBtoken_type\fP token::type () const\fC [inline]\fP"
+
+.SS "const std::string& token::value () const\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBdocument_position\fP token::position"
+
+.SS "\fBtoken_type\fP token::type"
+
+.SS "std::string token::value"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

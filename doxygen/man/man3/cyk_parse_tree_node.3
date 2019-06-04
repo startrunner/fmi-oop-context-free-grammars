@@ -1,0 +1,103 @@
+.TH "cyk_parse_tree_node" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cyk_parse_tree_node
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cyk_parse_tree\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcyk_parse_tree_node\fP ()"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree_node\fP (const std::string &name)"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree_node\fP (const std::string &name, const std::vector< \fBcyk_parse_tree_node\fP > &children)"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree_node\fP & \fBoperator=\fP (const \fBcyk_parse_tree_node\fP &other)"
+.br
+.ti -1c
+.RI "std::string \fBget_name\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_name\fP (const std::string &name)"
+.br
+.ti -1c
+.RI "int \fBchild_count\fP () const"
+.br
+.ti -1c
+.RI "\fBcyk_parse_tree_node\fP & \fBchild\fP (int index)"
+.br
+.ti -1c
+.RI "const \fBcyk_parse_tree_node\fP & \fBchild\fP (int index) const"
+.br
+.ti -1c
+.RI "void \fBset_child\fP (const \fBcyk_parse_tree_node\fP &node, int index)"
+.br
+.ti -1c
+.RI "void \fBadd_child\fP (const \fBcyk_parse_tree_node\fP &node)"
+.br
+.ti -1c
+.RI "void \fBclear_children\fP ()"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBcyk_parse_tree_node\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBcyk_parse_tree_node\fP &other) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &stream, const \fBcyk_parse_tree_node\fP &node)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cyk_parse_tree_node::cyk_parse_tree_node ()\fC [inline]\fP"
+
+.SS "cyk_parse_tree_node::cyk_parse_tree_node (const std::string & name)\fC [inline]\fP"
+
+.SS "cyk_parse_tree_node::cyk_parse_tree_node (const std::string & name, const std::vector< \fBcyk_parse_tree_node\fP > & children)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void cyk_parse_tree_node::add_child (const \fBcyk_parse_tree_node\fP & node)"
+
+.SS "\fBcyk_parse_tree_node\fP & cyk_parse_tree_node::child (int index)"
+
+.SS "const \fBcyk_parse_tree_node\fP & cyk_parse_tree_node::child (int index) const"
+
+.SS "int cyk_parse_tree_node::child_count () const"
+
+.SS "void cyk_parse_tree_node::clear_children ()"
+
+.SS "string cyk_parse_tree_node::get_name () const"
+
+.SS "bool cyk_parse_tree_node::operator< (const \fBcyk_parse_tree_node\fP & other) const"
+
+.SS "\fBcyk_parse_tree_node\fP & cyk_parse_tree_node::operator= (const \fBcyk_parse_tree_node\fP & other)"
+
+.SS "bool cyk_parse_tree_node::operator== (const \fBcyk_parse_tree_node\fP & other) const"
+
+.SS "void cyk_parse_tree_node::set_child (const \fBcyk_parse_tree_node\fP & node, int index)"
+
+.SS "void cyk_parse_tree_node::set_name (const std::string & name)"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & stream, const \fBcyk_parse_tree_node\fP & node)\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

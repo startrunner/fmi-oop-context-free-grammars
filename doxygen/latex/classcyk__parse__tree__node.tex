@@ -1,0 +1,147 @@
+\hypertarget{classcyk__parse__tree__node}{}\section{cyk\+\_\+parse\+\_\+tree\+\_\+node Class Reference}
+\label{classcyk__parse__tree__node}\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+
+
+{\ttfamily \#include $<$cyk\+\_\+parse\+\_\+tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcyk__parse__tree__node_aec49342697d8a2d6eec71ed65a02c11e}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} ()
+\item 
+\mbox{\hyperlink{classcyk__parse__tree__node_a8abcbe5d43d33c94f05dfa9e5bbd960b}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classcyk__parse__tree__node_a20adb06b40d65e9de1e661eb29c1582c}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} (const std\+::string \&name, const std\+::vector$<$ \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} $>$ \&children)
+\item 
+\mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& \mbox{\hyperlink{classcyk__parse__tree__node_a35eaca957a6874821c0899539b14d9f1}{operator=}} (const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&other)
+\item 
+std\+::string \mbox{\hyperlink{classcyk__parse__tree__node_af00f172bdcce590c066d408db94148e0}{get\+\_\+name}} () const
+\item 
+void \mbox{\hyperlink{classcyk__parse__tree__node_aec106b63ae6859480875ba5edf33e347}{set\+\_\+name}} (const std\+::string \&name)
+\item 
+int \mbox{\hyperlink{classcyk__parse__tree__node_aefb9b424e58a670b1ac368fcf86b7512}{child\+\_\+count}} () const
+\item 
+\mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& \mbox{\hyperlink{classcyk__parse__tree__node_a5b8c50139dff519bde5eaea7038a6908}{child}} (int index)
+\item 
+const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& \mbox{\hyperlink{classcyk__parse__tree__node_a0bb50917b8d92e1d2f7a4748612d2f6e}{child}} (int index) const
+\item 
+void \mbox{\hyperlink{classcyk__parse__tree__node_a1d80891bbf2ceb1c0a7eb9042dc0c31b}{set\+\_\+child}} (const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&node, int index)
+\item 
+void \mbox{\hyperlink{classcyk__parse__tree__node_a5c84dbc3467938e28d3da5580b209970}{add\+\_\+child}} (const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&node)
+\item 
+void \mbox{\hyperlink{classcyk__parse__tree__node_a38b760ecf7aa2fa860847eed6819aedb}{clear\+\_\+children}} ()
+\item 
+bool \mbox{\hyperlink{classcyk__parse__tree__node_a49838a9041ce5c10f22fa14f5993723c}{operator$<$}} (const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&other) const
+\item 
+bool \mbox{\hyperlink{classcyk__parse__tree__node_aa3149c25b9a3f7b2403402633ca05de0}{operator==}} (const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classcyk__parse__tree__node_a6a338e8d2d8c83ce89dc81dec7f9cfb6}{operator$<$$<$}} (std\+::ostream \&stream, const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcyk__parse__tree__node_aec49342697d8a2d6eec71ed65a02c11e}\label{classcyk__parse__tree__node_aec49342697d8a2d6eec71ed65a02c11e}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{cyk\_parse\_tree\_node()}{cyk\_parse\_tree\_node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily cyk\+\_\+parse\+\_\+tree\+\_\+node\+::cyk\+\_\+parse\+\_\+tree\+\_\+node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a8abcbe5d43d33c94f05dfa9e5bbd960b}\label{classcyk__parse__tree__node_a8abcbe5d43d33c94f05dfa9e5bbd960b}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{cyk\_parse\_tree\_node()}{cyk\_parse\_tree\_node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily cyk\+\_\+parse\+\_\+tree\+\_\+node\+::cyk\+\_\+parse\+\_\+tree\+\_\+node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a20adb06b40d65e9de1e661eb29c1582c}\label{classcyk__parse__tree__node_a20adb06b40d65e9de1e661eb29c1582c}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{cyk\_parse\_tree\_node()}{cyk\_parse\_tree\_node()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily cyk\+\_\+parse\+\_\+tree\+\_\+node\+::cyk\+\_\+parse\+\_\+tree\+\_\+node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} $>$ \&}]{children }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcyk__parse__tree__node_a5c84dbc3467938e28d3da5580b209970}\label{classcyk__parse__tree__node_a5c84dbc3467938e28d3da5580b209970}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!add\_child@{add\_child}}
+\index{add\_child@{add\_child}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{add\_child()}{add\_child()}}
+{\footnotesize\ttfamily void cyk\+\_\+parse\+\_\+tree\+\_\+node\+::add\+\_\+child (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a5b8c50139dff519bde5eaea7038a6908}\label{classcyk__parse__tree__node_a5b8c50139dff519bde5eaea7038a6908}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!child@{child}}
+\index{child@{child}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{child()}{child()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& cyk\+\_\+parse\+\_\+tree\+\_\+node\+::child (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a0bb50917b8d92e1d2f7a4748612d2f6e}\label{classcyk__parse__tree__node_a0bb50917b8d92e1d2f7a4748612d2f6e}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!child@{child}}
+\index{child@{child}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{child()}{child()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& cyk\+\_\+parse\+\_\+tree\+\_\+node\+::child (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_aefb9b424e58a670b1ac368fcf86b7512}\label{classcyk__parse__tree__node_aefb9b424e58a670b1ac368fcf86b7512}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!child\_count@{child\_count}}
+\index{child\_count@{child\_count}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{child\_count()}{child\_count()}}
+{\footnotesize\ttfamily int cyk\+\_\+parse\+\_\+tree\+\_\+node\+::child\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a38b760ecf7aa2fa860847eed6819aedb}\label{classcyk__parse__tree__node_a38b760ecf7aa2fa860847eed6819aedb}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!clear\_children@{clear\_children}}
+\index{clear\_children@{clear\_children}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{clear\_children()}{clear\_children()}}
+{\footnotesize\ttfamily void cyk\+\_\+parse\+\_\+tree\+\_\+node\+::clear\+\_\+children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_af00f172bdcce590c066d408db94148e0}\label{classcyk__parse__tree__node_af00f172bdcce590c066d408db94148e0}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily string cyk\+\_\+parse\+\_\+tree\+\_\+node\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a49838a9041ce5c10f22fa14f5993723c}\label{classcyk__parse__tree__node_a49838a9041ce5c10f22fa14f5993723c}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool cyk\+\_\+parse\+\_\+tree\+\_\+node\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a35eaca957a6874821c0899539b14d9f1}\label{classcyk__parse__tree__node_a35eaca957a6874821c0899539b14d9f1}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!operator=@{operator=}}
+\index{operator=@{operator=}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \& cyk\+\_\+parse\+\_\+tree\+\_\+node\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_aa3149c25b9a3f7b2403402633ca05de0}\label{classcyk__parse__tree__node_aa3149c25b9a3f7b2403402633ca05de0}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!operator==@{operator==}}
+\index{operator==@{operator==}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool cyk\+\_\+parse\+\_\+tree\+\_\+node\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_a1d80891bbf2ceb1c0a7eb9042dc0c31b}\label{classcyk__parse__tree__node_a1d80891bbf2ceb1c0a7eb9042dc0c31b}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!set\_child@{set\_child}}
+\index{set\_child@{set\_child}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{set\_child()}{set\_child()}}
+{\footnotesize\ttfamily void cyk\+\_\+parse\+\_\+tree\+\_\+node\+::set\+\_\+child (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{node,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcyk__parse__tree__node_aec106b63ae6859480875ba5edf33e347}\label{classcyk__parse__tree__node_aec106b63ae6859480875ba5edf33e347}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void cyk\+\_\+parse\+\_\+tree\+\_\+node\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcyk__parse__tree__node_a6a338e8d2d8c83ce89dc81dec7f9cfb6}\label{classcyk__parse__tree__node_a6a338e8d2d8c83ce89dc81dec7f9cfb6}} 
+\index{cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cyk\_parse\_tree\_node@{cyk\_parse\_tree\_node}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{classcyk__parse__tree__node}{cyk\+\_\+parse\+\_\+tree\+\_\+node}} \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{cyk__parse__tree_8h}{cyk\+\_\+parse\+\_\+tree.\+h}}\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{cyk__parse__tree_8cpp}{cyk\+\_\+parse\+\_\+tree.\+cpp}}\end{DoxyCompactItemize}

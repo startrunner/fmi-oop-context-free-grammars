@@ -1,0 +1,111 @@
+.TH "variable_arity_operator< T >" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+variable_arity_operator< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <variable_arity_operator\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBhas_no_operands\fP () const"
+.br
+.ti -1c
+.RI "int \fBoperand_count\fP () const"
+.br
+.ti -1c
+.RI "T & \fBoperand\fP (int index)"
+.br
+.ti -1c
+.RI "const T & \fBoperand\fP (int index) const"
+.br
+.ti -1c
+.RI "void \fBadd_operand\fP (const T &\fBoperand\fP)"
+.br
+.ti -1c
+.RI "template<typename TCollection > void \fBadd_operands\fP (const TCollection &operands)"
+.br
+.ti -1c
+.RI "void \fBreplace_operand\fP (int index, const T &\fBoperand\fP)"
+.br
+.ti -1c
+.RI "void \fBremove_last_operand\fP ()"
+.br
+.ti -1c
+.RI "void \fBclear_operands\fP ()"
+.br
+.ti -1c
+.RI "void \fBremove_operands\fP (const std::set< int > &indicesToRemove)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBvariable_arity_operator\fP< T > &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator !=\fP (const \fBvariable_arity_operator\fP< T > &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBvariable_arity_operator\fP< T > &other) const"
+.br
+.ti -1c
+.RI "virtual \fB~variable_arity_operator\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvariable_arity_operator\fP ()"
+.br
+.ti -1c
+.RI "\fBvariable_arity_operator\fP (const \fBvariable_arity_operator\fP< T > &toClone)"
+.br
+.ti -1c
+.RI "\fBvariable_arity_operator\fP & \fBoperator=\fP (const \fBvariable_arity_operator\fP &toAssign)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T> \fBvariable_arity_operator\fP< T >::\fBvariable_arity_operator\fP ()\fC [inline]\fP, \fC [protected]\fP"
+
+.SS "template<typename T> \fBvariable_arity_operator\fP< T >::\fBvariable_arity_operator\fP (const \fBvariable_arity_operator\fP< T > & toClone)\fC [inline]\fP, \fC [protected]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T> void \fBvariable_arity_operator\fP< T >::add_operand (const T & operand)\fC [inline]\fP"
+
+.SS "template<typename T> template<typename TCollection > void \fBvariable_arity_operator\fP< T >::add_operands (const TCollection & operands)\fC [inline]\fP"
+
+.SS "template<typename T> void \fBvariable_arity_operator\fP< T >::clear_operands ()\fC [inline]\fP"
+
+.SS "template<typename T> bool \fBvariable_arity_operator\fP< T >::has_no_operands () const\fC [inline]\fP"
+
+.SS "template<typename T> T& \fBvariable_arity_operator\fP< T >::operand (int index)\fC [inline]\fP"
+
+.SS "template<typename T> const T& \fBvariable_arity_operator\fP< T >::operand (int index) const\fC [inline]\fP"
+
+.SS "template<typename T> int \fBvariable_arity_operator\fP< T >::operand_count () const\fC [inline]\fP"
+
+.SS "template<typename T> bool \fBvariable_arity_operator\fP< T >::operator != (const \fBvariable_arity_operator\fP< T > & other) const\fC [inline]\fP"
+
+.SS "template<typename T> bool \fBvariable_arity_operator\fP< T >::operator< (const \fBvariable_arity_operator\fP< T > & other) const\fC [inline]\fP"
+
+.SS "template<typename T> \fBvariable_arity_operator\fP& \fBvariable_arity_operator\fP< T >::operator= (const \fBvariable_arity_operator\fP< T > & toAssign)\fC [inline]\fP, \fC [protected]\fP"
+
+.SS "template<typename T> bool \fBvariable_arity_operator\fP< T >::operator== (const \fBvariable_arity_operator\fP< T > & other) const\fC [inline]\fP"
+
+.SS "template<typename T> void \fBvariable_arity_operator\fP< T >::remove_last_operand ()\fC [inline]\fP"
+
+.SS "template<typename T> void \fBvariable_arity_operator\fP< T >::remove_operands (const std::set< int > & indicesToRemove)\fC [inline]\fP"
+
+.SS "template<typename T> void \fBvariable_arity_operator\fP< T >::replace_operand (int index, const T & operand)\fC [inline]\fP"
+
+.SS "template<typename T> virtual \fBvariable_arity_operator\fP< T >::~\fBvariable_arity_operator\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

@@ -1,0 +1,103 @@
+.TH "testing::TestInfo" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::TestInfo
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~TestInfo\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBtest_case_name\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBname\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBtype_param\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBvalue_param\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBfile\fP () const"
+.br
+.ti -1c
+.RI "int \fBline\fP () const"
+.br
+.ti -1c
+.RI "bool \fBshould_run\fP () const"
+.br
+.ti -1c
+.RI "bool \fBis_reportable\fP () const"
+.br
+.ti -1c
+.RI "const \fBTestResult\fP * \fBresult\fP () const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTest\fP"
+.br
+.ti -1c
+.RI "class \fBTestCase\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::UnitTestImpl\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::StreamingListenerTest\fP"
+.br
+.ti -1c
+.RI "\fBTestInfo\fP * \fBinternal::MakeAndRegisterTestInfo\fP (const char *\fBtest_case_name\fP, const char *\fBname\fP, const char *\fBtype_param\fP, const char *\fBvalue_param\fP, \fBinternal::CodeLocation\fP code_location, \fBinternal::TypeId\fP fixture_class_id, \fBTest::SetUpTestCaseFunc\fP set_up_tc, \fBTest::TearDownTestCaseFunc\fP tear_down_tc, \fBinternal::TestFactoryBase\fP *factory)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::TestInfo::~TestInfo ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const char* testing::TestInfo::file () const\fC [inline]\fP"
+
+.SS "bool testing::TestInfo::is_reportable () const\fC [inline]\fP"
+
+.SS "int testing::TestInfo::line () const\fC [inline]\fP"
+
+.SS "const char* testing::TestInfo::name () const\fC [inline]\fP"
+
+.SS "const \fBTestResult\fP* testing::TestInfo::result () const\fC [inline]\fP"
+
+.SS "bool testing::TestInfo::should_run () const\fC [inline]\fP"
+
+.SS "const char* testing::TestInfo::test_case_name () const\fC [inline]\fP"
+
+.SS "const char* testing::TestInfo::type_param () const\fC [inline]\fP"
+
+.SS "const char* testing::TestInfo::value_param () const\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "\fBTestInfo\fP* \fBinternal::MakeAndRegisterTestInfo\fP (const char * test_case_name, const char * name, const char * type_param, const char * value_param, \fBinternal::CodeLocation\fP code_location, \fBinternal::TypeId\fP fixture_class_id, \fBTest::SetUpTestCaseFunc\fP set_up_tc, \fBTest::TearDownTestCaseFunc\fP tear_down_tc, \fBinternal::TestFactoryBase\fP * factory)\fC [friend]\fP"
+
+.SS "friend class internal::StreamingListenerTest\fC [friend]\fP"
+
+.SS "friend class internal::UnitTestImpl\fC [friend]\fP"
+
+.SS "friend class \fBTest\fP\fC [friend]\fP"
+
+.SS "friend class \fBTestCase\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

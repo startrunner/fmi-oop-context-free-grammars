@@ -1,0 +1,35 @@
+.TH "testing::internal::linked_ptr_internal" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::linked_ptr_internal
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-linked_ptr\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBjoin_new\fP ()"
+.br
+.ti -1c
+.RI "void \fBjoin\fP (\fBlinked_ptr_internal\fP const *ptr) \fBGTEST_LOCK_EXCLUDED_\fP(g_linked_ptr_mutex)"
+.br
+.ti -1c
+.RI "bool \fBdepart\fP () \fBGTEST_LOCK_EXCLUDED_\fP(g_linked_ptr_mutex)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "bool testing::internal::linked_ptr_internal::depart ()\fC [inline]\fP"
+
+.SS "void testing::internal::linked_ptr_internal::join (\fBlinked_ptr_internal\fP const * ptr)\fC [inline]\fP"
+
+.SS "void testing::internal::linked_ptr_internal::join_new ()\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

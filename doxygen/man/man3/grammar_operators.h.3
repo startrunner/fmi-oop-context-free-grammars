@@ -1,0 +1,60 @@
+.TH "ContextFreeGrammars.Grammars/grammar_operators.h" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContextFreeGrammars.Grammars/grammar_operators.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'grammar\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBterm\fP \fBoperator''_term\fP (const char *literal, size_t length)"
+.br
+.ti -1c
+.RI "\fBterm\fP \fBoperator''_terminal\fP (const char *literal, size_t length)"
+.br
+.ti -1c
+.RI "\fBterm\fP \fBoperator''_nonterminal\fP (const char *literal, size_t length)"
+.br
+.ti -1c
+.RI "\fBconcatenation\fP \fBoperator *\fP (const \fBterm\fP &left, const \fBterm\fP &right)"
+.br
+.ti -1c
+.RI "\fBconcatenation\fP \fBoperator *\fP (const \fBconcatenation\fP &left, const \fBterm\fP &right)"
+.br
+.ti -1c
+.RI "\fBproduction\fP \fBoperator|\fP (const \fBconcatenation\fP &left, const \fBconcatenation\fP &right)"
+.br
+.ti -1c
+.RI "\fBproduction\fP \fBoperator|\fP (const \fBproduction\fP &left, const \fBconcatenation\fP &right)"
+.br
+.ti -1c
+.RI "\fBproduction\fP \fBoperator|\fP (const \fBterm\fP &left, const \fBconcatenation\fP &right)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBconcatenation\fP operator * (const \fBterm\fP & left, const \fBterm\fP & right)"
+
+.SS "\fBconcatenation\fP operator * (const \fBconcatenation\fP & left, const \fBterm\fP & right)"
+
+.SS "\fBterm\fP operator''_nonterminal (const char * literal, size_t length)"
+
+.SS "\fBterm\fP operator''_term (const char * literal, size_t length)"
+
+.SS "\fBterm\fP operator''_terminal (const char * literal, size_t length)"
+
+.SS "\fBproduction\fP operator| (const \fBconcatenation\fP & left, const \fBconcatenation\fP & right)"
+
+.SS "\fBproduction\fP operator| (const \fBproduction\fP & left, const \fBconcatenation\fP & right)"
+
+.SS "\fBproduction\fP operator| (const \fBterm\fP & left, const \fBconcatenation\fP & right)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

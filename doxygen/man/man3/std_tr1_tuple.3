@@ -1,0 +1,124 @@
+.TH "std::tr1::tuple<>" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+std::tr1::tuple<>
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-tuple\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBtuple\fP ()"
+.br
+.ti -1c
+.RI "\fBtuple\fP (\fBGTEST_BY_REF_\fP(T0) f0, \fBGTEST_BY_REF_\fP(T1) \fBf1\fP, \fBGTEST_BY_REF_\fP(T2) \fBf2\fP, \fBGTEST_BY_REF_\fP(T3) \fBf3\fP, \fBGTEST_BY_REF_\fP(T4) \fBf4\fP, \fBGTEST_BY_REF_\fP(T5) \fBf5\fP, \fBGTEST_BY_REF_\fP(T6) \fBf6\fP, \fBGTEST_BY_REF_\fP(T7) \fBf7\fP, \fBGTEST_BY_REF_\fP(T8) \fBf8\fP, \fBGTEST_BY_REF_\fP(T9) \fBf9\fP)"
+.br
+.ti -1c
+.RI "\fBtuple\fP (const \fBtuple\fP &t)"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(U) > \fBtuple\fP (const \fBGTEST_10_TUPLE_\fP(U)&t)"
+.br
+.ti -1c
+.RI "\fBtuple\fP & \fBoperator=\fP (const \fBtuple\fP &t)"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(U) > \fBtuple\fP & \fBoperator=\fP (const \fBGTEST_10_TUPLE_\fP(U)&t)"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(U) > \fBGTEST_DECLARE_TUPLE_AS_FRIEND_\fP \fBtuple\fP & \fBCopyFrom\fP (const \fBGTEST_10_TUPLE_\fP(U)&t)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "T0 \fBf0_\fP"
+.br
+.ti -1c
+.RI "T1 \fBf1_\fP"
+.br
+.ti -1c
+.RI "T2 \fBf2_\fP"
+.br
+.ti -1c
+.RI "T3 \fBf3_\fP"
+.br
+.ti -1c
+.RI "T4 \fBf4_\fP"
+.br
+.ti -1c
+.RI "T5 \fBf5_\fP"
+.br
+.ti -1c
+.RI "T6 \fBf6_\fP"
+.br
+.ti -1c
+.RI "T7 \fBf7_\fP"
+.br
+.ti -1c
+.RI "T8 \fBf8_\fP"
+.br
+.ti -1c
+.RI "T9 \fBf9_\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "template<int k> class \fBgtest_internal::Get\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<GTEST_10_TYPENAMES_(T) > \fBstd::tr1::tuple\fP<>::\fBtuple\fP ()\fC [inline]\fP"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > \fBstd::tr1::tuple\fP<>::\fBtuple\fP (\fBGTEST_BY_REF_\fP(T0) f0, \fBGTEST_BY_REF_\fP(T1) f1, \fBGTEST_BY_REF_\fP(T2) f2, \fBGTEST_BY_REF_\fP(T3) f3, \fBGTEST_BY_REF_\fP(T4) f4, \fBGTEST_BY_REF_\fP(T5) f5, \fBGTEST_BY_REF_\fP(T6) f6, \fBGTEST_BY_REF_\fP(T7) f7, \fBGTEST_BY_REF_\fP(T8) f8, \fBGTEST_BY_REF_\fP(T9) f9)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > \fBstd::tr1::tuple\fP<>::\fBtuple\fP (const \fBtuple\fP<> & t)\fC [inline]\fP"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > template<GTEST_10_TYPENAMES_(U) > \fBstd::tr1::tuple\fP<>::\fBtuple\fP (const \fBGTEST_10_TUPLE_\fP(U)& t)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<GTEST_10_TYPENAMES_(T) > template<GTEST_10_TYPENAMES_(U) > \fBGTEST_DECLARE_TUPLE_AS_FRIEND_\fP \fBtuple\fP& \fBstd::tr1::tuple\fP<>::CopyFrom (const \fBGTEST_10_TUPLE_\fP(U)& t)\fC [inline]\fP"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > \fBtuple\fP& \fBstd::tr1::tuple\fP<>::operator= (const \fBtuple\fP<> & t)\fC [inline]\fP"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > template<GTEST_10_TYPENAMES_(U) > \fBtuple\fP& \fBstd::tr1::tuple\fP<>::operator= (const \fBGTEST_10_TUPLE_\fP(U)& t)\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<GTEST_10_TYPENAMES_(T) > template<int k> friend class \fBgtest_internal::Get\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<GTEST_10_TYPENAMES_(T) > T0 \fBstd::tr1::tuple\fP<>::f0_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T1 \fBstd::tr1::tuple\fP<>::f1_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T2 \fBstd::tr1::tuple\fP<>::f2_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T3 \fBstd::tr1::tuple\fP<>::f3_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T4 \fBstd::tr1::tuple\fP<>::f4_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T5 \fBstd::tr1::tuple\fP<>::f5_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T6 \fBstd::tr1::tuple\fP<>::f6_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T7 \fBstd::tr1::tuple\fP<>::f7_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T8 \fBstd::tr1::tuple\fP<>::f8_"
+
+.SS "template<GTEST_10_TYPENAMES_(T) > T9 \fBstd::tr1::tuple\fP<>::f9_"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

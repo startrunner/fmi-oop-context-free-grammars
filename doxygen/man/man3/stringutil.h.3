@@ -1,0 +1,50 @@
+.TH "ContextFreeGrammars.Infrastructure/stringutil.h" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContextFreeGrammars.Infrastructure/stringutil.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stdafx\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBconcatenate\fP (const std::vector< std::string > segments, const std::string &delimeter='')"
+.br
+.ti -1c
+.RI "std::string \fBto_lower\fP (const std::string &text)"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBsplit\fP (const std::string &text, char delimeter)"
+.br
+.ti -1c
+.RI "std::string \fBtrim\fP (const std::string &text, char trimmedCharacter)"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBsplit_trim\fP (const std::string &text, char delimeter, char trimmedCharacter)"
+.br
+.ti -1c
+.RI "bool \fBstring_contains\fP (const std::string &text, char character)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "std::string concatenate (const std::vector< std::string > segments, const std::string & delimeter = \fC''\fP)"
+
+.SS "std::vector<std::string> split (const std::string & text, char delimeter)"
+
+.SS "std::vector<std::string> split_trim (const std::string & text, char delimeter, char trimmedCharacter)"
+
+.SS "bool string_contains (const std::string & text, char character)"
+
+.SS "std::string to_lower (const std::string & text)"
+
+.SS "std::string trim (const std::string & text, char trimmedCharacter)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

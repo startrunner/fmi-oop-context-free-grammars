@@ -1,0 +1,121 @@
+.TH "term" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+term
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <term\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBterm\fP ()"
+.br
+.ti -1c
+.RI "\fBterm\fP (const char *\fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBterm\fP (const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fBterm\fP (const std::string &\fBvalue\fP, \fBterm_type\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "const std::string & \fBvalue\fP () const"
+.br
+.ti -1c
+.RI "\fBterm\fP & \fBset_value\fP (const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "const \fBterm_type\fP \fBtype\fP () const"
+.br
+.ti -1c
+.RI "\fBterm\fP & \fBset_type\fP (\fBterm_type\fP \fBtype\fP)"
+.br
+.ti -1c
+.RI "bool \fBis_empty_word\fP () const"
+.br
+.ti -1c
+.RI "\fBterm\fP & \fBmake_empty_word\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_terminal\fP () const"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBterm\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBterm\fP &other) const"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBterm_type\fP \fBdetermine_term_type\fP (const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "static void \fBvalidate_value_or_throw\fP (const std::string &\fBvalue\fP)"
+.br
+.ti -1c
+.RI "static bool \fBvalidate_value\fP (const std::string &\fBvalue\fP)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const std::string \fBEMPTY_WORD\fP = '_'"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "term::term ()\fC [inline]\fP"
+
+.SS "term::term (const char * value)\fC [inline]\fP"
+
+.SS "term::term (const std::string & value)\fC [inline]\fP"
+
+.SS "term::term (const std::string & value, \fBterm_type\fP type)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBterm_type\fP term::determine_term_type (const std::string & value)\fC [static]\fP"
+
+.SS "bool term::is_empty_word () const"
+
+.SS "bool term::is_terminal () const"
+
+.SS "\fBterm\fP & term::make_empty_word ()"
+
+.SS "bool term::operator< (const \fBterm\fP & other) const"
+
+.SS "bool term::operator== (const \fBterm\fP & other) const"
+
+.SS "\fBterm\fP & term::set_type (\fBterm_type\fP type)"
+
+.SS "\fBterm\fP & term::set_value (const std::string & value)"
+
+.SS "const \fBterm_type\fP term::type () const"
+
+.SS "bool term::validate_value (const std::string & value)\fC [static]\fP"
+
+.SS "static void term::validate_value_or_throw (const std::string & value)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "const std::string& term::value () const"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const std::string term::EMPTY_WORD = '_'\fC [static]\fP"
+
+.SS "const \fBterm_type\fP term::type"
+
+.SS "const std::string & term::value"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

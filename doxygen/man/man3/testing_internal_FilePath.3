@@ -1,0 +1,141 @@
+.TH "testing::internal::FilePath" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::FilePath
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-filepath\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFilePath\fP ()"
+.br
+.ti -1c
+.RI "\fBFilePath\fP (const \fBFilePath\fP &rhs)"
+.br
+.ti -1c
+.RI "\fBFilePath\fP (const std::string &pathname)"
+.br
+.ti -1c
+.RI "\fBFilePath\fP & \fBoperator=\fP (const \fBFilePath\fP &rhs)"
+.br
+.ti -1c
+.RI "void \fBSet\fP (const \fBFilePath\fP &rhs)"
+.br
+.ti -1c
+.RI "const std::string & \fBstring\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBc_str\fP () const"
+.br
+.ti -1c
+.RI "bool \fBIsEmpty\fP () const"
+.br
+.ti -1c
+.RI "\fBFilePath\fP \fBRemoveTrailingPathSeparator\fP () const"
+.br
+.ti -1c
+.RI "\fBFilePath\fP \fBRemoveDirectoryName\fP () const"
+.br
+.ti -1c
+.RI "\fBFilePath\fP \fBRemoveFileName\fP () const"
+.br
+.ti -1c
+.RI "\fBFilePath\fP \fBRemoveExtension\fP (const char *extension) const"
+.br
+.ti -1c
+.RI "bool \fBCreateDirectoriesRecursively\fP () const"
+.br
+.ti -1c
+.RI "bool \fBCreateFolder\fP () const"
+.br
+.ti -1c
+.RI "bool \fBFileOrDirectoryExists\fP () const"
+.br
+.ti -1c
+.RI "bool \fBDirectoryExists\fP () const"
+.br
+.ti -1c
+.RI "bool \fBIsDirectory\fP () const"
+.br
+.ti -1c
+.RI "bool \fBIsRootDirectory\fP () const"
+.br
+.ti -1c
+.RI "bool \fBIsAbsolutePath\fP () const"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBFilePath\fP \fBGetCurrentDir\fP ()"
+.br
+.ti -1c
+.RI "static \fBFilePath\fP \fBMakeFileName\fP (const \fBFilePath\fP &directory, const \fBFilePath\fP &base_name, int number, const char *extension)"
+.br
+.ti -1c
+.RI "static \fBFilePath\fP \fBConcatPaths\fP (const \fBFilePath\fP &directory, const \fBFilePath\fP &relative_path)"
+.br
+.ti -1c
+.RI "static \fBFilePath\fP \fBGenerateUniqueFileName\fP (const \fBFilePath\fP &directory, const \fBFilePath\fP &base_name, const char *extension)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::internal::FilePath::FilePath ()\fC [inline]\fP"
+
+.SS "testing::internal::FilePath::FilePath (const \fBFilePath\fP & rhs)\fC [inline]\fP"
+
+.SS "testing::internal::FilePath::FilePath (const std::string & pathname)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const char* testing::internal::FilePath::c_str () const\fC [inline]\fP"
+
+.SS "static \fBFilePath\fP testing::internal::FilePath::ConcatPaths (const \fBFilePath\fP & directory, const \fBFilePath\fP & relative_path)\fC [static]\fP"
+
+.SS "bool testing::internal::FilePath::CreateDirectoriesRecursively () const"
+
+.SS "bool testing::internal::FilePath::CreateFolder () const"
+
+.SS "bool testing::internal::FilePath::DirectoryExists () const"
+
+.SS "bool testing::internal::FilePath::FileOrDirectoryExists () const"
+
+.SS "static \fBFilePath\fP testing::internal::FilePath::GenerateUniqueFileName (const \fBFilePath\fP & directory, const \fBFilePath\fP & base_name, const char * extension)\fC [static]\fP"
+
+.SS "static \fBFilePath\fP testing::internal::FilePath::GetCurrentDir ()\fC [static]\fP"
+
+.SS "bool testing::internal::FilePath::IsAbsolutePath () const"
+
+.SS "bool testing::internal::FilePath::IsDirectory () const"
+
+.SS "bool testing::internal::FilePath::IsEmpty () const\fC [inline]\fP"
+
+.SS "bool testing::internal::FilePath::IsRootDirectory () const"
+
+.SS "static \fBFilePath\fP testing::internal::FilePath::MakeFileName (const \fBFilePath\fP & directory, const \fBFilePath\fP & base_name, int number, const char * extension)\fC [static]\fP"
+
+.SS "\fBFilePath\fP& testing::internal::FilePath::operator= (const \fBFilePath\fP & rhs)\fC [inline]\fP"
+
+.SS "\fBFilePath\fP testing::internal::FilePath::RemoveDirectoryName () const"
+
+.SS "\fBFilePath\fP testing::internal::FilePath::RemoveExtension (const char * extension) const"
+
+.SS "\fBFilePath\fP testing::internal::FilePath::RemoveFileName () const"
+
+.SS "\fBFilePath\fP testing::internal::FilePath::RemoveTrailingPathSeparator () const"
+
+.SS "void testing::internal::FilePath::Set (const \fBFilePath\fP & rhs)\fC [inline]\fP"
+
+.SS "const std::string& testing::internal::FilePath::string () const\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

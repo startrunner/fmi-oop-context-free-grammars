@@ -1,0 +1,54 @@
+.TH "testing::internal::edit_distance" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::edit_distance
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBEditType\fP { \fBkMatch\fP, \fBkAdd\fP, \fBkRemove\fP, \fBkReplace\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGTEST_API_\fP std::vector< \fBEditType\fP > \fBCalculateOptimalEdits\fP (const std::vector< size_t > &left, const std::vector< size_t > &right)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP std::vector< \fBEditType\fP > \fBCalculateOptimalEdits\fP (const std::vector< std::string > &left, const std::vector< std::string > &right)"
+.br
+.ti -1c
+.RI "\fBGTEST_API_\fP std::string \fBCreateUnifiedDiff\fP (const std::vector< std::string > &left, const std::vector< std::string > &right, size_t context=2)"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBtesting::internal::edit_distance::EditType\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIkMatch \fP\fP
+.TP
+\fB\fIkAdd \fP\fP
+.TP
+\fB\fIkRemove \fP\fP
+.TP
+\fB\fIkReplace \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "\fBGTEST_API_\fP std::vector<\fBEditType\fP> testing::internal::edit_distance::CalculateOptimalEdits (const std::vector< size_t > & left, const std::vector< size_t > & right)"
+
+.SS "\fBGTEST_API_\fP std::vector<\fBEditType\fP> testing::internal::edit_distance::CalculateOptimalEdits (const std::vector< std::string > & left, const std::vector< std::string > & right)"
+
+.SS "\fBGTEST_API_\fP std::string testing::internal::edit_distance::CreateUnifiedDiff (const std::vector< std::string > & left, const std::vector< std::string > & right, size_t context = \fC2\fP)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

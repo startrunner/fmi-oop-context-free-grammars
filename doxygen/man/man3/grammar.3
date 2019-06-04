@@ -1,0 +1,177 @@
+.TH "grammar" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+grammar
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <grammar\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgrammar\fP (const std::string &startSymbol, const std::map< std::string, \fBproduction\fP > &productionRules)"
+.br
+.ti -1c
+.RI "\fBgrammar\fP ()"
+.br
+.ti -1c
+.RI "\fBgrammar\fP (const \fBgrammar\fP &toCopy)"
+.br
+.ti -1c
+.RI "\fBgrammar\fP & \fBoperator=\fP (const \fBgrammar\fP &toAssign)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBgrammar\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBtry_chomskify\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBwrap_start_symbol\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBwrap_start_symbol\fP (const std::string &suggestedName)"
+.br
+.ti -1c
+.RI "void \fBeliminate_nonsolitary_terminals\fP ()"
+.br
+.ti -1c
+.RI "void \fBeliminate_long_concatenations\fP ()"
+.br
+.ti -1c
+.RI "void \fBinline_nullable_rules\fP ()"
+.br
+.ti -1c
+.RI "void \fBinline_unit_rules\fP ()"
+.br
+.ti -1c
+.RI "void \fBremove_unreferenced_rules\fP ()"
+.br
+.ti -1c
+.RI "void \fBsort_production_operands\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_chomskified\fP () const"
+.br
+.ti -1c
+.RI "int \fBrule_count\fP () const"
+.br
+.ti -1c
+.RI "bool \fBcontains_rule\fP (const std::string &ruleName) const"
+.br
+.ti -1c
+.RI "bool \fBsymbols_exist\fP (const \fBproduction\fP &rule) const"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBget_rule_names\fP () const"
+.br
+.ti -1c
+.RI "const std::string & \fBstart_symbol\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_start_symbol\fP (const std::string &startSymbol)"
+.br
+.ti -1c
+.RI "void \fBadd_rule\fP (const std::string &ruleName, const \fBproduction\fP &expression)"
+.br
+.ti -1c
+.RI "const \fBproduction\fP & \fBget_rule\fP (const std::string &ruleName) const"
+.br
+.ti -1c
+.RI "\fBproduction\fP & \fBget_rule\fP (const std::string &ruleName)"
+.br
+.ti -1c
+.RI "void \fBremove_rule\fP (const std::string &ruleName)"
+.br
+.ti -1c
+.RI "\fBgrammar\fP \fBunion_with\fP (const \fBgrammar\fP &other) const"
+.br
+.ti -1c
+.RI "\fBgrammar\fP \fBconcatenation_with\fP (const \fBgrammar\fP &other) const"
+.br
+.ti -1c
+.RI "\fBgrammar\fP \fBkleene_star\fP () const"
+.br
+.ti -1c
+.RI "bool \fBis_empty\fP () const"
+.br
+.ti -1c
+.RI "bool \fBtry_match\fP (const std::string &word, \fBcyk_parse_tree\fP *outParseTree=nullptr) const"
+.br
+.ti -1c
+.RI "bool \fBtry_match\fP (const std::vector< std::string > &word, \fBcyk_parse_tree\fP *outParseTree=nullptr) const"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "grammar::grammar (const std::string & startSymbol, const std::map< std::string, \fBproduction\fP > & productionRules)\fC [inline]\fP"
+
+.SS "grammar::grammar ()\fC [inline]\fP"
+
+.SS "grammar::grammar (const \fBgrammar\fP & toCopy)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void grammar::add_rule (const std::string & ruleName, const \fBproduction\fP & expression)"
+
+.SS "\fBgrammar\fP grammar::concatenation_with (const \fBgrammar\fP & other) const"
+
+.SS "bool grammar::contains_rule (const std::string & ruleName) const"
+
+.SS "void grammar::eliminate_long_concatenations ()"
+
+.SS "void grammar::eliminate_nonsolitary_terminals ()"
+
+.SS "const \fBproduction\fP& grammar::get_rule (const std::string & ruleName) const"
+
+.SS "\fBproduction\fP& grammar::get_rule (const std::string & ruleName)"
+
+.SS "vector< string > grammar::get_rule_names () const"
+
+.SS "void grammar::inline_nullable_rules ()"
+
+.SS "void grammar::inline_unit_rules ()"
+
+.SS "bool grammar::is_chomskified () const"
+
+.SS "bool grammar::is_empty () const"
+
+.SS "\fBgrammar\fP grammar::kleene_star () const"
+
+.SS "\fBgrammar\fP & grammar::operator= (const \fBgrammar\fP & toAssign)"
+
+.SS "bool grammar::operator== (const \fBgrammar\fP & other) const"
+
+.SS "void grammar::remove_rule (const std::string & ruleName)"
+
+.SS "void grammar::remove_unreferenced_rules ()"
+
+.SS "int grammar::rule_count () const"
+
+.SS "void grammar::set_start_symbol (const std::string & startSymbol)"
+
+.SS "void grammar::sort_production_operands ()"
+
+.SS "const string & grammar::start_symbol () const"
+
+.SS "bool grammar::symbols_exist (const \fBproduction\fP & rule) const"
+
+.SS "bool grammar::try_chomskify ()"
+
+.SS "bool grammar::try_match (const std::string & word, \fBcyk_parse_tree\fP * outParseTree = \fCnullptr\fP) const"
+
+.SS "bool grammar::try_match (const std::vector< std::string > & word, \fBcyk_parse_tree\fP * outParseTree = \fCnullptr\fP) const"
+
+.SS "\fBgrammar\fP grammar::union_with (const \fBgrammar\fP & other) const"
+
+.SS "string grammar::wrap_start_symbol ()"
+
+.SS "std::string grammar::wrap_start_symbol (const std::string & suggestedName)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

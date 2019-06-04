@@ -1,0 +1,62 @@
+.TH "Test.ContextFreeGrammars/tokenizer_tests.cpp" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Test.ContextFreeGrammars/tokenizer_tests.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'pch\&.h'\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Deserialization/tokenizer\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTEST\fP (RestoreText, Tokenization)"
+.br
+.ti -1c
+.RI "\fBTEST\fP (CorrectMeaningfulTokenTypes, Tokenization)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const string \fBGRAMMAR_TEXT\fP"
+.br
+.ti -1c
+.RI "vector< \fBtoken_type\fP > \fBEXPECTED_MEANINGFUL_TOKENS\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "TEST (RestoreText, Tokenization)"
+
+.SS "TEST (CorrectMeaningfulTokenTypes, Tokenization)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "vector<\fBtoken_type\fP> EXPECTED_MEANINGFUL_TOKENS"
+
+.SS "const string GRAMMAR_TEXT"
+\fBInitial value:\fP
+.PP
+.nf
+=
+"^^Expr -> Term | Expr\&.AddOp\&.Term | AddOp\&.Term;                        \n"
+"Term->Factor | Term\&.MulOp\&.Factor;                                    \n"
+"Factor->Primary | Factor\&.pw\&.Primary;                             \n"
+"Primary->number | variable | opn\&.Expr\&.cls;                           \n"
+"AddOp->add | sub;                                                  \n"
+"MulOp->mul | div;"
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

@@ -1,0 +1,123 @@
+.TH "testing::TestCase" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::TestCase
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTestCase\fP (const char *\fBname\fP, const char *a_type_param, \fBTest::SetUpTestCaseFunc\fP set_up_tc, \fBTest::TearDownTestCaseFunc\fP tear_down_tc)"
+.br
+.ti -1c
+.RI "virtual \fB~TestCase\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBname\fP () const"
+.br
+.ti -1c
+.RI "const char * \fBtype_param\fP () const"
+.br
+.ti -1c
+.RI "bool \fBshould_run\fP () const"
+.br
+.ti -1c
+.RI "int \fBsuccessful_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBfailed_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBreportable_disabled_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBdisabled_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBreportable_test_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtest_to_run_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtotal_test_count\fP () const"
+.br
+.ti -1c
+.RI "bool \fBPassed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBFailed\fP () const"
+.br
+.ti -1c
+.RI "\fBTimeInMillis\fP \fBelapsed_time\fP () const"
+.br
+.ti -1c
+.RI "const \fBTestInfo\fP * \fBGetTestInfo\fP (int i) const"
+.br
+.ti -1c
+.RI "const \fBTestResult\fP & \fBad_hoc_test_result\fP () const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTest\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::UnitTestImpl\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::TestCase::TestCase (const char * name, const char * a_type_param, \fBTest::SetUpTestCaseFunc\fP set_up_tc, \fBTest::TearDownTestCaseFunc\fP tear_down_tc)"
+
+.SS "virtual testing::TestCase::~TestCase ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBTestResult\fP& testing::TestCase::ad_hoc_test_result () const\fC [inline]\fP"
+
+.SS "int testing::TestCase::disabled_test_count () const"
+
+.SS "\fBTimeInMillis\fP testing::TestCase::elapsed_time () const\fC [inline]\fP"
+
+.SS "bool testing::TestCase::Failed () const\fC [inline]\fP"
+
+.SS "int testing::TestCase::failed_test_count () const"
+
+.SS "const \fBTestInfo\fP* testing::TestCase::GetTestInfo (int i) const"
+
+.SS "const char* testing::TestCase::name () const\fC [inline]\fP"
+
+.SS "bool testing::TestCase::Passed () const\fC [inline]\fP"
+
+.SS "int testing::TestCase::reportable_disabled_test_count () const"
+
+.SS "int testing::TestCase::reportable_test_count () const"
+
+.SS "bool testing::TestCase::should_run () const\fC [inline]\fP"
+
+.SS "int testing::TestCase::successful_test_count () const"
+
+.SS "int testing::TestCase::test_to_run_count () const"
+
+.SS "int testing::TestCase::total_test_count () const"
+
+.SS "const char* testing::TestCase::type_param () const\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class internal::UnitTestImpl\fC [friend]\fP"
+
+.SS "friend class \fBTest\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

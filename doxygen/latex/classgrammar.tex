@@ -1,0 +1,271 @@
+\hypertarget{classgrammar}{}\section{grammar Class Reference}
+\label{classgrammar}\index{grammar@{grammar}}
+
+
+{\ttfamily \#include $<$grammar.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgrammar_ac5f3203b55ddacb4be6812e28bc24c54}{grammar}} (const std\+::string \&start\+Symbol, const std\+::map$<$ std\+::string, \mbox{\hyperlink{classproduction}{production}} $>$ \&production\+Rules)
+\item 
+\mbox{\hyperlink{classgrammar_a938b62e11d5b77d1d1345a09bdf0c53a}{grammar}} ()
+\item 
+\mbox{\hyperlink{classgrammar_af510455ef0446c923c2e263d09860106}{grammar}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&to\+Copy)
+\item 
+\mbox{\hyperlink{classgrammar}{grammar}} \& \mbox{\hyperlink{classgrammar_a3db2c51b19a84c1ce87c3c51dc2920a4}{operator=}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&to\+Assign)
+\item 
+bool \mbox{\hyperlink{classgrammar_a100c981be6ba64d3dbf00b3a0b5f9625}{operator==}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&other) const
+\item 
+bool \mbox{\hyperlink{classgrammar_a9b20c1a787aa628df4424651c4e7785e}{try\+\_\+chomskify}} ()
+\item 
+std\+::string \mbox{\hyperlink{classgrammar_a3c92b694459fcff389cadb9c08c60154}{wrap\+\_\+start\+\_\+symbol}} ()
+\item 
+std\+::string \mbox{\hyperlink{classgrammar_a151e599b2202fe4cb3beee2f8807c3fd}{wrap\+\_\+start\+\_\+symbol}} (const std\+::string \&suggested\+Name)
+\item 
+void \mbox{\hyperlink{classgrammar_a33362bc642781e3f92193239a8a68754}{eliminate\+\_\+nonsolitary\+\_\+terminals}} ()
+\item 
+void \mbox{\hyperlink{classgrammar_a952140b5dc622de9d076323c340b23f9}{eliminate\+\_\+long\+\_\+concatenations}} ()
+\item 
+void \mbox{\hyperlink{classgrammar_ab1161361d2865e305c3c40d1f8de6a6b}{inline\+\_\+nullable\+\_\+rules}} ()
+\item 
+void \mbox{\hyperlink{classgrammar_a91f3c8916ed850bc38f347480349c123}{inline\+\_\+unit\+\_\+rules}} ()
+\item 
+void \mbox{\hyperlink{classgrammar_ac0ec80f1ed9e863f1367a92a2d9393dc}{remove\+\_\+unreferenced\+\_\+rules}} ()
+\item 
+void \mbox{\hyperlink{classgrammar_ae3145b76d7016e89e749a609eac53f5c}{sort\+\_\+production\+\_\+operands}} ()
+\item 
+bool \mbox{\hyperlink{classgrammar_a1be2558728bfb9d77d4f7dc373dc00d2}{is\+\_\+chomskified}} () const
+\item 
+int \mbox{\hyperlink{classgrammar_a5a3bc8f800c26c55673bca0399e471d2}{rule\+\_\+count}} () const
+\item 
+bool \mbox{\hyperlink{classgrammar_a9a1fc73cfb8f5635fd6fda5861333f1c}{contains\+\_\+rule}} (const std\+::string \&rule\+Name) const
+\item 
+bool \mbox{\hyperlink{classgrammar_a6c8d5e930806290a3fb86b73cceedd29}{symbols\+\_\+exist}} (const \mbox{\hyperlink{classproduction}{production}} \&rule) const
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classgrammar_a20f84bcd1749e5b68340b45f247a532b}{get\+\_\+rule\+\_\+names}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classgrammar_afb48ec09952ff17ef932669758b4b15c}{start\+\_\+symbol}} () const
+\item 
+void \mbox{\hyperlink{classgrammar_ac0fc0535d0b161a1d6ca2ccc8e057aa0}{set\+\_\+start\+\_\+symbol}} (const std\+::string \&start\+Symbol)
+\item 
+void \mbox{\hyperlink{classgrammar_abb216d5ac0bb7052b84372f7f13ceb6b}{add\+\_\+rule}} (const std\+::string \&rule\+Name, const \mbox{\hyperlink{classproduction}{production}} \&expression)
+\item 
+const \mbox{\hyperlink{classproduction}{production}} \& \mbox{\hyperlink{classgrammar_a0a159a4ba2e48cd321f7f0653ba2e078}{get\+\_\+rule}} (const std\+::string \&rule\+Name) const
+\item 
+\mbox{\hyperlink{classproduction}{production}} \& \mbox{\hyperlink{classgrammar_ad4b972df16ac59d6f81a3ca9d875beff}{get\+\_\+rule}} (const std\+::string \&rule\+Name)
+\item 
+void \mbox{\hyperlink{classgrammar_a63fe5a10e250e6925b0de9dce5b31127}{remove\+\_\+rule}} (const std\+::string \&rule\+Name)
+\item 
+\mbox{\hyperlink{classgrammar}{grammar}} \mbox{\hyperlink{classgrammar_a4fe5e40e6f636f65e42f8a0364cdbf4f}{union\+\_\+with}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&other) const
+\item 
+\mbox{\hyperlink{classgrammar}{grammar}} \mbox{\hyperlink{classgrammar_ade6431312e7273027055a13c704e9e41}{concatenation\+\_\+with}} (const \mbox{\hyperlink{classgrammar}{grammar}} \&other) const
+\item 
+\mbox{\hyperlink{classgrammar}{grammar}} \mbox{\hyperlink{classgrammar_a83ff8da91405eade6d7e991371d57230}{kleene\+\_\+star}} () const
+\item 
+bool \mbox{\hyperlink{classgrammar_a1d5ab32a94db0da5dfde871e5d9ce19a}{is\+\_\+empty}} () const
+\item 
+bool \mbox{\hyperlink{classgrammar_a499f2e8760673b17bee51cc6f66b2b3c}{try\+\_\+match}} (const std\+::string \&word, \mbox{\hyperlink{classcyk__parse__tree}{cyk\+\_\+parse\+\_\+tree}} $\ast$out\+Parse\+Tree=nullptr) const
+\item 
+bool \mbox{\hyperlink{classgrammar_af46a1bef1d9f68dc8cd00eb094c07430}{try\+\_\+match}} (const std\+::vector$<$ std\+::string $>$ \&word, \mbox{\hyperlink{classcyk__parse__tree}{cyk\+\_\+parse\+\_\+tree}} $\ast$out\+Parse\+Tree=nullptr) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgrammar_ac5f3203b55ddacb4be6812e28bc24c54}\label{classgrammar_ac5f3203b55ddacb4be6812e28bc24c54}} 
+\index{grammar@{grammar}!grammar@{grammar}}
+\index{grammar@{grammar}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{grammar()}{grammar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily grammar\+::grammar (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{start\+Symbol,  }\item[{const std\+::map$<$ std\+::string, \mbox{\hyperlink{classproduction}{production}} $>$ \&}]{production\+Rules }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgrammar_a938b62e11d5b77d1d1345a09bdf0c53a}\label{classgrammar_a938b62e11d5b77d1d1345a09bdf0c53a}} 
+\index{grammar@{grammar}!grammar@{grammar}}
+\index{grammar@{grammar}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{grammar()}{grammar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily grammar\+::grammar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgrammar_af510455ef0446c923c2e263d09860106}\label{classgrammar_af510455ef0446c923c2e263d09860106}} 
+\index{grammar@{grammar}!grammar@{grammar}}
+\index{grammar@{grammar}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{grammar()}{grammar()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily grammar\+::grammar (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{to\+Copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgrammar_abb216d5ac0bb7052b84372f7f13ceb6b}\label{classgrammar_abb216d5ac0bb7052b84372f7f13ceb6b}} 
+\index{grammar@{grammar}!add\_rule@{add\_rule}}
+\index{add\_rule@{add\_rule}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{add\_rule()}{add\_rule()}}
+{\footnotesize\ttfamily void grammar\+::add\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rule\+Name,  }\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{expression }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_ade6431312e7273027055a13c704e9e41}\label{classgrammar_ade6431312e7273027055a13c704e9e41}} 
+\index{grammar@{grammar}!concatenation\_with@{concatenation\_with}}
+\index{concatenation\_with@{concatenation\_with}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{concatenation\_with()}{concatenation\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgrammar}{grammar}} grammar\+::concatenation\+\_\+with (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a9a1fc73cfb8f5635fd6fda5861333f1c}\label{classgrammar_a9a1fc73cfb8f5635fd6fda5861333f1c}} 
+\index{grammar@{grammar}!contains\_rule@{contains\_rule}}
+\index{contains\_rule@{contains\_rule}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{contains\_rule()}{contains\_rule()}}
+{\footnotesize\ttfamily bool grammar\+::contains\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rule\+Name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a952140b5dc622de9d076323c340b23f9}\label{classgrammar_a952140b5dc622de9d076323c340b23f9}} 
+\index{grammar@{grammar}!eliminate\_long\_concatenations@{eliminate\_long\_concatenations}}
+\index{eliminate\_long\_concatenations@{eliminate\_long\_concatenations}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{eliminate\_long\_concatenations()}{eliminate\_long\_concatenations()}}
+{\footnotesize\ttfamily void grammar\+::eliminate\+\_\+long\+\_\+concatenations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a33362bc642781e3f92193239a8a68754}\label{classgrammar_a33362bc642781e3f92193239a8a68754}} 
+\index{grammar@{grammar}!eliminate\_nonsolitary\_terminals@{eliminate\_nonsolitary\_terminals}}
+\index{eliminate\_nonsolitary\_terminals@{eliminate\_nonsolitary\_terminals}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{eliminate\_nonsolitary\_terminals()}{eliminate\_nonsolitary\_terminals()}}
+{\footnotesize\ttfamily void grammar\+::eliminate\+\_\+nonsolitary\+\_\+terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a0a159a4ba2e48cd321f7f0653ba2e078}\label{classgrammar_a0a159a4ba2e48cd321f7f0653ba2e078}} 
+\index{grammar@{grammar}!get\_rule@{get\_rule}}
+\index{get\_rule@{get\_rule}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{get\_rule()}{get\_rule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classproduction}{production}}\& grammar\+::get\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rule\+Name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_ad4b972df16ac59d6f81a3ca9d875beff}\label{classgrammar_ad4b972df16ac59d6f81a3ca9d875beff}} 
+\index{grammar@{grammar}!get\_rule@{get\_rule}}
+\index{get\_rule@{get\_rule}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{get\_rule()}{get\_rule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classproduction}{production}}\& grammar\+::get\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rule\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a20f84bcd1749e5b68340b45f247a532b}\label{classgrammar_a20f84bcd1749e5b68340b45f247a532b}} 
+\index{grammar@{grammar}!get\_rule\_names@{get\_rule\_names}}
+\index{get\_rule\_names@{get\_rule\_names}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{get\_rule\_names()}{get\_rule\_names()}}
+{\footnotesize\ttfamily vector$<$ string $>$ grammar\+::get\+\_\+rule\+\_\+names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_ab1161361d2865e305c3c40d1f8de6a6b}\label{classgrammar_ab1161361d2865e305c3c40d1f8de6a6b}} 
+\index{grammar@{grammar}!inline\_nullable\_rules@{inline\_nullable\_rules}}
+\index{inline\_nullable\_rules@{inline\_nullable\_rules}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{inline\_nullable\_rules()}{inline\_nullable\_rules()}}
+{\footnotesize\ttfamily void grammar\+::inline\+\_\+nullable\+\_\+rules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a91f3c8916ed850bc38f347480349c123}\label{classgrammar_a91f3c8916ed850bc38f347480349c123}} 
+\index{grammar@{grammar}!inline\_unit\_rules@{inline\_unit\_rules}}
+\index{inline\_unit\_rules@{inline\_unit\_rules}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{inline\_unit\_rules()}{inline\_unit\_rules()}}
+{\footnotesize\ttfamily void grammar\+::inline\+\_\+unit\+\_\+rules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a1be2558728bfb9d77d4f7dc373dc00d2}\label{classgrammar_a1be2558728bfb9d77d4f7dc373dc00d2}} 
+\index{grammar@{grammar}!is\_chomskified@{is\_chomskified}}
+\index{is\_chomskified@{is\_chomskified}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{is\_chomskified()}{is\_chomskified()}}
+{\footnotesize\ttfamily bool grammar\+::is\+\_\+chomskified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a1d5ab32a94db0da5dfde871e5d9ce19a}\label{classgrammar_a1d5ab32a94db0da5dfde871e5d9ce19a}} 
+\index{grammar@{grammar}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily bool grammar\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a83ff8da91405eade6d7e991371d57230}\label{classgrammar_a83ff8da91405eade6d7e991371d57230}} 
+\index{grammar@{grammar}!kleene\_star@{kleene\_star}}
+\index{kleene\_star@{kleene\_star}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{kleene\_star()}{kleene\_star()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgrammar}{grammar}} grammar\+::kleene\+\_\+star (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a3db2c51b19a84c1ce87c3c51dc2920a4}\label{classgrammar_a3db2c51b19a84c1ce87c3c51dc2920a4}} 
+\index{grammar@{grammar}!operator=@{operator=}}
+\index{operator=@{operator=}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgrammar}{grammar}} \& grammar\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{to\+Assign }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a100c981be6ba64d3dbf00b3a0b5f9625}\label{classgrammar_a100c981be6ba64d3dbf00b3a0b5f9625}} 
+\index{grammar@{grammar}!operator==@{operator==}}
+\index{operator==@{operator==}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool grammar\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a63fe5a10e250e6925b0de9dce5b31127}\label{classgrammar_a63fe5a10e250e6925b0de9dce5b31127}} 
+\index{grammar@{grammar}!remove\_rule@{remove\_rule}}
+\index{remove\_rule@{remove\_rule}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{remove\_rule()}{remove\_rule()}}
+{\footnotesize\ttfamily void grammar\+::remove\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rule\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_ac0ec80f1ed9e863f1367a92a2d9393dc}\label{classgrammar_ac0ec80f1ed9e863f1367a92a2d9393dc}} 
+\index{grammar@{grammar}!remove\_unreferenced\_rules@{remove\_unreferenced\_rules}}
+\index{remove\_unreferenced\_rules@{remove\_unreferenced\_rules}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{remove\_unreferenced\_rules()}{remove\_unreferenced\_rules()}}
+{\footnotesize\ttfamily void grammar\+::remove\+\_\+unreferenced\+\_\+rules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a5a3bc8f800c26c55673bca0399e471d2}\label{classgrammar_a5a3bc8f800c26c55673bca0399e471d2}} 
+\index{grammar@{grammar}!rule\_count@{rule\_count}}
+\index{rule\_count@{rule\_count}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{rule\_count()}{rule\_count()}}
+{\footnotesize\ttfamily int grammar\+::rule\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_ac0fc0535d0b161a1d6ca2ccc8e057aa0}\label{classgrammar_ac0fc0535d0b161a1d6ca2ccc8e057aa0}} 
+\index{grammar@{grammar}!set\_start\_symbol@{set\_start\_symbol}}
+\index{set\_start\_symbol@{set\_start\_symbol}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{set\_start\_symbol()}{set\_start\_symbol()}}
+{\footnotesize\ttfamily void grammar\+::set\+\_\+start\+\_\+symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{start\+Symbol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_ae3145b76d7016e89e749a609eac53f5c}\label{classgrammar_ae3145b76d7016e89e749a609eac53f5c}} 
+\index{grammar@{grammar}!sort\_production\_operands@{sort\_production\_operands}}
+\index{sort\_production\_operands@{sort\_production\_operands}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{sort\_production\_operands()}{sort\_production\_operands()}}
+{\footnotesize\ttfamily void grammar\+::sort\+\_\+production\+\_\+operands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_afb48ec09952ff17ef932669758b4b15c}\label{classgrammar_afb48ec09952ff17ef932669758b4b15c}} 
+\index{grammar@{grammar}!start\_symbol@{start\_symbol}}
+\index{start\_symbol@{start\_symbol}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{start\_symbol()}{start\_symbol()}}
+{\footnotesize\ttfamily const string \& grammar\+::start\+\_\+symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a6c8d5e930806290a3fb86b73cceedd29}\label{classgrammar_a6c8d5e930806290a3fb86b73cceedd29}} 
+\index{grammar@{grammar}!symbols\_exist@{symbols\_exist}}
+\index{symbols\_exist@{symbols\_exist}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{symbols\_exist()}{symbols\_exist()}}
+{\footnotesize\ttfamily bool grammar\+::symbols\+\_\+exist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{rule }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a9b20c1a787aa628df4424651c4e7785e}\label{classgrammar_a9b20c1a787aa628df4424651c4e7785e}} 
+\index{grammar@{grammar}!try\_chomskify@{try\_chomskify}}
+\index{try\_chomskify@{try\_chomskify}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{try\_chomskify()}{try\_chomskify()}}
+{\footnotesize\ttfamily bool grammar\+::try\+\_\+chomskify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a499f2e8760673b17bee51cc6f66b2b3c}\label{classgrammar_a499f2e8760673b17bee51cc6f66b2b3c}} 
+\index{grammar@{grammar}!try\_match@{try\_match}}
+\index{try\_match@{try\_match}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{try\_match()}{try\_match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool grammar\+::try\+\_\+match (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word,  }\item[{\mbox{\hyperlink{classcyk__parse__tree}{cyk\+\_\+parse\+\_\+tree}} $\ast$}]{out\+Parse\+Tree = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_af46a1bef1d9f68dc8cd00eb094c07430}\label{classgrammar_af46a1bef1d9f68dc8cd00eb094c07430}} 
+\index{grammar@{grammar}!try\_match@{try\_match}}
+\index{try\_match@{try\_match}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{try\_match()}{try\_match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool grammar\+::try\+\_\+match (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{word,  }\item[{\mbox{\hyperlink{classcyk__parse__tree}{cyk\+\_\+parse\+\_\+tree}} $\ast$}]{out\+Parse\+Tree = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a4fe5e40e6f636f65e42f8a0364cdbf4f}\label{classgrammar_a4fe5e40e6f636f65e42f8a0364cdbf4f}} 
+\index{grammar@{grammar}!union\_with@{union\_with}}
+\index{union\_with@{union\_with}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{union\_with()}{union\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgrammar}{grammar}} grammar\+::union\+\_\+with (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgrammar}{grammar}} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgrammar_a3c92b694459fcff389cadb9c08c60154}\label{classgrammar_a3c92b694459fcff389cadb9c08c60154}} 
+\index{grammar@{grammar}!wrap\_start\_symbol@{wrap\_start\_symbol}}
+\index{wrap\_start\_symbol@{wrap\_start\_symbol}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{wrap\_start\_symbol()}{wrap\_start\_symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string grammar\+::wrap\+\_\+start\+\_\+symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgrammar_a151e599b2202fe4cb3beee2f8807c3fd}\label{classgrammar_a151e599b2202fe4cb3beee2f8807c3fd}} 
+\index{grammar@{grammar}!wrap\_start\_symbol@{wrap\_start\_symbol}}
+\index{wrap\_start\_symbol@{wrap\_start\_symbol}!grammar@{grammar}}
+\subsubsection{\texorpdfstring{wrap\_start\_symbol()}{wrap\_start\_symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string grammar\+::wrap\+\_\+start\+\_\+symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{suggested\+Name }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{grammar_8h}{grammar.\+h}}\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{grammar_8cpp}{grammar.\+cpp}}\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{grammar__chomsky__normal__form_8cpp}{grammar\+\_\+chomsky\+\_\+normal\+\_\+form.\+cpp}}\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{grammar__try__match_8cpp}{grammar\+\_\+try\+\_\+match.\+cpp}}\end{DoxyCompactItemize}

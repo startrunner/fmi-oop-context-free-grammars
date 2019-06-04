@@ -1,0 +1,177 @@
+\hypertarget{classvariable__arity__operator}{}\section{variable\+\_\+arity\+\_\+operator$<$ T $>$ Class Template Reference}
+\label{classvariable__arity__operator}\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$variable\+\_\+arity\+\_\+operator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvariable__arity__operator_a22780769430d4ff3d7ce4437e53e10eb}{has\+\_\+no\+\_\+operands}} () const
+\item 
+int \mbox{\hyperlink{classvariable__arity__operator_a8a174af98c61f22a922c9ddf1ff32434}{operand\+\_\+count}} () const
+\item 
+T \& \mbox{\hyperlink{classvariable__arity__operator_a14be99b3e0d7e0604aba35376be982cf}{operand}} (int index)
+\item 
+const T \& \mbox{\hyperlink{classvariable__arity__operator_a2267ce7b53012afcfab8bc0a68daa522}{operand}} (int index) const
+\item 
+void \mbox{\hyperlink{classvariable__arity__operator_a8ac51b2911c51f9cde1b8b8f8aa101b5}{add\+\_\+operand}} (const T \&\mbox{\hyperlink{classvariable__arity__operator_a14be99b3e0d7e0604aba35376be982cf}{operand}})
+\item 
+{\footnotesize template$<$typename T\+Collection $>$ }\\void \mbox{\hyperlink{classvariable__arity__operator_a0f78e9be6f6f0b1a1a1767e401f40ac0}{add\+\_\+operands}} (const T\+Collection \&operands)
+\item 
+void \mbox{\hyperlink{classvariable__arity__operator_ad222ead15955e3b74bae9e409c25b401}{replace\+\_\+operand}} (int index, const T \&\mbox{\hyperlink{classvariable__arity__operator_a14be99b3e0d7e0604aba35376be982cf}{operand}})
+\item 
+void \mbox{\hyperlink{classvariable__arity__operator_ac124c2f286a72e65b3fb81d92bf1b557}{remove\+\_\+last\+\_\+operand}} ()
+\item 
+void \mbox{\hyperlink{classvariable__arity__operator_a11b0559752155c5689d18c5ad91f8eec}{clear\+\_\+operands}} ()
+\item 
+void \mbox{\hyperlink{classvariable__arity__operator_a6695e38c33b73a8c61db982d4ab6fa1d}{remove\+\_\+operands}} (const std\+::set$<$ int $>$ \&indices\+To\+Remove)
+\item 
+bool \mbox{\hyperlink{classvariable__arity__operator_a75174e132e55220f4ff58538280c3b80}{operator$<$}} (const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&other) const
+\item 
+bool \mbox{\hyperlink{classvariable__arity__operator_ab9a37ed2600d3a1778a1179dadb2f74c}{operator !=}} (const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&other) const
+\item 
+bool \mbox{\hyperlink{classvariable__arity__operator_a02ba776fcea71188e25e1144c818df88}{operator==}} (const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&other) const
+\item 
+virtual \mbox{\hyperlink{classvariable__arity__operator_ab39270d60125d24ac74a1dbebe62a789}{$\sim$variable\+\_\+arity\+\_\+operator}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvariable__arity__operator_a6067a5e35bf8db1c109e72cb5a506816}{variable\+\_\+arity\+\_\+operator}} ()
+\item 
+\mbox{\hyperlink{classvariable__arity__operator_a634c5fc7b2ef20999ee8763ae4801b53}{variable\+\_\+arity\+\_\+operator}} (const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&to\+Clone)
+\item 
+\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}} \& \mbox{\hyperlink{classvariable__arity__operator_ac202af79e996beb613110b1b6b0572a0}{operator=}} (const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}} \&to\+Assign)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvariable__arity__operator_a6067a5e35bf8db1c109e72cb5a506816}\label{classvariable__arity__operator_a6067a5e35bf8db1c109e72cb5a506816}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!variable\_arity\_operator@{variable\_arity\_operator}}
+\index{variable\_arity\_operator@{variable\_arity\_operator}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{variable\_arity\_operator()}{variable\_arity\_operator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a634c5fc7b2ef20999ee8763ae4801b53}\label{classvariable__arity__operator_a634c5fc7b2ef20999ee8763ae4801b53}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!variable\_arity\_operator@{variable\_arity\_operator}}
+\index{variable\_arity\_operator@{variable\_arity\_operator}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{variable\_arity\_operator()}{variable\_arity\_operator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&}]{to\+Clone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvariable__arity__operator_a8ac51b2911c51f9cde1b8b8f8aa101b5}\label{classvariable__arity__operator_a8ac51b2911c51f9cde1b8b8f8aa101b5}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!add\_operand@{add\_operand}}
+\index{add\_operand@{add\_operand}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{add\_operand()}{add\_operand()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::add\+\_\+operand (\begin{DoxyParamCaption}\item[{const T \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a0f78e9be6f6f0b1a1a1767e401f40ac0}\label{classvariable__arity__operator_a0f78e9be6f6f0b1a1a1767e401f40ac0}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!add\_operands@{add\_operands}}
+\index{add\_operands@{add\_operands}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{add\_operands()}{add\_operands()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename T\+Collection $>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::add\+\_\+operands (\begin{DoxyParamCaption}\item[{const T\+Collection \&}]{operands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a11b0559752155c5689d18c5ad91f8eec}\label{classvariable__arity__operator_a11b0559752155c5689d18c5ad91f8eec}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!clear\_operands@{clear\_operands}}
+\index{clear\_operands@{clear\_operands}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{clear\_operands()}{clear\_operands()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::clear\+\_\+operands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a22780769430d4ff3d7ce4437e53e10eb}\label{classvariable__arity__operator_a22780769430d4ff3d7ce4437e53e10eb}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!has\_no\_operands@{has\_no\_operands}}
+\index{has\_no\_operands@{has\_no\_operands}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{has\_no\_operands()}{has\_no\_operands()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::has\+\_\+no\+\_\+operands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a14be99b3e0d7e0604aba35376be982cf}\label{classvariable__arity__operator_a14be99b3e0d7e0604aba35376be982cf}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operand@{operand}}
+\index{operand@{operand}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operand()}{operand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operand (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a2267ce7b53012afcfab8bc0a68daa522}\label{classvariable__arity__operator_a2267ce7b53012afcfab8bc0a68daa522}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operand@{operand}}
+\index{operand@{operand}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operand()}{operand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operand (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a8a174af98c61f22a922c9ddf1ff32434}\label{classvariable__arity__operator_a8a174af98c61f22a922c9ddf1ff32434}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operand\_count@{operand\_count}}
+\index{operand\_count@{operand\_count}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operand\_count()}{operand\_count()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operand\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_ab9a37ed2600d3a1778a1179dadb2f74c}\label{classvariable__arity__operator_ab9a37ed2600d3a1778a1179dadb2f74c}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operator != (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a75174e132e55220f4ff58538280c3b80}\label{classvariable__arity__operator_a75174e132e55220f4ff58538280c3b80}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_ac202af79e996beb613110b1b6b0572a0}\label{classvariable__arity__operator_ac202af79e996beb613110b1b6b0572a0}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}\& \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&}]{to\+Assign }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a02ba776fcea71188e25e1144c818df88}\label{classvariable__arity__operator_a02ba776fcea71188e25e1144c818df88}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_ac124c2f286a72e65b3fb81d92bf1b557}\label{classvariable__arity__operator_ac124c2f286a72e65b3fb81d92bf1b557}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!remove\_last\_operand@{remove\_last\_operand}}
+\index{remove\_last\_operand@{remove\_last\_operand}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{remove\_last\_operand()}{remove\_last\_operand()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::remove\+\_\+last\+\_\+operand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_a6695e38c33b73a8c61db982d4ab6fa1d}\label{classvariable__arity__operator_a6695e38c33b73a8c61db982d4ab6fa1d}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!remove\_operands@{remove\_operands}}
+\index{remove\_operands@{remove\_operands}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{remove\_operands()}{remove\_operands()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::remove\+\_\+operands (\begin{DoxyParamCaption}\item[{const std\+::set$<$ int $>$ \&}]{indices\+To\+Remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_ad222ead15955e3b74bae9e409c25b401}\label{classvariable__arity__operator_ad222ead15955e3b74bae9e409c25b401}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!replace\_operand@{replace\_operand}}
+\index{replace\_operand@{replace\_operand}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{replace\_operand()}{replace\_operand()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::replace\+\_\+operand (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const T \&}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvariable__arity__operator_ab39270d60125d24ac74a1dbebe62a789}\label{classvariable__arity__operator_ab39270d60125d24ac74a1dbebe62a789}} 
+\index{variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}!````~variable\_arity\_operator@{$\sim$variable\_arity\_operator}}
+\index{````~variable\_arity\_operator@{$\sim$variable\_arity\_operator}!variable\_arity\_operator$<$ T $>$@{variable\_arity\_operator$<$ T $>$}}
+\subsubsection{\texorpdfstring{$\sim$variable\_arity\_operator()}{~variable\_arity\_operator()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classvariable__arity__operator}{variable\+\_\+arity\+\_\+operator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Context\+Free\+Grammars.\+Grammars/\mbox{\hyperlink{variable__arity__operator_8h}{variable\+\_\+arity\+\_\+operator.\+h}}\end{DoxyCompactItemize}

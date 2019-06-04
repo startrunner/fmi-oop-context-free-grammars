@@ -1,0 +1,88 @@
+\hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter}{}\section{testing\+::Scoped\+Fake\+Test\+Part\+Result\+Reporter Class Reference}
+\label{classtesting_1_1_scoped_fake_test_part_result_reporter}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+
+
+{\ttfamily \#include $<$gtest-\/spi.\+h$>$}
+
+Inheritance diagram for testing\+::Scoped\+Fake\+Test\+Part\+Result\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtesting_1_1_scoped_fake_test_part_result_reporter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}{Intercept\+Mode}} \{ \mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a}{I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+O\+N\+L\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+T\+H\+R\+E\+AD}}, 
+\mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd}{I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+A\+L\+L\+\_\+\+T\+H\+R\+E\+A\+DS}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_aa0100ecf4799fb51d45167be6a5de1d5}{Scoped\+Fake\+Test\+Part\+Result\+Reporter}} (\mbox{\hyperlink{classtesting_1_1_test_part_result_array}{Test\+Part\+Result\+Array}} $\ast$result)
+\item 
+\mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a57cbc09ed48627c8a73e622618dc4b4f}{Scoped\+Fake\+Test\+Part\+Result\+Reporter}} (\mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}{Intercept\+Mode}} intercept\+\_\+mode, \mbox{\hyperlink{classtesting_1_1_test_part_result_array}{Test\+Part\+Result\+Array}} $\ast$result)
+\item 
+virtual \mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a916585996236c45e447546a3bcc0796c}{$\sim$\+Scoped\+Fake\+Test\+Part\+Result\+Reporter}} ()
+\item 
+virtual void \mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a3bc6cb939cbc3db71ece8846e6bafe00}{Report\+Test\+Part\+Result}} (const \mbox{\hyperlink{classtesting_1_1_test_part_result}{Test\+Part\+Result}} \&result)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}} 
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!InterceptMode@{InterceptMode}}
+\index{InterceptMode@{InterceptMode}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\texorpdfstring{InterceptMode}{InterceptMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}{testing\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter\+::\+Intercept\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERCEPT\_ONLY\_CURRENT\_THREAD@{INTERCEPT\_ONLY\_CURRENT\_THREAD}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!INTERCEPT\_ONLY\_CURRENT\_THREAD@{INTERCEPT\_ONLY\_CURRENT\_THREAD}}}\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a}} 
+I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+O\+N\+L\+Y\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+T\+H\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERCEPT\_ALL\_THREADS@{INTERCEPT\_ALL\_THREADS}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!INTERCEPT\_ALL\_THREADS@{INTERCEPT\_ALL\_THREADS}}}\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd}} 
+I\+N\+T\+E\+R\+C\+E\+P\+T\+\_\+\+A\+L\+L\+\_\+\+T\+H\+R\+E\+A\+DS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_aa0100ecf4799fb51d45167be6a5de1d5}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_aa0100ecf4799fb51d45167be6a5de1d5}} 
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}}
+\index{ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\texorpdfstring{ScopedFakeTestPartResultReporter()}{ScopedFakeTestPartResultReporter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily testing\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesting_1_1_test_part_result_array}{Test\+Part\+Result\+Array}} $\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a57cbc09ed48627c8a73e622618dc4b4f}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a57cbc09ed48627c8a73e622618dc4b4f}} 
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}}
+\index{ScopedFakeTestPartResultReporter@{ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\texorpdfstring{ScopedFakeTestPartResultReporter()}{ScopedFakeTestPartResultReporter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily testing\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesting_1_1_scoped_fake_test_part_result_reporter_a82f6209b3cf5c4b15ec8bd8041dbc2d5}{Intercept\+Mode}}}]{intercept\+\_\+mode,  }\item[{\mbox{\hyperlink{classtesting_1_1_test_part_result_array}{Test\+Part\+Result\+Array}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a916585996236c45e447546a3bcc0796c}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a916585996236c45e447546a3bcc0796c}} 
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!````~ScopedFakeTestPartResultReporter@{$\sim$ScopedFakeTestPartResultReporter}}
+\index{````~ScopedFakeTestPartResultReporter@{$\sim$ScopedFakeTestPartResultReporter}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\texorpdfstring{$\sim$ScopedFakeTestPartResultReporter()}{~ScopedFakeTestPartResultReporter()}}
+{\footnotesize\ttfamily virtual testing\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter\+::$\sim$\+Scoped\+Fake\+Test\+Part\+Result\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1_scoped_fake_test_part_result_reporter_a3bc6cb939cbc3db71ece8846e6bafe00}\label{classtesting_1_1_scoped_fake_test_part_result_reporter_a3bc6cb939cbc3db71ece8846e6bafe00}} 
+\index{testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}!ReportTestPartResult@{ReportTestPartResult}}
+\index{ReportTestPartResult@{ReportTestPartResult}!testing::ScopedFakeTestPartResultReporter@{testing::ScopedFakeTestPartResultReporter}}
+\subsubsection{\texorpdfstring{ReportTestPartResult()}{ReportTestPartResult()}}
+{\footnotesize\ttfamily virtual void testing\+::\+Scoped\+Fake\+Test\+Part\+Result\+Reporter\+::\+Report\+Test\+Part\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtesting_1_1_test_part_result}{Test\+Part\+Result}} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classtesting_1_1_test_part_result_reporter_interface_aa2f920e7a5a0a6d0faf19e3727928c22}{testing\+::\+Test\+Part\+Result\+Reporter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+packages/\+Microsoft.\+googletest.\+v140.\+windesktop.\+msvcstl.\+static.\+rt-\/dyn.\+1.\+8.\+0/build/native/include/gtest/\mbox{\hyperlink{gtest-spi_8h}{gtest-\/spi.\+h}}\end{DoxyCompactItemize}

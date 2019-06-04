@@ -1,0 +1,74 @@
+\hypertarget{grammar__operators_8cpp}{}\section{Context\+Free\+Grammars.\+Grammars/grammar\+\_\+operators.cpp File Reference}
+\label{grammar__operators_8cpp}\index{ContextFreeGrammars.Grammars/grammar\_operators.cpp@{ContextFreeGrammars.Grammars/grammar\_operators.cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}grammar\+\_\+operators.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classterm}{term}} \mbox{\hyperlink{grammar__operators_8cpp_a0f0c935bb76f74f411b948174842d087}{operator\char`\"{}\char`\"{}\+\_\+term}} (const char $\ast$literal, size\+\_\+t length)
+\item 
+\mbox{\hyperlink{classterm}{term}} \mbox{\hyperlink{grammar__operators_8cpp_a843e62c11694e611a1f47f642cbd5f82}{operator\char`\"{}\char`\"{}\+\_\+terminal}} (const char $\ast$literal, size\+\_\+t length)
+\item 
+\mbox{\hyperlink{classterm}{term}} \mbox{\hyperlink{grammar__operators_8cpp_a7a77ec0abd1f0b19db8f3b6dbf330081}{operator\char`\"{}\char`\"{}\+\_\+nonterminal}} (const char $\ast$literal, size\+\_\+t length)
+\item 
+\mbox{\hyperlink{classconcatenation}{concatenation}} \mbox{\hyperlink{grammar__operators_8cpp_a1b3050201b838ad7baef55b91065584b}{operator $\ast$}} (const \mbox{\hyperlink{classterm}{term}} \&left, const \mbox{\hyperlink{classterm}{term}} \&right)
+\item 
+\mbox{\hyperlink{classconcatenation}{concatenation}} \mbox{\hyperlink{grammar__operators_8cpp_a1efc4f1564d7f48066c09b2456d22576}{operator $\ast$}} (const \mbox{\hyperlink{classconcatenation}{concatenation}} \&left, const \mbox{\hyperlink{classterm}{term}} \&right)
+\item 
+\mbox{\hyperlink{classproduction}{production}} \mbox{\hyperlink{grammar__operators_8cpp_abc97ded06547be8bb8c43b55d6df889e}{operator$\vert$}} (const \mbox{\hyperlink{classconcatenation}{concatenation}} \&left, const \mbox{\hyperlink{classconcatenation}{concatenation}} \&right)
+\item 
+\mbox{\hyperlink{classproduction}{production}} \mbox{\hyperlink{grammar__operators_8cpp_ab772562aa4518a6ea84918aa6bf153ca}{operator$\vert$}} (const \mbox{\hyperlink{classproduction}{production}} \&left, const \mbox{\hyperlink{classconcatenation}{concatenation}} \&right)
+\item 
+\mbox{\hyperlink{classproduction}{production}} \mbox{\hyperlink{grammar__operators_8cpp_a50d482b23f95e63a75811a483ed7457f}{operator$\vert$}} (const \mbox{\hyperlink{classterm}{term}} \&left, const \mbox{\hyperlink{classconcatenation}{concatenation}} \&right)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{grammar__operators_8cpp_a1b3050201b838ad7baef55b91065584b}\label{grammar__operators_8cpp_a1b3050201b838ad7baef55b91065584b}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcatenation}{concatenation}} operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterm}{term}} \&}]{left,  }\item[{const \mbox{\hyperlink{classterm}{term}} \&}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_a1efc4f1564d7f48066c09b2456d22576}\label{grammar__operators_8cpp_a1efc4f1564d7f48066c09b2456d22576}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconcatenation}{concatenation}} operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{left,  }\item[{const \mbox{\hyperlink{classterm}{term}} \&}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_a7a77ec0abd1f0b19db8f3b6dbf330081}\label{grammar__operators_8cpp_a7a77ec0abd1f0b19db8f3b6dbf330081}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\char`\"{}\char`\"{}\_nonterminal@{operator""""\_nonterminal}}
+\index{operator\char`\"{}\char`\"{}\_nonterminal@{operator""""\_nonterminal}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator""""\_nonterminal()}{operator""\_nonterminal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterm}{term}} operator\char`\"{}\char`\"{}\+\_\+nonterminal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{literal,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_a0f0c935bb76f74f411b948174842d087}\label{grammar__operators_8cpp_a0f0c935bb76f74f411b948174842d087}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\char`\"{}\char`\"{}\_term@{operator""""\_term}}
+\index{operator\char`\"{}\char`\"{}\_term@{operator""""\_term}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator""""\_term()}{operator""\_term()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterm}{term}} operator\char`\"{}\char`\"{}\+\_\+term (\begin{DoxyParamCaption}\item[{const char $\ast$}]{literal,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_a843e62c11694e611a1f47f642cbd5f82}\label{grammar__operators_8cpp_a843e62c11694e611a1f47f642cbd5f82}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\char`\"{}\char`\"{}\_terminal@{operator""""\_terminal}}
+\index{operator\char`\"{}\char`\"{}\_terminal@{operator""""\_terminal}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator""""\_terminal()}{operator""\_terminal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterm}{term}} operator\char`\"{}\char`\"{}\+\_\+terminal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{literal,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_abc97ded06547be8bb8c43b55d6df889e}\label{grammar__operators_8cpp_abc97ded06547be8bb8c43b55d6df889e}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classproduction}{production}} operator$\vert$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{left,  }\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_ab772562aa4518a6ea84918aa6bf153ca}\label{grammar__operators_8cpp_ab772562aa4518a6ea84918aa6bf153ca}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classproduction}{production}} operator$\vert$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classproduction}{production}} \&}]{left,  }\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar__operators_8cpp_a50d482b23f95e63a75811a483ed7457f}\label{grammar__operators_8cpp_a50d482b23f95e63a75811a483ed7457f}} 
+\index{grammar\_operators.cpp@{grammar\_operators.cpp}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!grammar\_operators.cpp@{grammar\_operators.cpp}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classproduction}{production}} operator$\vert$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterm}{term}} \&}]{left,  }\item[{const \mbox{\hyperlink{classconcatenation}{concatenation}} \&}]{right }\end{DoxyParamCaption})}
+

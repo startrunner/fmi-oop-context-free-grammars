@@ -1,0 +1,114 @@
+.TH "testing::internal::linked_ptr< T >" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::linked_ptr< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-linked_ptr\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef T \fBelement_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlinked_ptr\fP (T *ptr=NULL)"
+.br
+.ti -1c
+.RI "\fB~linked_ptr\fP ()"
+.br
+.ti -1c
+.RI "template<typename U > \fBlinked_ptr\fP (\fBlinked_ptr\fP< U > const &ptr)"
+.br
+.ti -1c
+.RI "\fBlinked_ptr\fP (\fBlinked_ptr\fP const &ptr)"
+.br
+.ti -1c
+.RI "template<typename U > \fBlinked_ptr\fP & \fBoperator=\fP (\fBlinked_ptr\fP< U > const &ptr)"
+.br
+.ti -1c
+.RI "\fBlinked_ptr\fP & \fBoperator=\fP (\fBlinked_ptr\fP const &ptr)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (T *ptr=NULL)"
+.br
+.ti -1c
+.RI "T * \fBget\fP () const"
+.br
+.ti -1c
+.RI "T * \fBoperator\->\fP () const"
+.br
+.ti -1c
+.RI "T & \fBoperator *\fP () const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (T *p) const"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (T *p) const"
+.br
+.ti -1c
+.RI "template<typename U > bool \fBoperator==\fP (\fBlinked_ptr\fP< U > const &ptr) const"
+.br
+.ti -1c
+.RI "template<typename U > bool \fBoperator!=\fP (\fBlinked_ptr\fP< U > const &ptr) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "template<typename U > class \fBlinked_ptr\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename T> typedef T \fBtesting::internal::linked_ptr\fP< T >::\fBelement_type\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T> \fBtesting::internal::linked_ptr\fP< T >::\fBlinked_ptr\fP (T * ptr = \fCNULL\fP)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SS "template<typename T> \fBtesting::internal::linked_ptr\fP< T >::~\fBlinked_ptr\fP ()\fC [inline]\fP"
+
+.SS "template<typename T> template<typename U > \fBtesting::internal::linked_ptr\fP< T >::\fBlinked_ptr\fP (\fBlinked_ptr\fP< U > const & ptr)\fC [inline]\fP"
+
+.SS "template<typename T> \fBtesting::internal::linked_ptr\fP< T >::\fBlinked_ptr\fP (\fBlinked_ptr\fP< T > const & ptr)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T> T* \fBtesting::internal::linked_ptr\fP< T >::get () const\fC [inline]\fP"
+
+.SS "template<typename T> T& \fBtesting::internal::linked_ptr\fP< T >::operator * () const\fC [inline]\fP"
+
+.SS "template<typename T> bool \fBtesting::internal::linked_ptr\fP< T >::operator!= (T * p) const\fC [inline]\fP"
+
+.SS "template<typename T> template<typename U > bool \fBtesting::internal::linked_ptr\fP< T >::operator!= (\fBlinked_ptr\fP< U > const & ptr) const\fC [inline]\fP"
+
+.SS "template<typename T> T* \fBtesting::internal::linked_ptr\fP< T >::operator\-> () const\fC [inline]\fP"
+
+.SS "template<typename T> template<typename U > \fBlinked_ptr\fP& \fBtesting::internal::linked_ptr\fP< T >::operator= (\fBlinked_ptr\fP< U > const & ptr)\fC [inline]\fP"
+
+.SS "template<typename T> \fBlinked_ptr\fP& \fBtesting::internal::linked_ptr\fP< T >::operator= (\fBlinked_ptr\fP< T > const & ptr)\fC [inline]\fP"
+
+.SS "template<typename T> bool \fBtesting::internal::linked_ptr\fP< T >::operator== (T * p) const\fC [inline]\fP"
+
+.SS "template<typename T> template<typename U > bool \fBtesting::internal::linked_ptr\fP< T >::operator== (\fBlinked_ptr\fP< U > const & ptr) const\fC [inline]\fP"
+
+.SS "template<typename T> void \fBtesting::internal::linked_ptr\fP< T >::reset (T * ptr = \fCNULL\fP)\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<typename T> template<typename U > friend class \fBlinked_ptr\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

@@ -1,0 +1,64 @@
+.TH "testing::ScopedFakeTestPartResultReporter" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::ScopedFakeTestPartResultReporter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-spi\&.h>\fP
+.PP
+Inherits \fBtesting::TestPartResultReporterInterface\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBInterceptMode\fP { \fBINTERCEPT_ONLY_CURRENT_THREAD\fP, \fBINTERCEPT_ALL_THREADS\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScopedFakeTestPartResultReporter\fP (\fBTestPartResultArray\fP *result)"
+.br
+.ti -1c
+.RI "\fBScopedFakeTestPartResultReporter\fP (\fBInterceptMode\fP intercept_mode, \fBTestPartResultArray\fP *result)"
+.br
+.ti -1c
+.RI "virtual \fB~ScopedFakeTestPartResultReporter\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBReportTestPartResult\fP (const \fBTestPartResult\fP &result)"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBtesting::ScopedFakeTestPartResultReporter::InterceptMode\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIINTERCEPT_ONLY_CURRENT_THREAD \fP\fP
+.TP
+\fB\fIINTERCEPT_ALL_THREADS \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter (\fBTestPartResultArray\fP * result)\fC [explicit]\fP"
+
+.SS "testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter (\fBInterceptMode\fP intercept_mode, \fBTestPartResultArray\fP * result)"
+
+.SS "virtual testing::ScopedFakeTestPartResultReporter::~ScopedFakeTestPartResultReporter ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void testing::ScopedFakeTestPartResultReporter::ReportTestPartResult (const \fBTestPartResult\fP & result)\fC [virtual]\fP"
+
+.PP
+Implements \fBtesting::TestPartResultReporterInterface\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

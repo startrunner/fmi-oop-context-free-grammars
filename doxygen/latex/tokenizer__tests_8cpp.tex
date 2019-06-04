@@ -1,0 +1,61 @@
+\hypertarget{tokenizer__tests_8cpp}{}\section{Test.\+Context\+Free\+Grammars/tokenizer\+\_\+tests.cpp File Reference}
+\label{tokenizer__tests_8cpp}\index{Test.ContextFreeGrammars/tokenizer\_tests.cpp@{Test.ContextFreeGrammars/tokenizer\_tests.cpp}}
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Context\+Free\+Grammars.\+Deserialization/tokenizer.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tokenizer__tests_8cpp_a5a3a629f53f97a7f1762f3744c910776}{T\+E\+ST}} (Restore\+Text, Tokenization)
+\item 
+\mbox{\hyperlink{tokenizer__tests_8cpp_a32604b704ec7f1300a904baabca23fe5}{T\+E\+ST}} (Correct\+Meaningful\+Token\+Types, Tokenization)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{tokenizer__tests_8cpp_ad1d85d4da48f5bad580356589268a4af}{G\+R\+A\+M\+M\+A\+R\+\_\+\+T\+E\+XT}}
+\item 
+vector$<$ \mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}} $>$ \mbox{\hyperlink{tokenizer__tests_8cpp_a02ab25aa67cc0e41038d1af82ece2464}{E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+M\+E\+A\+N\+I\+N\+G\+F\+U\+L\+\_\+\+T\+O\+K\+E\+NS}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tokenizer__tests_8cpp_a5a3a629f53f97a7f1762f3744c910776}\label{tokenizer__tests_8cpp_a5a3a629f53f97a7f1762f3744c910776}} 
+\index{tokenizer\_tests.cpp@{tokenizer\_tests.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tokenizer\_tests.cpp@{tokenizer\_tests.cpp}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Restore\+Text}]{,  }\item[{Tokenization}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tokenizer__tests_8cpp_a32604b704ec7f1300a904baabca23fe5}\label{tokenizer__tests_8cpp_a32604b704ec7f1300a904baabca23fe5}} 
+\index{tokenizer\_tests.cpp@{tokenizer\_tests.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!tokenizer\_tests.cpp@{tokenizer\_tests.cpp}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{Correct\+Meaningful\+Token\+Types}]{,  }\item[{Tokenization}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{tokenizer__tests_8cpp_a02ab25aa67cc0e41038d1af82ece2464}\label{tokenizer__tests_8cpp_a02ab25aa67cc0e41038d1af82ece2464}} 
+\index{tokenizer\_tests.cpp@{tokenizer\_tests.cpp}!EXPECTED\_MEANINGFUL\_TOKENS@{EXPECTED\_MEANINGFUL\_TOKENS}}
+\index{EXPECTED\_MEANINGFUL\_TOKENS@{EXPECTED\_MEANINGFUL\_TOKENS}!tokenizer\_tests.cpp@{tokenizer\_tests.cpp}}
+\subsubsection{\texorpdfstring{EXPECTED\_MEANINGFUL\_TOKENS}{EXPECTED\_MEANINGFUL\_TOKENS}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{token_8h_afe5ef662303b6b710ea6ee1a944bad0d}{token\+\_\+type}}$>$ E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+M\+E\+A\+N\+I\+N\+G\+F\+U\+L\+\_\+\+T\+O\+K\+E\+NS}
+
+\mbox{\Hypertarget{tokenizer__tests_8cpp_ad1d85d4da48f5bad580356589268a4af}\label{tokenizer__tests_8cpp_ad1d85d4da48f5bad580356589268a4af}} 
+\index{tokenizer\_tests.cpp@{tokenizer\_tests.cpp}!GRAMMAR\_TEXT@{GRAMMAR\_TEXT}}
+\index{GRAMMAR\_TEXT@{GRAMMAR\_TEXT}!tokenizer\_tests.cpp@{tokenizer\_tests.cpp}}
+\subsubsection{\texorpdfstring{GRAMMAR\_TEXT}{GRAMMAR\_TEXT}}
+{\footnotesize\ttfamily const string G\+R\+A\+M\+M\+A\+R\+\_\+\+T\+E\+XT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\textcolor{stringliteral}{"\string^\string^Expr -> Term | Expr.AddOp.Term | AddOp.Term;                     \(\backslash\)n"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"Term->Factor | Term.MulOp.Factor;                                  \(\backslash\)n"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"Factor->Primary | Factor.pw.Primary;                               \(\backslash\)n"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"Primary->number | variable | opn.Expr.cls;                         \(\backslash\)n"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"AddOp->add | sub;                                                  \(\backslash\)n"}}
+\DoxyCodeLine{\textcolor{stringliteral}{"MulOp->mul | div;"}}
+
+\end{DoxyCode}

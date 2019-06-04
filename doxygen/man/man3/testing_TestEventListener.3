@@ -1,0 +1,120 @@
+.TH "testing::TestEventListener" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::TestEventListener
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.PP
+Inherited by \fBtesting::EmptyTestEventListener\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~TestEventListener\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestProgramStart\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestIterationStart\fP (const \fBUnitTest\fP &unit_test, int iteration)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnEnvironmentsSetUpStart\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnEnvironmentsSetUpEnd\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestCaseStart\fP (const \fBTestCase\fP &test_case)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestStart\fP (const \fBTestInfo\fP &test_info)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestPartResult\fP (const \fBTestPartResult\fP &test_part_result)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestEnd\fP (const \fBTestInfo\fP &test_info)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestCaseEnd\fP (const \fBTestCase\fP &test_case)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnEnvironmentsTearDownStart\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnEnvironmentsTearDownEnd\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestIterationEnd\fP (const \fBUnitTest\fP &unit_test, int iteration)=0"
+.br
+.ti -1c
+.RI "virtual void \fBOnTestProgramEnd\fP (const \fBUnitTest\fP &unit_test)=0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual testing::TestEventListener::~TestEventListener ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void testing::TestEventListener::OnEnvironmentsSetUpEnd (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnEnvironmentsSetUpStart (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnEnvironmentsTearDownEnd (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnEnvironmentsTearDownStart (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestCaseEnd (const \fBTestCase\fP & test_case)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestCaseStart (const \fBTestCase\fP & test_case)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestEnd (const \fBTestInfo\fP & test_info)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestIterationEnd (const \fBUnitTest\fP & unit_test, int iteration)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestIterationStart (const \fBUnitTest\fP & unit_test, int iteration)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestPartResult (const \fBTestPartResult\fP & test_part_result)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestProgramEnd (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestProgramStart (const \fBUnitTest\fP & unit_test)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+.SS "virtual void testing::TestEventListener::OnTestStart (const \fBTestInfo\fP & test_info)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBtesting::EmptyTestEventListener\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

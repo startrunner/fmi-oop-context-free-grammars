@@ -1,0 +1,97 @@
+\hypertarget{classtesting_1_1internal_1_1_string}{}\section{testing\+::internal\+::String Class Reference}
+\label{classtesting_1_1internal_1_1_string}\index{testing::internal::String@{testing::internal::String}}
+
+
+{\ttfamily \#include $<$gtest-\/string.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a8bce6b1281ae3d2f9061b920aa78aca0}{Clone\+C\+String}} (const char $\ast$c\+\_\+str)
+\item 
+static bool \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a06919f642bd47f0593196b460d352f24}{C\+String\+Equals}} (const char $\ast$lhs, const char $\ast$rhs)
+\item 
+static std\+::string \mbox{\hyperlink{classtesting_1_1internal_1_1_string_acbf0511e9ae5009f42de77e565f6ba61}{Show\+Wide\+C\+String}} (const wchar\+\_\+t $\ast$wide\+\_\+c\+\_\+str)
+\item 
+static bool \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a4f5e053907ebced07fe0dc52dd2d1e85}{Wide\+C\+String\+Equals}} (const wchar\+\_\+t $\ast$lhs, const wchar\+\_\+t $\ast$rhs)
+\item 
+static bool \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a7ce24c41c67b928fe89434d3571c988c}{Case\+Insensitive\+C\+String\+Equals}} (const char $\ast$lhs, const char $\ast$rhs)
+\item 
+static bool \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a0a67eac434fa7800640c9d56cb91e105}{Case\+Insensitive\+Wide\+C\+String\+Equals}} (const wchar\+\_\+t $\ast$lhs, const wchar\+\_\+t $\ast$rhs)
+\item 
+static bool \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a3de1df085eddc89ef3f3833c67aee3fe}{Ends\+With\+Case\+Insensitive}} (const std\+::string \&str, const std\+::string \&suffix)
+\item 
+static std\+::string \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a51cab855f7ec6091e5886b6be5598ca2}{Format\+Int\+Width2}} (int value)
+\item 
+static std\+::string \mbox{\hyperlink{classtesting_1_1internal_1_1_string_a7bedf4780e0c938d203b73ddb17ff490}{Format\+Hex\+Int}} (int value)
+\item 
+static std\+::string \mbox{\hyperlink{classtesting_1_1internal_1_1_string_ab3555eeb6abe4b7c6f63d865af10379d}{Format\+Byte}} (unsigned char value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a7ce24c41c67b928fe89434d3571c988c}\label{classtesting_1_1internal_1_1_string_a7ce24c41c67b928fe89434d3571c988c}} 
+\index{testing::internal::String@{testing::internal::String}!CaseInsensitiveCStringEquals@{CaseInsensitiveCStringEquals}}
+\index{CaseInsensitiveCStringEquals@{CaseInsensitiveCStringEquals}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{CaseInsensitiveCStringEquals()}{CaseInsensitiveCStringEquals()}}
+{\footnotesize\ttfamily static bool testing\+::internal\+::\+String\+::\+Case\+Insensitive\+C\+String\+Equals (\begin{DoxyParamCaption}\item[{const char $\ast$}]{lhs,  }\item[{const char $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a0a67eac434fa7800640c9d56cb91e105}\label{classtesting_1_1internal_1_1_string_a0a67eac434fa7800640c9d56cb91e105}} 
+\index{testing::internal::String@{testing::internal::String}!CaseInsensitiveWideCStringEquals@{CaseInsensitiveWideCStringEquals}}
+\index{CaseInsensitiveWideCStringEquals@{CaseInsensitiveWideCStringEquals}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{CaseInsensitiveWideCStringEquals()}{CaseInsensitiveWideCStringEquals()}}
+{\footnotesize\ttfamily static bool testing\+::internal\+::\+String\+::\+Case\+Insensitive\+Wide\+C\+String\+Equals (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{lhs,  }\item[{const wchar\+\_\+t $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a8bce6b1281ae3d2f9061b920aa78aca0}\label{classtesting_1_1internal_1_1_string_a8bce6b1281ae3d2f9061b920aa78aca0}} 
+\index{testing::internal::String@{testing::internal::String}!CloneCString@{CloneCString}}
+\index{CloneCString@{CloneCString}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{CloneCString()}{CloneCString()}}
+{\footnotesize\ttfamily static const char$\ast$ testing\+::internal\+::\+String\+::\+Clone\+C\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{c\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a06919f642bd47f0593196b460d352f24}\label{classtesting_1_1internal_1_1_string_a06919f642bd47f0593196b460d352f24}} 
+\index{testing::internal::String@{testing::internal::String}!CStringEquals@{CStringEquals}}
+\index{CStringEquals@{CStringEquals}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{CStringEquals()}{CStringEquals()}}
+{\footnotesize\ttfamily static bool testing\+::internal\+::\+String\+::\+C\+String\+Equals (\begin{DoxyParamCaption}\item[{const char $\ast$}]{lhs,  }\item[{const char $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a3de1df085eddc89ef3f3833c67aee3fe}\label{classtesting_1_1internal_1_1_string_a3de1df085eddc89ef3f3833c67aee3fe}} 
+\index{testing::internal::String@{testing::internal::String}!EndsWithCaseInsensitive@{EndsWithCaseInsensitive}}
+\index{EndsWithCaseInsensitive@{EndsWithCaseInsensitive}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{EndsWithCaseInsensitive()}{EndsWithCaseInsensitive()}}
+{\footnotesize\ttfamily static bool testing\+::internal\+::\+String\+::\+Ends\+With\+Case\+Insensitive (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{const std\+::string \&}]{suffix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_ab3555eeb6abe4b7c6f63d865af10379d}\label{classtesting_1_1internal_1_1_string_ab3555eeb6abe4b7c6f63d865af10379d}} 
+\index{testing::internal::String@{testing::internal::String}!FormatByte@{FormatByte}}
+\index{FormatByte@{FormatByte}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{FormatByte()}{FormatByte()}}
+{\footnotesize\ttfamily static std\+::string testing\+::internal\+::\+String\+::\+Format\+Byte (\begin{DoxyParamCaption}\item[{unsigned char}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a7bedf4780e0c938d203b73ddb17ff490}\label{classtesting_1_1internal_1_1_string_a7bedf4780e0c938d203b73ddb17ff490}} 
+\index{testing::internal::String@{testing::internal::String}!FormatHexInt@{FormatHexInt}}
+\index{FormatHexInt@{FormatHexInt}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{FormatHexInt()}{FormatHexInt()}}
+{\footnotesize\ttfamily static std\+::string testing\+::internal\+::\+String\+::\+Format\+Hex\+Int (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a51cab855f7ec6091e5886b6be5598ca2}\label{classtesting_1_1internal_1_1_string_a51cab855f7ec6091e5886b6be5598ca2}} 
+\index{testing::internal::String@{testing::internal::String}!FormatIntWidth2@{FormatIntWidth2}}
+\index{FormatIntWidth2@{FormatIntWidth2}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{FormatIntWidth2()}{FormatIntWidth2()}}
+{\footnotesize\ttfamily static std\+::string testing\+::internal\+::\+String\+::\+Format\+Int\+Width2 (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_acbf0511e9ae5009f42de77e565f6ba61}\label{classtesting_1_1internal_1_1_string_acbf0511e9ae5009f42de77e565f6ba61}} 
+\index{testing::internal::String@{testing::internal::String}!ShowWideCString@{ShowWideCString}}
+\index{ShowWideCString@{ShowWideCString}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{ShowWideCString()}{ShowWideCString()}}
+{\footnotesize\ttfamily static std\+::string testing\+::internal\+::\+String\+::\+Show\+Wide\+C\+String (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{wide\+\_\+c\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_string_a4f5e053907ebced07fe0dc52dd2d1e85}\label{classtesting_1_1internal_1_1_string_a4f5e053907ebced07fe0dc52dd2d1e85}} 
+\index{testing::internal::String@{testing::internal::String}!WideCStringEquals@{WideCStringEquals}}
+\index{WideCStringEquals@{WideCStringEquals}!testing::internal::String@{testing::internal::String}}
+\subsubsection{\texorpdfstring{WideCStringEquals()}{WideCStringEquals()}}
+{\footnotesize\ttfamily static bool testing\+::internal\+::\+String\+::\+Wide\+C\+String\+Equals (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{lhs,  }\item[{const wchar\+\_\+t $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+packages/\+Microsoft.\+googletest.\+v140.\+windesktop.\+msvcstl.\+static.\+rt-\/dyn.\+1.\+8.\+0/build/native/include/gtest/internal/\mbox{\hyperlink{gtest-string_8h}{gtest-\/string.\+h}}\end{DoxyCompactItemize}

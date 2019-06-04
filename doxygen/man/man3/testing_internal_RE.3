@@ -1,0 +1,71 @@
+.TH "testing::internal::RE" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::RE
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-port\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRE\fP (const \fBRE\fP &other)"
+.br
+.ti -1c
+.RI "\fBRE\fP (const ::std::string &regex)"
+.br
+.ti -1c
+.RI "\fBRE\fP (const char *regex)"
+.br
+.ti -1c
+.RI "\fB~RE\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBpattern\fP () const"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBFullMatch\fP (const ::std::string &str, const \fBRE\fP &re)"
+.br
+.ti -1c
+.RI "static bool \fBPartialMatch\fP (const ::std::string &str, const \fBRE\fP &re)"
+.br
+.ti -1c
+.RI "static bool \fBFullMatch\fP (const char *str, const \fBRE\fP &re)"
+.br
+.ti -1c
+.RI "static bool \fBPartialMatch\fP (const char *str, const \fBRE\fP &re)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::internal::RE::RE (const \fBRE\fP & other)\fC [inline]\fP"
+
+.SS "testing::internal::RE::RE (const ::std::string & regex)\fC [inline]\fP"
+
+.SS "testing::internal::RE::RE (const char * regex)\fC [inline]\fP"
+
+.SS "testing::internal::RE::~RE ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static bool testing::internal::RE::FullMatch (const ::std::string & str, const \fBRE\fP & re)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "static bool testing::internal::RE::FullMatch (const char * str, const \fBRE\fP & re)\fC [static]\fP"
+
+.SS "static bool testing::internal::RE::PartialMatch (const ::std::string & str, const \fBRE\fP & re)\fC [inline]\fP, \fC [static]\fP"
+
+.SS "static bool testing::internal::RE::PartialMatch (const char * str, const \fBRE\fP & re)\fC [static]\fP"
+
+.SS "const char* testing::internal::RE::pattern () const\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

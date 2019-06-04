@@ -1,0 +1,48 @@
+.TH "ContextFreeGrammars.Grammars/grammar.cpp" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContextFreeGrammars.Grammars/grammar.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'grammar\&.h'\fP
+.br
+\fC#include 'stdafx\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Infrastructure/stringutil\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Infrastructure/bitmaskutil\&.h'\fP
+.br
+\fC#include 'cyk_parse_tree\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprefix_rule_terms\fP (\fBproduction\fP &\fBproduction\fP, const string &prefix)"
+.br
+.ti -1c
+.RI "void \fBadd_rule_with_prefix\fP (\fBgrammar\fP &addTo, const string &ruleName, const \fBproduction\fP &rule, const string &prefix)"
+.br
+.ti -1c
+.RI "void \fBadd_rules_with_prefix\fP (\fBgrammar\fP &addTo, const \fBgrammar\fP &addFrom, const std::string &prefix)"
+.br
+.ti -1c
+.RI "template<typename TJoin > \fBgrammar\fP \fBjoin_grammars\fP (const \fBgrammar\fP &left, const \fBgrammar\fP &right)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void add_rule_with_prefix (\fBgrammar\fP & addTo, const string & ruleName, const \fBproduction\fP & rule, const string & prefix)"
+
+.SS "void add_rules_with_prefix (\fBgrammar\fP & addTo, const \fBgrammar\fP & addFrom, const std::string & prefix)"
+
+.SS "template<typename TJoin > \fBgrammar\fP join_grammars (const \fBgrammar\fP & left, const \fBgrammar\fP & right)"
+
+.SS "void prefix_rule_terms (\fBproduction\fP & production, const string & prefix)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

@@ -1,0 +1,73 @@
+.TH "lookahead_tokenizer" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lookahead_tokenizer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <lookahead_tokenizer\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "using \fBfilter_predicate\fP = typename std::function< bool(const \fBtoken\fP &\fBtoken\fP)>"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlookahead_tokenizer\fP (std::istream *stream)"
+.br
+.ti -1c
+.RI "\fBlookahead_tokenizer\fP (std::istream *stream, \fBfilter_predicate\fP filter)"
+.br
+.ti -1c
+.RI "void \fBrefeed\fP (std::istream *stream)"
+.br
+.ti -1c
+.RI "bool \fBtry_cache\fP (int tokenCount)"
+.br
+.ti -1c
+.RI "const \fBtoken\fP & \fBtoken_at\fP (int index)"
+.br
+.ti -1c
+.RI "int \fBcache_all\fP ()"
+.br
+.ti -1c
+.RI "void \fBpop\fP (int count)"
+.br
+.ti -1c
+.RI "\fBtoken\fP \fBpop\fP ()"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "using \fBlookahead_tokenizer::filter_predicate\fP =  typename std::function<bool(const \fBtoken\fP &\fBtoken\fP)>"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "lookahead_tokenizer::lookahead_tokenizer (std::istream * stream)\fC [inline]\fP"
+
+.SS "lookahead_tokenizer::lookahead_tokenizer (std::istream * stream, \fBfilter_predicate\fP filter)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int lookahead_tokenizer::cache_all ()"
+
+.SS "void lookahead_tokenizer::pop (int count)"
+
+.SS "\fBtoken\fP lookahead_tokenizer::pop ()"
+
+.SS "void lookahead_tokenizer::refeed (std::istream * stream)"
+
+.SS "const \fBtoken\fP & lookahead_tokenizer::token_at (int index)"
+
+.SS "bool lookahead_tokenizer::try_cache (int tokenCount)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

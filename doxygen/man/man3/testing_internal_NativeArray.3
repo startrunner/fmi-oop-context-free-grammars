@@ -1,0 +1,83 @@
+.TH "testing::internal::NativeArray< Element >" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal::NativeArray< Element >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\-internal\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef Element \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef Element * \fBiterator\fP"
+.br
+.ti -1c
+.RI "typedef const Element * \fBconst_iterator\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNativeArray\fP (const Element *array, size_t count, \fBRelationToSourceReference\fP)"
+.br
+.ti -1c
+.RI "\fBNativeArray\fP (const Element *array, size_t count, \fBRelationToSourceCopy\fP)"
+.br
+.ti -1c
+.RI "\fBNativeArray\fP (const \fBNativeArray\fP &rhs)"
+.br
+.ti -1c
+.RI "\fB~NativeArray\fP ()"
+.br
+.ti -1c
+.RI "size_t \fBsize\fP () const"
+.br
+.ti -1c
+.RI "\fBconst_iterator\fP \fBbegin\fP () const"
+.br
+.ti -1c
+.RI "\fBconst_iterator\fP \fBend\fP () const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBNativeArray\fP &rhs) const"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename Element > typedef const Element* \fBtesting::internal::NativeArray\fP< Element >::\fBconst_iterator\fP"
+
+.SS "template<typename Element > typedef Element* \fBtesting::internal::NativeArray\fP< Element >::\fBiterator\fP"
+
+.SS "template<typename Element > typedef Element \fBtesting::internal::NativeArray\fP< Element >::\fBvalue_type\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename Element > \fBtesting::internal::NativeArray\fP< Element >::\fBNativeArray\fP (const Element * array, size_t count, \fBRelationToSourceReference\fP)\fC [inline]\fP"
+
+.SS "template<typename Element > \fBtesting::internal::NativeArray\fP< Element >::\fBNativeArray\fP (const Element * array, size_t count, \fBRelationToSourceCopy\fP)\fC [inline]\fP"
+
+.SS "template<typename Element > \fBtesting::internal::NativeArray\fP< Element >::\fBNativeArray\fP (const \fBNativeArray\fP< Element > & rhs)\fC [inline]\fP"
+
+.SS "template<typename Element > \fBtesting::internal::NativeArray\fP< Element >::~\fBNativeArray\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename Element > \fBconst_iterator\fP \fBtesting::internal::NativeArray\fP< Element >::begin () const\fC [inline]\fP"
+
+.SS "template<typename Element > \fBconst_iterator\fP \fBtesting::internal::NativeArray\fP< Element >::end () const\fC [inline]\fP"
+
+.SS "template<typename Element > bool \fBtesting::internal::NativeArray\fP< Element >::operator== (const \fBNativeArray\fP< Element > & rhs) const\fC [inline]\fP"
+
+.SS "template<typename Element > size_t \fBtesting::internal::NativeArray\fP< Element >::size () const\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

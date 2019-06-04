@@ -1,0 +1,501 @@
+.TH "packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0/build/native/include/gtest/internal/gtest-tuple.h" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0/build/native/include/gtest/internal/gtest-tuple.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <utility>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBstd::tr1::tuple<>\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::ByRef< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::ByRef< T & >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::AddRef< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::AddRef< T & >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< k >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< kIndexValid, kIndex, Tuple >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 0, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 1, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 2, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 3, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 4, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 5, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 6, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 7, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 8, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::TupleElement< true, 9, GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::tuple<>\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::tuple<>\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< Tuple >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_0_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_1_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_2_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_3_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_4_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_5_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_6_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_7_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_8_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_9_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_size< GTEST_10_TUPLE_(T) >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::tuple_element< k, Tuple >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 0 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 1 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 2 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 3 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 4 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 5 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 6 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 7 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 8 >\fP"
+.br
+.ti -1c
+.RI "class \fBstd::tr1::gtest_internal::Get< 9 >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::SameSizeTuplePrefixComparator< kSize1, kSize2 >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::SameSizeTuplePrefixComparator< 0, 0 >\fP"
+.br
+.ti -1c
+.RI "struct \fBstd::tr1::gtest_internal::SameSizeTuplePrefixComparator< k, k >\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBstd\fP"
+.br
+.ti -1c
+.RI " \fBstd::tr1\fP"
+.br
+.ti -1c
+.RI " \fBstd::tr1::gtest_internal\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGTEST_DECLARE_TUPLE_AS_FRIEND_\fP"
+.br
+.ti -1c
+.RI "#define \fBGTEST_0_TUPLE_\fP(T)   tuple<>"
+.br
+.ti -1c
+.RI "#define \fBGTEST_1_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_2_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_3_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_4_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_5_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_6_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_7_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_8_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_9_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_10_TUPLE_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_0_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_1_TYPENAMES_\fP(T)   typename T##0"
+.br
+.ti -1c
+.RI "#define \fBGTEST_2_TYPENAMES_\fP(T)   typename T##0, typename T##1"
+.br
+.ti -1c
+.RI "#define \fBGTEST_3_TYPENAMES_\fP(T)   typename T##0, typename T##1, typename T##2"
+.br
+.ti -1c
+.RI "#define \fBGTEST_4_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_5_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_6_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_7_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_8_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_9_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_10_TYPENAMES_\fP(T)"
+.br
+.ti -1c
+.RI "#define \fBGTEST_BY_REF_\fP(T)   typename ::\fBstd::tr1::gtest_internal::ByRef\fP<T>::type"
+.br
+.ti -1c
+.RI "#define \fBGTEST_ADD_REF_\fP(T)   typename ::\fBstd::tr1::gtest_internal::AddRef\fP<T>::type"
+.br
+.ti -1c
+.RI "#define \fBGTEST_TUPLE_ELEMENT_\fP(k,  Tuple)   typename tuple_element<k, Tuple >::type"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<GTEST_1_TYPENAMES_(T) > class \fBstd::tr1::GTEST_1_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_2_TYPENAMES_(T) > class \fBstd::tr1::GTEST_2_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_3_TYPENAMES_(T) > class \fBstd::tr1::GTEST_3_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_4_TYPENAMES_(T) > class \fBstd::tr1::GTEST_4_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_5_TYPENAMES_(T) > class \fBstd::tr1::GTEST_5_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_6_TYPENAMES_(T) > class \fBstd::tr1::GTEST_6_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_7_TYPENAMES_(T) > class \fBstd::tr1::GTEST_7_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_8_TYPENAMES_(T) > class \fBstd::tr1::GTEST_8_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "template<GTEST_9_TYPENAMES_(T) > class \fBstd::tr1::GTEST_9_TUPLE_\fP (T)"
+.br
+.ti -1c
+.RI "tuple \fBstd::tr1::make_tuple\fP ()"
+.br
+.ti -1c
+.RI "template<GTEST_1_TYPENAMES_(T) > \fBstd::tr1::GTEST_1_TUPLE_\fP (T) make_tuple(const T0 &f0)"
+.br
+.ti -1c
+.RI "template<GTEST_2_TYPENAMES_(T) > \fBstd::tr1::GTEST_2_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_3_TYPENAMES_(T) > \fBstd::tr1::GTEST_3_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_4_TYPENAMES_(T) > \fBstd::tr1::GTEST_4_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_5_TYPENAMES_(T) > \fBstd::tr1::GTEST_5_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_6_TYPENAMES_(T) > \fBstd::tr1::GTEST_6_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_7_TYPENAMES_(T) > \fBstd::tr1::GTEST_7_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_8_TYPENAMES_(T) > \fBstd::tr1::GTEST_8_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_9_TYPENAMES_(T) > \fBstd::tr1::GTEST_9_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(T) > \fBstd::tr1::GTEST_10_TUPLE_\fP (T) make_tuple(const T0 &f0"
+.br
+.ti -1c
+.RI "template<int k, GTEST_10_TYPENAMES_(T) > \fBstd::tr1::GTEST_ADD_REF_\fP (\fBGTEST_TUPLE_ELEMENT_\fP(k, \fBGTEST_10_TUPLE_\fP(T))) get(\fBGTEST_10_TUPLE_\fP(T) &t)"
+.br
+.ti -1c
+.RI "template<int k, GTEST_10_TYPENAMES_(T) > \fBstd::tr1::GTEST_BY_REF_\fP (\fBGTEST_TUPLE_ELEMENT_\fP(k, \fBGTEST_10_TUPLE_\fP(T))) get(const \fBGTEST_10_TUPLE_\fP(T) &t)"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) > bool \fBstd::tr1::operator==\fP (const \fBGTEST_10_TUPLE_\fP(T)&t, const \fBGTEST_10_TUPLE_\fP(U)&u)"
+.br
+.ti -1c
+.RI "template<GTEST_10_TYPENAMES_(T) , GTEST_10_TYPENAMES_(U) > bool \fBstd::tr1::operator!=\fP (const \fBGTEST_10_TUPLE_\fP(T)&t, const \fBGTEST_10_TUPLE_\fP(U)&u)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const T1 & \fBstd::tr1::f1\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 & \fBstd::tr1::f2\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 & \fBstd::tr1::f3\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 & \fBstd::tr1::f4\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 const T5 & \fBstd::tr1::f5\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 const T5 const T6 & \fBstd::tr1::f6\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 const T5 const T6 const T7 & \fBstd::tr1::f7\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 & \fBstd::tr1::f8\fP"
+.br
+.ti -1c
+.RI "const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 const T9 & \fBstd::tr1::f9\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GTEST_0_TUPLE_(T)   tuple<>"
+
+.SS "#define GTEST_0_TYPENAMES_(T)"
+
+.SS "#define GTEST_10_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    T##7, T##8, T##9>
+.fi
+.SS "#define GTEST_10_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4, typename T##5, typename T##6, \
+    typename T##7, typename T##8, typename T##9
+.fi
+.SS "#define GTEST_1_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, void, void, void, void, void, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_1_TYPENAMES_(T)   typename T##0"
+
+.SS "#define GTEST_2_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, void, void, void, void, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_2_TYPENAMES_(T)   typename T##0, typename T##1"
+
+.SS "#define GTEST_3_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, void, void, void, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_3_TYPENAMES_(T)   typename T##0, typename T##1, typename T##2"
+
+.SS "#define GTEST_4_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, void, void, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_4_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3
+.fi
+.SS "#define GTEST_5_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, void, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_5_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4
+.fi
+.SS "#define GTEST_6_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, T##5, void, \
+    void, void, void>
+.fi
+.SS "#define GTEST_6_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4, typename T##5
+.fi
+.SS "#define GTEST_7_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    void, void, void>
+.fi
+.SS "#define GTEST_7_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4, typename T##5, typename T##6
+.fi
+.SS "#define GTEST_8_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    T##7, void, void>
+.fi
+.SS "#define GTEST_8_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4, typename T##5, typename T##6, typename T##7
+.fi
+.SS "#define GTEST_9_TUPLE_(T)"
+\fBValue:\fP
+.PP
+.nf
+tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    T##7, T##8, void>
+.fi
+.SS "#define GTEST_9_TYPENAMES_(T)"
+\fBValue:\fP
+.PP
+.nf
+typename T##0, typename T##1, typename T##2, \
+    typename T##3, typename T##4, typename T##5, typename T##6, \
+    typename T##7, typename T##8
+.fi
+.SS "#define GTEST_ADD_REF_(T)   typename ::\fBstd::tr1::gtest_internal::AddRef\fP<T>::type"
+
+.SS "#define GTEST_BY_REF_(T)   typename ::\fBstd::tr1::gtest_internal::ByRef\fP<T>::type"
+
+.SS "#define GTEST_DECLARE_TUPLE_AS_FRIEND_"
+\fBValue:\fP
+.PP
+.nf
+template <GTEST_10_TYPENAMES_(U)> friend class tuple; \
+   private:
+.fi
+.SS "#define GTEST_TUPLE_ELEMENT_(k, Tuple)   typename tuple_element<k, Tuple >::type"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

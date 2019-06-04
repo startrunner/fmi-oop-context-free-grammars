@@ -1,0 +1,42 @@
+.TH "production_rule_deserializer" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+production_rule_deserializer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <production_rule_deserializer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBproduction_rule_deserializer\fP (std::istream *stream)"
+.br
+.ti -1c
+.RI "void \fBrefeed\fP (std::istream *stream)"
+.br
+.ti -1c
+.RI "bool \fBtry_get_next_named\fP (std::string *outName=nullptr, \fBproduction\fP *outRule=nullptr)"
+.br
+.ti -1c
+.RI "bool \fBtry_get_next\fP (\fBproduction\fP *outRule=nullptr)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "production_rule_deserializer::production_rule_deserializer (std::istream * stream)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void production_rule_deserializer::refeed (std::istream * stream)"
+
+.SS "bool production_rule_deserializer::try_get_next (\fBproduction\fP * outRule = \fCnullptr\fP)"
+
+.SS "bool production_rule_deserializer::try_get_next_named (std::string * outName = \fCnullptr\fP, \fBproduction\fP * outRule = \fCnullptr\fP)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

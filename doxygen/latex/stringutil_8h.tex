@@ -1,0 +1,57 @@
+\hypertarget{stringutil_8h}{}\section{Context\+Free\+Grammars.\+Infrastructure/stringutil.h File Reference}
+\label{stringutil_8h}\index{ContextFreeGrammars.Infrastructure/stringutil.h@{ContextFreeGrammars.Infrastructure/stringutil.h}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{stringutil_8h_a941a1b259075ae5811b2516f7aa69e79}{concatenate}} (const std\+::vector$<$ std\+::string $>$ segments, const std\+::string \&delimeter=\char`\"{}\char`\"{})
+\item 
+std\+::string \mbox{\hyperlink{stringutil_8h_acf36469587aa60b5cbc9cd195eb4ad23}{to\+\_\+lower}} (const std\+::string \&text)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{stringutil_8h_a54c7ed4574964e12715b0681438752bb}{split}} (const std\+::string \&text, char delimeter)
+\item 
+std\+::string \mbox{\hyperlink{stringutil_8h_aed869056bfc56ee13b21dd375d1e2f44}{trim}} (const std\+::string \&text, char trimmed\+Character)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{stringutil_8h_ade5f5b5ac13518d454aeec13f0a12e84}{split\+\_\+trim}} (const std\+::string \&text, char delimeter, char trimmed\+Character)
+\item 
+bool \mbox{\hyperlink{stringutil_8h_a1c70716d8ad6f089b0e5b8f32eedd336}{string\+\_\+contains}} (const std\+::string \&text, char character)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{stringutil_8h_a941a1b259075ae5811b2516f7aa69e79}\label{stringutil_8h_a941a1b259075ae5811b2516f7aa69e79}} 
+\index{stringutil.h@{stringutil.h}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{concatenate()}{concatenate()}}
+{\footnotesize\ttfamily std\+::string concatenate (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$}]{segments,  }\item[{const std\+::string \&}]{delimeter = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stringutil_8h_a54c7ed4574964e12715b0681438752bb}\label{stringutil_8h_a54c7ed4574964e12715b0681438752bb}} 
+\index{stringutil.h@{stringutil.h}!split@{split}}
+\index{split@{split}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{char}]{delimeter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stringutil_8h_ade5f5b5ac13518d454aeec13f0a12e84}\label{stringutil_8h_ade5f5b5ac13518d454aeec13f0a12e84}} 
+\index{stringutil.h@{stringutil.h}!split\_trim@{split\_trim}}
+\index{split\_trim@{split\_trim}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{split\_trim()}{split\_trim()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ split\+\_\+trim (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{char}]{delimeter,  }\item[{char}]{trimmed\+Character }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stringutil_8h_a1c70716d8ad6f089b0e5b8f32eedd336}\label{stringutil_8h_a1c70716d8ad6f089b0e5b8f32eedd336}} 
+\index{stringutil.h@{stringutil.h}!string\_contains@{string\_contains}}
+\index{string\_contains@{string\_contains}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{string\_contains()}{string\_contains()}}
+{\footnotesize\ttfamily bool string\+\_\+contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{char}]{character }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stringutil_8h_acf36469587aa60b5cbc9cd195eb4ad23}\label{stringutil_8h_acf36469587aa60b5cbc9cd195eb4ad23}} 
+\index{stringutil.h@{stringutil.h}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{to\_lower()}{to\_lower()}}
+{\footnotesize\ttfamily std\+::string to\+\_\+lower (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stringutil_8h_aed869056bfc56ee13b21dd375d1e2f44}\label{stringutil_8h_aed869056bfc56ee13b21dd375d1e2f44}} 
+\index{stringutil.h@{stringutil.h}!trim@{trim}}
+\index{trim@{trim}!stringutil.h@{stringutil.h}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily std\+::string trim (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{char}]{trimmed\+Character }\end{DoxyParamCaption})}
+

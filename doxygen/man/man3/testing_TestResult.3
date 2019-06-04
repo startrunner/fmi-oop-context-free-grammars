@@ -1,0 +1,123 @@
+.TH "testing::TestResult" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::TestResult
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTestResult\fP ()"
+.br
+.ti -1c
+.RI "\fB~TestResult\fP ()"
+.br
+.ti -1c
+.RI "int \fBtotal_part_count\fP () const"
+.br
+.ti -1c
+.RI "int \fBtest_property_count\fP () const"
+.br
+.ti -1c
+.RI "bool \fBPassed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBFailed\fP () const"
+.br
+.ti -1c
+.RI "bool \fBHasFatalFailure\fP () const"
+.br
+.ti -1c
+.RI "bool \fBHasNonfatalFailure\fP () const"
+.br
+.ti -1c
+.RI "\fBTimeInMillis\fP \fBelapsed_time\fP () const"
+.br
+.ti -1c
+.RI "const \fBTestPartResult\fP & \fBGetTestPartResult\fP (int i) const"
+.br
+.ti -1c
+.RI "const \fBTestProperty\fP & \fBGetTestProperty\fP (int i) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTestInfo\fP"
+.br
+.ti -1c
+.RI "class \fBTestCase\fP"
+.br
+.ti -1c
+.RI "class \fBUnitTest\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::DefaultGlobalTestPartResultReporter\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::ExecDeathTest\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::TestResultAccessor\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::UnitTestImpl\fP"
+.br
+.ti -1c
+.RI "class \fBinternal::WindowsDeathTest\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "testing::TestResult::TestResult ()"
+
+.SS "testing::TestResult::~TestResult ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBTimeInMillis\fP testing::TestResult::elapsed_time () const\fC [inline]\fP"
+
+.SS "bool testing::TestResult::Failed () const"
+
+.SS "const \fBTestPartResult\fP& testing::TestResult::GetTestPartResult (int i) const"
+
+.SS "const \fBTestProperty\fP& testing::TestResult::GetTestProperty (int i) const"
+
+.SS "bool testing::TestResult::HasFatalFailure () const"
+
+.SS "bool testing::TestResult::HasNonfatalFailure () const"
+
+.SS "bool testing::TestResult::Passed () const\fC [inline]\fP"
+
+.SS "int testing::TestResult::test_property_count () const"
+
+.SS "int testing::TestResult::total_part_count () const"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class internal::DefaultGlobalTestPartResultReporter\fC [friend]\fP"
+
+.SS "friend class internal::ExecDeathTest\fC [friend]\fP"
+
+.SS "friend class internal::TestResultAccessor\fC [friend]\fP"
+
+.SS "friend class internal::UnitTestImpl\fC [friend]\fP"
+
+.SS "friend class internal::WindowsDeathTest\fC [friend]\fP"
+
+.SS "friend class \fBTestCase\fP\fC [friend]\fP"
+
+.SS "friend class \fBTestInfo\fP\fC [friend]\fP"
+
+.SS "friend class \fBUnitTest\fP\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

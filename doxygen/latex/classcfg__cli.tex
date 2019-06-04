@@ -1,0 +1,181 @@
+\hypertarget{classcfg__cli}{}\section{cfg\+\_\+cli Class Reference}
+\label{classcfg__cli}\index{cfg\_cli@{cfg\_cli}}
+
+
+{\ttfamily \#include $<$cfg\+\_\+cli.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcfg__cli_a4698335f2fd01d4abb19651cde3ce898}{run}} ()
+\item 
+\mbox{\hyperlink{structcommand}{command}} \mbox{\hyperlink{classcfg__cli_ad4be9b5541afca7e8604ede8d66b0859}{read\+\_\+command}} ()
+\item 
+void \mbox{\hyperlink{classcfg__cli_a7cab592cbf2c62defe32013be876ae67}{open}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_afd8799d78f8f03d2ad6be723c8bcf2c5}{list}} () const
+\item 
+void \mbox{\hyperlink{classcfg__cli_add8ecd5384eb0f41173e1d13bc3a0db5}{print}} (const std\+::vector$<$ std\+::string $>$ \&arguments) const
+\item 
+void \mbox{\hyperlink{classcfg__cli_ab4206d3ef9d20e52d6592c44dc85979e}{save}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_ac6f35017786fa9f561e9278d3609e937}{grammar\+\_\+union}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_a351532c63ecdd76043c8f906d297c0bf}{grammar\+\_\+concatenation}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_ae1adc6d5a037500ed69d62e6834f60f9}{grammar\+\_\+kleene\+\_\+star}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_a53b16d52eeb8cf55d0fd3e46e948b2ea}{grammar\+\_\+check\+\_\+chomsky}} (const std\+::vector$<$ std\+::string $>$ \&arguments) const
+\item 
+void \mbox{\hyperlink{classcfg__cli_ac8c3f52a81dc07bf8f9fe231e1e116f7}{grammar\+\_\+check\+\_\+empty}} (const std\+::vector$<$ std\+::string $>$ \&arguments) const
+\item 
+void \mbox{\hyperlink{classcfg__cli_ad4a441afca336701561e489689e60b6a}{grammar\+\_\+chomskify}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_a9b6c74a0ff4a8d1d8c5b8b7c898da5b8}{add\+\_\+rule}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_a5daa8ccbc86585416405e7d8ae06de35}{remove\+\_\+rule}} (const std\+::vector$<$ std\+::string $>$ \&arguments)
+\item 
+void \mbox{\hyperlink{classcfg__cli_a67a7343e67e89eec5851c0b6a3224b36}{cyk}} (const std\+::vector$<$ std\+::string $>$ \&arguments) const
+\item 
+bool \mbox{\hyperlink{classcfg__cli_ab0f5ffb557534426d320cf66d3d765eb}{try\+\_\+get\+\_\+grammar\+\_\+from\+\_\+id}} (const std\+::vector$<$ std\+::string $>$ \&arguments, \mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$out\+Grammar) const
+\item 
+bool \mbox{\hyperlink{classcfg__cli_aba2c11a19403438eb40392cda3a953f2}{try\+\_\+get\+\_\+two\+\_\+grammars\+\_\+from\+\_\+ids}} (const std\+::vector$<$ std\+::string $>$ \&arguments, \mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$out\+Left, \mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$out\+Right) const
+\item 
+bool \mbox{\hyperlink{classcfg__cli_a83a18d4e3a5bfe9ccba1912b2cbbda18}{show\+\_\+binary\+\_\+dialog}} (const std\+::string \&message, const std\+::string \&yes, const std\+::string \&no) const
+\item 
+\mbox{\hyperlink{classcfg__cli_ad210c1eb0cd98ad0cdd77f163c1ab598}{cfg\+\_\+cli}} ()
+\item 
+\mbox{\hyperlink{classcfg__cli_ae6d900444e2cb5b820eea4db1a0c3723}{$\sim$cfg\+\_\+cli}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcfg__cli_ad210c1eb0cd98ad0cdd77f163c1ab598}\label{classcfg__cli_ad210c1eb0cd98ad0cdd77f163c1ab598}} 
+\index{cfg\_cli@{cfg\_cli}!cfg\_cli@{cfg\_cli}}
+\index{cfg\_cli@{cfg\_cli}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{cfg\_cli()}{cfg\_cli()}}
+{\footnotesize\ttfamily cfg\+\_\+cli\+::cfg\+\_\+cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_ae6d900444e2cb5b820eea4db1a0c3723}\label{classcfg__cli_ae6d900444e2cb5b820eea4db1a0c3723}} 
+\index{cfg\_cli@{cfg\_cli}!````~cfg\_cli@{$\sim$cfg\_cli}}
+\index{````~cfg\_cli@{$\sim$cfg\_cli}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{$\sim$cfg\_cli()}{~cfg\_cli()}}
+{\footnotesize\ttfamily cfg\+\_\+cli\+::$\sim$cfg\+\_\+cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcfg__cli_a9b6c74a0ff4a8d1d8c5b8b7c898da5b8}\label{classcfg__cli_a9b6c74a0ff4a8d1d8c5b8b7c898da5b8}} 
+\index{cfg\_cli@{cfg\_cli}!add\_rule@{add\_rule}}
+\index{add\_rule@{add\_rule}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{add\_rule()}{add\_rule()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::add\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_a67a7343e67e89eec5851c0b6a3224b36}\label{classcfg__cli_a67a7343e67e89eec5851c0b6a3224b36}} 
+\index{cfg\_cli@{cfg\_cli}!cyk@{cyk}}
+\index{cyk@{cyk}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{cyk()}{cyk()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::cyk (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_a53b16d52eeb8cf55d0fd3e46e948b2ea}\label{classcfg__cli_a53b16d52eeb8cf55d0fd3e46e948b2ea}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_check\_chomsky@{grammar\_check\_chomsky}}
+\index{grammar\_check\_chomsky@{grammar\_check\_chomsky}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_check\_chomsky()}{grammar\_check\_chomsky()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+check\+\_\+chomsky (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_ac8c3f52a81dc07bf8f9fe231e1e116f7}\label{classcfg__cli_ac8c3f52a81dc07bf8f9fe231e1e116f7}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_check\_empty@{grammar\_check\_empty}}
+\index{grammar\_check\_empty@{grammar\_check\_empty}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_check\_empty()}{grammar\_check\_empty()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+check\+\_\+empty (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_ad4a441afca336701561e489689e60b6a}\label{classcfg__cli_ad4a441afca336701561e489689e60b6a}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_chomskify@{grammar\_chomskify}}
+\index{grammar\_chomskify@{grammar\_chomskify}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_chomskify()}{grammar\_chomskify()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+chomskify (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_a351532c63ecdd76043c8f906d297c0bf}\label{classcfg__cli_a351532c63ecdd76043c8f906d297c0bf}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_concatenation@{grammar\_concatenation}}
+\index{grammar\_concatenation@{grammar\_concatenation}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_concatenation()}{grammar\_concatenation()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+concatenation (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_ae1adc6d5a037500ed69d62e6834f60f9}\label{classcfg__cli_ae1adc6d5a037500ed69d62e6834f60f9}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_kleene\_star@{grammar\_kleene\_star}}
+\index{grammar\_kleene\_star@{grammar\_kleene\_star}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_kleene\_star()}{grammar\_kleene\_star()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+kleene\+\_\+star (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_ac6f35017786fa9f561e9278d3609e937}\label{classcfg__cli_ac6f35017786fa9f561e9278d3609e937}} 
+\index{cfg\_cli@{cfg\_cli}!grammar\_union@{grammar\_union}}
+\index{grammar\_union@{grammar\_union}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{grammar\_union()}{grammar\_union()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::grammar\+\_\+union (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_afd8799d78f8f03d2ad6be723c8bcf2c5}\label{classcfg__cli_afd8799d78f8f03d2ad6be723c8bcf2c5}} 
+\index{cfg\_cli@{cfg\_cli}!list@{list}}
+\index{list@{list}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_a7cab592cbf2c62defe32013be876ae67}\label{classcfg__cli_a7cab592cbf2c62defe32013be876ae67}} 
+\index{cfg\_cli@{cfg\_cli}!open@{open}}
+\index{open@{open}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::open (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_add8ecd5384eb0f41173e1d13bc3a0db5}\label{classcfg__cli_add8ecd5384eb0f41173e1d13bc3a0db5}} 
+\index{cfg\_cli@{cfg\_cli}!print@{print}}
+\index{print@{print}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::print (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_ad4be9b5541afca7e8604ede8d66b0859}\label{classcfg__cli_ad4be9b5541afca7e8604ede8d66b0859}} 
+\index{cfg\_cli@{cfg\_cli}!read\_command@{read\_command}}
+\index{read\_command@{read\_command}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{read\_command()}{read\_command()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcommand}{command}} cfg\+\_\+cli\+::read\+\_\+command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_a5daa8ccbc86585416405e7d8ae06de35}\label{classcfg__cli_a5daa8ccbc86585416405e7d8ae06de35}} 
+\index{cfg\_cli@{cfg\_cli}!remove\_rule@{remove\_rule}}
+\index{remove\_rule@{remove\_rule}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{remove\_rule()}{remove\_rule()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::remove\+\_\+rule (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_a4698335f2fd01d4abb19651cde3ce898}\label{classcfg__cli_a4698335f2fd01d4abb19651cde3ce898}} 
+\index{cfg\_cli@{cfg\_cli}!run@{run}}
+\index{run@{run}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_ab4206d3ef9d20e52d6592c44dc85979e}\label{classcfg__cli_ab4206d3ef9d20e52d6592c44dc85979e}} 
+\index{cfg\_cli@{cfg\_cli}!save@{save}}
+\index{save@{save}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void cfg\+\_\+cli\+::save (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcfg__cli_a83a18d4e3a5bfe9ccba1912b2cbbda18}\label{classcfg__cli_a83a18d4e3a5bfe9ccba1912b2cbbda18}} 
+\index{cfg\_cli@{cfg\_cli}!show\_binary\_dialog@{show\_binary\_dialog}}
+\index{show\_binary\_dialog@{show\_binary\_dialog}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{show\_binary\_dialog()}{show\_binary\_dialog()}}
+{\footnotesize\ttfamily bool cfg\+\_\+cli\+::show\+\_\+binary\+\_\+dialog (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{yes,  }\item[{const std\+::string \&}]{no }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_ab0f5ffb557534426d320cf66d3d765eb}\label{classcfg__cli_ab0f5ffb557534426d320cf66d3d765eb}} 
+\index{cfg\_cli@{cfg\_cli}!try\_get\_grammar\_from\_id@{try\_get\_grammar\_from\_id}}
+\index{try\_get\_grammar\_from\_id@{try\_get\_grammar\_from\_id}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{try\_get\_grammar\_from\_id()}{try\_get\_grammar\_from\_id()}}
+{\footnotesize\ttfamily bool cfg\+\_\+cli\+::try\+\_\+get\+\_\+grammar\+\_\+from\+\_\+id (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments,  }\item[{\mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$}]{out\+Grammar }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcfg__cli_aba2c11a19403438eb40392cda3a953f2}\label{classcfg__cli_aba2c11a19403438eb40392cda3a953f2}} 
+\index{cfg\_cli@{cfg\_cli}!try\_get\_two\_grammars\_from\_ids@{try\_get\_two\_grammars\_from\_ids}}
+\index{try\_get\_two\_grammars\_from\_ids@{try\_get\_two\_grammars\_from\_ids}!cfg\_cli@{cfg\_cli}}
+\subsubsection{\texorpdfstring{try\_get\_two\_grammars\_from\_ids()}{try\_get\_two\_grammars\_from\_ids()}}
+{\footnotesize\ttfamily bool cfg\+\_\+cli\+::try\+\_\+get\+\_\+two\+\_\+grammars\+\_\+from\+\_\+ids (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments,  }\item[{\mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$}]{out\+Left,  }\item[{\mbox{\hyperlink{classgrammar}{grammar}} const $\ast$$\ast$}]{out\+Right }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Context\+Free\+Grammars.\+C\+L\+I/\mbox{\hyperlink{cfg__cli_8h}{cfg\+\_\+cli.\+h}}\item 
+Context\+Free\+Grammars.\+C\+L\+I/\mbox{\hyperlink{cfg__cli_8cpp}{cfg\+\_\+cli.\+cpp}}\end{DoxyCompactItemize}

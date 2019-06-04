@@ -1,0 +1,71 @@
+.TH "testing::internal2" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testing::internal2
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBTypeWithoutFormatter\fP"
+.br
+.ti -1c
+.RI "class \fBTypeWithoutFormatter< T, kConvertibleToInteger >\fP"
+.br
+.ti -1c
+.RI "class \fBTypeWithoutFormatter< T, kProtobuf >\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTypeKind\fP { \fBkProtobuf\fP, \fBkConvertibleToInteger\fP, \fBkOtherType\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGTEST_API_\fP void \fBPrintBytesInObjectTo\fP (const unsigned char *obj_bytes, size_t count, ::std::ostream *os)"
+.br
+.ti -1c
+.RI "template<typename Char , typename CharTraits , typename T > ::std::basic_ostream< Char, CharTraits > & \fBoperator<<\fP (::std::basic_ostream< Char, CharTraits > &os, const T &x)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const size_t \fBkProtobufOneLinerMaxLength\fP = 50"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBtesting::internal2::TypeKind\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIkProtobuf \fP\fP
+.TP
+\fB\fIkConvertibleToInteger \fP\fP
+.TP
+\fB\fIkOtherType \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "template<typename Char , typename CharTraits , typename T > ::std::basic_ostream<Char, CharTraits>& testing::internal2::operator<< (::std::basic_ostream< Char, CharTraits > & os, const T & x)"
+
+.SS "\fBGTEST_API_\fP void testing::internal2::PrintBytesInObjectTo (const unsigned char * obj_bytes, size_t count, ::std::ostream * os)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const size_t testing::internal2::kProtobufOneLinerMaxLength = 50"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

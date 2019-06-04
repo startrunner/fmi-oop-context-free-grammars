@@ -1,0 +1,42 @@
+.TH "ContextFreeGrammars.Deserialization/grammar_deserialization.h" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContextFreeGrammars.Deserialization/grammar_deserialization.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./ContextFreeGrammars\&.Grammars/grammar\&.h'\fP
+.br
+\fC#include 'production_rule_deserializer\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBtry_deserialize_grammar\fP (std::istream &stream, \fBgrammar\fP *outGrammar)"
+.br
+.ti -1c
+.RI "bool \fBtry_deserialize_integer\fP (const std::string &text, int *outValue)"
+.br
+.ti -1c
+.RI "bool \fBtry_deserialize_identifier\fP (const std::string &text, std::string *outIdentifier)"
+.br
+.ti -1c
+.RI "bool \fBtry_deserialize_production_rule\fP (const std::string &text, \fBproduction\fP *outProduction)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool try_deserialize_grammar (std::istream & stream, \fBgrammar\fP * outGrammar)"
+
+.SS "bool try_deserialize_identifier (const std::string & text, std::string * outIdentifier)"
+
+.SS "bool try_deserialize_integer (const std::string & text, int * outValue)"
+
+.SS "bool try_deserialize_production_rule (const std::string & text, \fBproduction\fP * outProduction)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.

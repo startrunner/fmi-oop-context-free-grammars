@@ -1,0 +1,64 @@
+.TH "Demo.ContextFreeGrammars/Demo.ContextFreeGrammars.Serialization.cpp" 3 "Tue Jun 4 2019" "Context-Free Grammars" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Demo.ContextFreeGrammars/Demo.ContextFreeGrammars.Serialization.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'pch\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Grammars/grammar\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Grammars/grammar_operators\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Serialization/grammar_serialization\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Deserialization/grammar_deserialization\&.h'\fP
+.br
+\fC#include '\&.\&./ContextFreeGrammars\&.Serialization/informal_grammar_serialization\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <sstream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBgrammar\fP \fBg\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBgrammar\fP g"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+    "Expr",
+    {
+        {"Expr", "Term"_term | "Expr"_term * "AddOp" * "Term" | "AddOp"_term*"Term"},
+        {"Term", "Factor"_term | "Term"_term*"MulOp"*"Factor"},
+        {"Factor", "Primary"_term | "Factor"_term*"pw"*"Primary"},
+        {"Primary", "number"_terminal | "variable" | "opn"_terminal*"Expr"*"cls"},
+        {"AddOp", "add"_terminal | "sub"},
+        {"MulOp", "mul"_terminal | "div"}
+    }
+}
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Context-Free Grammars from the source code\&.
