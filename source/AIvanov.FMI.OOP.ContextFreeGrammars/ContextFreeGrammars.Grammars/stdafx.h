@@ -7,6 +7,5 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
-#include "../ContextFreeGrammars.Infrastructure/map.h"
-#include "../ContextFreeGrammars.Infrastructure/set.h"
+#include <set>
+#include <map>

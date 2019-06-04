@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include <set>
 
 template <typename T>
 class variable_arity_operator
@@ -22,7 +23,7 @@ public:
 
 	bool has_no_operands()const { return operands.empty(); }
 
-	int operand_count()const 
+	int operand_count()const
 	{
 		int value = operands.size();
 		;
@@ -49,7 +50,7 @@ public:
 		{
 			throw std::out_of_range("");
 		}
-		
+
 		operands[index] = operand;
 	}
 
@@ -63,7 +64,7 @@ public:
 		operands.clear();
 	}
 
-	void remove_operands(const set<int> &indicesToRemove)
+	void remove_operands(const std::set<int> &indicesToRemove)
 	{
 		std::vector<T> keptOperands;
 		for (int i = 0; i < operands.size(); i++)
@@ -79,6 +80,11 @@ public:
 	{
 		if (this == &other)return false;
 		return operands < other.operands;
+	}
+
+	bool operator !=(const variable_arity_operator<T> &other)const
+	{
+		return !(*this == other);
 	}
 
 	bool operator == (const variable_arity_operator<T> &other)const

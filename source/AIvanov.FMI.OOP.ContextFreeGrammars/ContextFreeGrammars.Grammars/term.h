@@ -16,8 +16,10 @@ class term
 	}my;
 
 public:
+	static const std::string EMPTY_WORD;
+
 	term() :
-		term("_") {}
+		term(EMPTY_WORD) {}
 
 	term(const char *value) :
 		term(std::string{ value }) {}
@@ -57,4 +59,3 @@ public:
 
 	static bool validate_value(const std::string &value);
 };
-

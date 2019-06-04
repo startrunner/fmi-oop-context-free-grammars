@@ -2,6 +2,8 @@
 #include "../ContextFreeGrammars.Grammars/grammar.h"
 #include "../ContextFreeGrammars.Grammars/grammar_operators.h"
 #include "../ContextFreeGrammars.Serialization/grammar_serialization.h"
+#include "../ContextFreeGrammars.Deserialization/grammar_deserialization.h"
+#include "../ContextFreeGrammars.Serialization/informal_grammar_serialization.h"
 #include <iostream>
 #include <sstream>
 using namespace std;

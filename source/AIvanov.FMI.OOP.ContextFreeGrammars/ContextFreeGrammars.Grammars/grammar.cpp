@@ -21,10 +21,17 @@ bool grammar::contains_rule(const string &ruleName) const { return productionRul
 const string &grammar::start_symbol() const { return startSymbol; }
 void grammar::set_start_symbol(const string &startSymbol) { this->startSymbol = startSymbol; }
 
-void grammar::add_rule(const string &ruleName, const production &expression) { productionRules.emplace(ruleName, expression); }
+void grammar::add_rule(const string &ruleName, const production &expression)
+{
+	if (!term::validate_value(ruleName) && term::determine_term_type(ruleName) != term_type::rule_reference)
+	{
+		throw std::runtime_error("'" + ruleName + "' is not a valid rule name.");
+	}
+	productionRules.emplace(ruleName, expression);
+}
 const production &grammar::get_rule(const string &ruleName) const { return productionRules.at(ruleName); }
 
-production& grammar::get_rule(const string &ruleName) 
+production& grammar::get_rule(const string &ruleName)
 {
 	production &rule = productionRules.at(ruleName);
 
@@ -83,6 +90,8 @@ template<typename TJoin> grammar join_grammars(const grammar &left, const gramma
 	startRule.add_operand(term{ rightStart, term_type::rule_reference });
 
 	result.add_rule("Start", startRule);
+	result.set_start_symbol("Start");
+
 	add_rules_with_prefix(result, left, "L");
 	add_rules_with_prefix(result, right, "R");
 

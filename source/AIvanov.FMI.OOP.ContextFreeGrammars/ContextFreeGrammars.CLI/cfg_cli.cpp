@@ -5,17 +5,19 @@
 #include <fstream>
 #include "../ContextFreeGrammars.Grammars/grammar.h"
 #include "../ContextFreeGrammars.Infrastructure/stringutil.h"
+#include "../ContextFreeGrammars.Serialization/informal_grammar_serialization.h"
+#include "../ContextFreeGrammars.Deserialization/grammar_deserialization.h"
 #include "../ContextFreeGrammars.Serialization/grammar_serialization.h"
 using namespace std;
 
 void cfg_cli::run()
 {
-	while (true)
+	for (bool running = true; running;)
 	{
 		command command = read_command();
 
 		if (trim(command.name, ' ') == "") {}
-		else if (command.name == "exit")return;
+		else if (command.name == "exit")running = false;
 		else if (command.name == "open")open(command.arguments);
 		else if (command.name == "list")list();
 		else if (command.name == "print")print(command.arguments);
@@ -118,7 +120,8 @@ void cfg_cli::save(const std::vector<std::string>& arguments)
 	}
 
 	ofstream stream{ filePath };
-	stream << grammars.at(grammarID);
+	//stream << grammars.at(grammarID);
+	serialize_grammar(stream, grammars.at(grammarID));
 	stream.close();
 
 	cout << "Success." << endl;;
@@ -189,7 +192,8 @@ void cfg_cli::grammar_chomskify(const std::vector<std::string>& arguments)
 	}
 
 	int chomskifiedId = grammars.size();
-	grammars[chomskifiedId] = chomskified;
+	//grammars[chomskifiedId] = chomskified;
+	grammars.emplace(chomskifiedId, chomskified);
 
 	cout << "Success. ID: " << chomskifiedId << endl;
 }
@@ -206,7 +210,11 @@ void cfg_cli::add_rule(const std::vector<std::string>& arguments)
 	if (!try_get_grammar_from_id({ arguments[0] }, &grammar))return;
 
 	string identifier;
-	if (!try_deserialize_identifier(arguments[1], &identifier))
+	if (
+		!try_deserialize_identifier(arguments[1], &identifier) ||
+		term::validate_value(identifier) ||
+		term::determine_term_type(identifier) != term_type::rule_reference
+		)
 	{
 		cout << "Invalid identifier: '" << arguments[1] << "'" << endl;
 		return;

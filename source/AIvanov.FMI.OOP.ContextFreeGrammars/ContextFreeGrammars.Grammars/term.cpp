@@ -3,6 +3,8 @@
 #include <exception>
 using namespace std;
 
+const std::string term::EMPTY_WORD = "_";
+
 const std::string& term::value() const
 {
 	return my.value;
@@ -28,12 +30,12 @@ term& term::set_type(term_type type)
 
 bool term::is_empty_word() const
 {
-	return my.value == "_";
+	return my.value == EMPTY_WORD;
 }
 
 term& term::make_empty_word()
 {
-	my.value = "_";
+	my.value = EMPTY_WORD;
 	my.type = term_type::terminal;
 	return *this;
 }
@@ -48,7 +50,7 @@ term_type term::determine_term_type(const string &value)
 	validate_value_or_throw(value);
 
 	return
-		(value == "_" || islower(value.front())) ?
+		(value == EMPTY_WORD || islower(value.front())) ?
 		term_type::terminal :
 		term_type::rule_reference;
 }
@@ -67,7 +69,7 @@ bool term::operator==(const term & other) const
 bool term::validate_value(const string &value)
 {
 	if (value.empty())return false;
-	if (value == "_")return true;
+	if (value == EMPTY_WORD)return true;
 
 	bool valid = isalpha(value.front()) || value.front() == '_';
 	for (int i = 1; valid && i < value.size(); i++)

@@ -14,7 +14,7 @@ struct command
 
 class cfg_cli
 {
-	map<int, grammar> grammars;
+	std::map<int, grammar> grammars;
 
 public:
 	void run();
